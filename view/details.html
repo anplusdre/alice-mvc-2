@@ -1,0 +1,41 @@
+<div class="relative">
+    <div class="fixedMenu boxed fixed ng-scope relative" style="display: block;">
+        <div class="topMenu relative">
+            <div class="stackMenu"><a href="#"><img src="assets/icons/menu.svg"></a></div>
+
+            <div class="logo logo-ico-fixed"><img src="assets/images/ALIS-DEER-ICON.svg"></div>
+
+            <div class="menuPost">
+                <ul>
+                    <li><a href="#" class="joinBtn">Join</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+
+<div ng-controller="detailsController">
+
+    <div class="fulldetails" ng-model="talents">
+
+        <div><img ng-src="{{talents[which].images}}"></div>
+
+        <div>
+            <h1>{{talents[which].name}}</h1>
+        </div>
+
+        <div class="containerVid" ng-model="talents">
+            <video controls>
+            <source src="{{talents.video}}">
+            </video>
+        </div>
+
+
+
+    </div>
+</div>

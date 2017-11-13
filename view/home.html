@@ -1,0 +1,45 @@
+<!-- START DISPLAY -->
+<div ng-controller="AliceController" class="talent-container">
+    <div ng-repeat="talent in talents" class="card boxed" ng-class=" {{talent.indexing}}">
+        <div class="actionlist">
+            <div class="vid-icon"><a href="#" ng-click="showVid = ! showVid">video</a></div>
+            <div class="addBtn">
+                <a href="#"><img src="assets/icons/plus.svg"></a>
+            </div>
+            <div class="loveBtn">
+                <a href="#"><img src="assets/icons/heart-in-a-circle.svg"></a>
+            </div>
+        </div>
+        <div class="media" ng-mouseover="open = true" ng-mouseleave="open = false">
+
+            <div class="indicator-thumb" rn-carousel-indicators ng-if="talents.length > 1" slides="talents" rn-carousel-index="carouselIndex" ng-show="open">
+            </div>
+            <ul rn-carousel rn-carousel-buffered rn-carousel-index="carouselIndex" rn-carousel-on-infinite-scroll-right="loadNextImages()" rn-carousel-on-infinite-scroll-left="loadPreviousImages()" rnCarouselPauseOnHover>
+
+                <li><img id="slideShow" ng-src="{{talent.images}}"></li>
+                <li class="hide"><img id="slideShow" ng-src="{{talent.images02}}"></li>
+                <li class="hide"><img id="slideShow" ng-src="{{talent.images03}}"></li>
+
+            </ul>
+        </div>
+        <div class="info">
+            <div id="name">{{talent.name}}</div>
+            <div class="button medium">
+                <a ng-href="./details/{{ talents.indexOf(talent) }}" class="moreBtn">MORE</a>
+            </div>
+        </div>
+        <div class="skills-thumb">
+            <a href="#" class="boxedMedium">{{talent.skills}}</a><a href="#" class="boxedMedium">{{talent.skills02}}</a>
+        </div>
+
+
+        <div class="containerVid" ng-model="talents" ng-show="showVid">
+            <video controls autoplay loop>
+            <source src="{{talent.video}}">
+            </video>
+        </div>
+
+    </div>
+
+
+</div>

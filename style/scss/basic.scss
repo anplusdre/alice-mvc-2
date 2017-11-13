@@ -1,0 +1,228 @@
+@font-face {
+    font-family: 'Myriad Set Pro Thin';
+    src: url('../../assets/fonts/MyriadSetPro-Thin.eot');
+    /* IE9 Compat Modes */
+    src: url('../../assets/fonts/MyriadSetPro-Thin.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('../../assets/fonts/MyriadSetPro-Thin.woff2') format('woff2'), /* Super Modern Browsers */
+    url('../../assets/fonts/MyriadSetPro-Thin.woff') format('woff'), /* Pretty Modern Browsers */
+    url('../../assets/fonts/MyriadSetPro-Thin.ttf') format('truetype'), /* Safari, Android, iOS */
+    url('../../assets/fonts/MyriadSetPro-Thin.svg#svgFontName') format('svg');
+    /* Legacy iOS */
+}
+
+@import url('https://fonts.googleapis.com/css?family=Ubuntu:300,400,500');
+@import url('https://fonts.googleapis.com/css?family=PT+Sans:400,700');
+
+html,
+body {}
+
+html {
+    background: #FFFFFF;
+    height: 100%!important;
+}
+
+$blue: #0089e1;
+$mainb: #9ac3c3;
+$mainc: #b18646;
+$font: 'PT Sans',
+sans-serif;
+$bold: 'Myriad Set Pro Bold';
+$ubuntu: 'Ubuntu',
+sans-serif;
+$black: #222222;
+$less-black: #989898;
+$g1: linear-gradient( to right,
+#fa508c,
+#ffc86d);
+$g2: linear-gradient(to right,
+#3674ef,
+#23a5f1);
+$g3: linear-gradient(to right,
+#000,
+#000);
+$g4: linear-gradient(to bottom,
+#9ac3c3,
+#ce3482);
+$smooth: all .2s ease-in-out;
+
+ol,
+ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+li {
+    display: inline-block;
+}
+
+a {
+    color: $less-black;
+    text-decoration: none;
+}
+
+input {
+    border: 0;
+    &:focus {
+        border: 0;
+        outline: 0;
+    }
+}
+
+*,
+*:before,
+*:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+button {
+    border: 0;
+    cursor: pointer;
+    &:focus {
+        outline: none;
+    }
+}
+
+::-webkit-scrollbar-track {
+    background-color: #ddd;
+}
+
+::-webkit-scrollbar {
+    width: 4px;
+    background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #9ac3c3;
+}
+
+
+.button {
+    display: inline-block;
+    float: right;
+    position: relative;
+    top: -15px;
+}
+
+.rl-container {
+    position: relative;
+}
+
+.boxed {
+
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.26);
+    -moz-box-sizing: border-box;
+}
+
+.boxedSmall {
+    box-shadow: 0 1px 1px #66abab;
+    -moz-box-sizing: border-box;
+}
+
+.boxed.fixed {
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.19);
+    -moz-box-sizing: border-box;
+}
+
+.clear {
+    clear: both;
+}
+
+.slow {
+    transition: all .2s ease-in-out;
+}
+
+.row {
+    width: 1124px;
+    margin: 0 auto;
+}
+
+.center {
+    text-align: center;
+}
+
+.left {
+    text-align: left;
+}
+
+.spacer.huge {
+    height: 20vh;
+}
+
+.spacer.big {
+    height: 10vh;
+    position: relative;
+}
+
+.gr-2 {
+    width: 50%;
+}
+
+.gr-2-5 {
+    width: 55%;
+    min-height: 1px;
+}
+
+.gr-2-4 {
+    width: 40%;
+}
+
+.gr-3 {
+    width: 33%;
+    min-height: 1px;
+}
+
+
+.gr-3-5 {
+    width: 30%;
+    min-height: 1px;
+}
+
+.gr-4 {
+    width: 25%;
+    min-height: 1px;
+}
+
+.gr-5 {
+    width: 20%;
+    min-height: 1px;
+}
+
+.gr-10 {
+    width: 10%;
+    min-height: 1px;
+}
+
+.talent-container {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: "";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    zoom: 1;
+}
+
+.relative {
+    position: relative!important;
+
+}
+
+// SEARCH

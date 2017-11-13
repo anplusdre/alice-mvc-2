@@ -1,0 +1,232 @@
+@import url("https://fonts.googleapis.com/css?family=Ubuntu:300,400,500");
+@import url("https://fonts.googleapis.com/css?family=PT+Sans:400,700");
+@font-face {
+  font-family: 'Myriad Set Pro Thin';
+  src: url("../../assets/fonts/MyriadSetPro-Thin.eot");
+  /* IE9 Compat Modes */
+  src: url("../../assets/fonts/MyriadSetPro-Thin.eot?#iefix") format("embedded-opentype"), url("../../assets/fonts/MyriadSetPro-Thin.woff2") format("woff2"), url("../../assets/fonts/MyriadSetPro-Thin.woff") format("woff"), url("../../assets/fonts/MyriadSetPro-Thin.ttf") format("truetype"), url("../../assets/fonts/MyriadSetPro-Thin.svg#svgFontName") format("svg");
+  /* Legacy iOS */
+}
+
+/* line 19, D:/xampp/htdocs/alice/style/scss/basic.scss */
+html {
+  background: #FFFFFF;
+  height: 100% !important;
+}
+
+/* line 48, D:/xampp/htdocs/alice/style/scss/basic.scss */
+ol,
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+/* line 55, D:/xampp/htdocs/alice/style/scss/basic.scss */
+li {
+  display: inline-block;
+}
+
+/* line 59, D:/xampp/htdocs/alice/style/scss/basic.scss */
+a {
+  color: #989898;
+  text-decoration: none;
+}
+
+/* line 64, D:/xampp/htdocs/alice/style/scss/basic.scss */
+input {
+  border: 0;
+}
+
+/* line 66, D:/xampp/htdocs/alice/style/scss/basic.scss */
+input:focus {
+  border: 0;
+  outline: 0;
+}
+
+/* line 72, D:/xampp/htdocs/alice/style/scss/basic.scss */
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 80, D:/xampp/htdocs/alice/style/scss/basic.scss */
+img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+/* line 85, D:/xampp/htdocs/alice/style/scss/basic.scss */
+button {
+  border: 0;
+  cursor: pointer;
+}
+
+/* line 88, D:/xampp/htdocs/alice/style/scss/basic.scss */
+button:focus {
+  outline: none;
+}
+
+/* line 93, D:/xampp/htdocs/alice/style/scss/basic.scss */
+::-webkit-scrollbar-track {
+  background-color: #ddd;
+}
+
+/* line 97, D:/xampp/htdocs/alice/style/scss/basic.scss */
+::-webkit-scrollbar {
+  width: 4px;
+  background-color: #F5F5F5;
+}
+
+/* line 102, D:/xampp/htdocs/alice/style/scss/basic.scss */
+::-webkit-scrollbar-thumb {
+  background-color: #9ac3c3;
+}
+
+/* line 107, D:/xampp/htdocs/alice/style/scss/basic.scss */
+.button {
+  display: inline-block;
+  float: right;
+  position: relative;
+  top: -15px;
+}
+
+/* line 114, D:/xampp/htdocs/alice/style/scss/basic.scss */
+.rl-container {
+  position: relative;
+}
+
+/* line 118, D:/xampp/htdocs/alice/style/scss/basic.scss */
+.boxed {
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.26);
+  -moz-box-sizing: border-box;
+}
+
+/* line 124, D:/xampp/htdocs/alice/style/scss/basic.scss */
+.boxedSmall {
+  box-shadow: 0 1px 1px #66abab;
+  -moz-box-sizing: border-box;
+}
+
+/* line 129, D:/xampp/htdocs/alice/style/scss/basic.scss */
+.boxed.fixed {
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.19);
+  -moz-box-sizing: border-box;
+}
+
+/* line 134, D:/xampp/htdocs/alice/style/scss/basic.scss */
+.clear {
+  clear: both;
+}
+
+/* line 138, D:/xampp/htdocs/alice/style/scss/basic.scss */
+.slow {
+  transition: all .2s ease-in-out;
+}
+
+/* line 142, D:/xampp/htdocs/alice/style/scss/basic.scss */
+.row {
+  width: 1124px;
+  margin: 0 auto;
+}
+
+/* line 147, D:/xampp/htdocs/alice/style/scss/basic.scss */
+.center {
+  text-align: center;
+}
+
+/* line 151, D:/xampp/htdocs/alice/style/scss/basic.scss */
+.left {
+  text-align: left;
+}
+
+/* line 155, D:/xampp/htdocs/alice/style/scss/basic.scss */
+.spacer.huge {
+  height: 20vh;
+}
+
+/* line 159, D:/xampp/htdocs/alice/style/scss/basic.scss */
+.spacer.big {
+  height: 10vh;
+  position: relative;
+}
+
+/* line 164, D:/xampp/htdocs/alice/style/scss/basic.scss */
+.gr-2 {
+  width: 50%;
+}
+
+/* line 168, D:/xampp/htdocs/alice/style/scss/basic.scss */
+.gr-2-5 {
+  width: 55%;
+  min-height: 1px;
+}
+
+/* line 173, D:/xampp/htdocs/alice/style/scss/basic.scss */
+.gr-2-4 {
+  width: 40%;
+}
+
+/* line 177, D:/xampp/htdocs/alice/style/scss/basic.scss */
+.gr-3 {
+  width: 33%;
+  min-height: 1px;
+}
+
+/* line 183, D:/xampp/htdocs/alice/style/scss/basic.scss */
+.gr-3-5 {
+  width: 30%;
+  min-height: 1px;
+}
+
+/* line 188, D:/xampp/htdocs/alice/style/scss/basic.scss */
+.gr-4 {
+  width: 25%;
+  min-height: 1px;
+}
+
+/* line 193, D:/xampp/htdocs/alice/style/scss/basic.scss */
+.gr-5 {
+  width: 20%;
+  min-height: 1px;
+}
+
+/* line 198, D:/xampp/htdocs/alice/style/scss/basic.scss */
+.gr-10 {
+  width: 10%;
+  min-height: 1px;
+}
+
+/* line 203, D:/xampp/htdocs/alice/style/scss/basic.scss */
+.talent-container {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* line 209, D:/xampp/htdocs/alice/style/scss/basic.scss */
+.clearfix:before,
+.clearfix:after {
+  content: "";
+  display: table;
+}
+
+/* line 215, D:/xampp/htdocs/alice/style/scss/basic.scss */
+.clearfix:after {
+  clear: both;
+}
+
+/* line 219, D:/xampp/htdocs/alice/style/scss/basic.scss */
+.clearfix {
+  zoom: 1;
+}
+
+/* line 223, D:/xampp/htdocs/alice/style/scss/basic.scss */
+.relative {
+  position: relative !important;
+}
+
+/*# sourceMappingURL=../css/basic.map */
