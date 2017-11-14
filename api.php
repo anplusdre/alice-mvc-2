@@ -19,7 +19,10 @@ while($rs = $result->fetch_array(MYSQLI_ASSOC)) {
      $outp .= '"images03":"'. $rs["images03"] . '",';
     $outp .= '"skills":"'. $rs["skills"]     . '",';
     $outp .= '"skills02":"'. $rs["skills02"]     . '",';
-    $outp .= '"indexing":"'. $rs["indexing"] . '"}';
+    $outp .= '"indexing":"'. $rs["indexing"] . '",';
+    $outp .= '"gender":"'. $rs["gender"] . '",';
+    $outp .= '"age":"'. $rs["age"] . '",';
+    $outp .= '"domicile":"'. $rs["domicile"] . '"}';
 }
 $outp ='{"talents":['.$outp.']}';
 $conn->close();

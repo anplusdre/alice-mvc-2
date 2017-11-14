@@ -1,41 +1,185 @@
-<div class="relative">
-    <div class="fixedMenu boxed fixed ng-scope relative" style="display: block;">
-        <div class="topMenu relative">
-            <div class="stackMenu"><a href="#"><img src="assets/icons/menu.svg"></a></div>
-
-            <div class="logo logo-ico-fixed"><img src="assets/images/ALIS-DEER-ICON.svg"></div>
-
-            <div class="menuPost">
-                <ul>
-                    <li><a href="#" class="joinBtn">Join</a></li>
-                    <li><a href="#">Blog</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
-            </div>
-        </div>
-    </div>
-
-</div>
+<header class="minified" ng-include src="'view/header-mini.html'"></header>
 
 
 
-<div ng-controller="detailsController">
+
+
+<div ng-controller="detailsController" class="detailsController">
 
     <div class="fulldetails" ng-model="talents">
 
-        <div><img ng-src="{{talents[which].images}}"></div>
-
+        <div class="userProfile">
+            <img ng-src="{{talents[which].images}}">
+        </div>
         <div>
-            <h1>{{talents[which].name}}</h1>
+            <h5>{{talents[which].name}}</h5>
         </div>
 
-        <div class="containerVid" ng-model="talents">
-            <video controls>
-            <source src="{{talents.video}}">
-            </video>
-        </div>
+    </div>
 
+    <div class="fullDetails_s" ng-model="talents">
+
+
+
+        <div class="userFlash">
+            <ul>
+                <li>{{talents[which].gender}},</li>
+                <li>{{talents[which].age}}</li>
+                <li>From &nbsp;{{talents[which].domicile}}</li>
+            </ul>
+        </div>
 
 
     </div>
+
+
 </div>
+
+
+
+
+<div class="spacer big"></div>
+
+
+<div class="tabbed_info" ng-controller="detailsController">
+    <ul class='tabs'>
+        <li><a href='#tab1' class="tab1 selectedTab"><img src="assets/icons/inbox.svg">
+        <p>Database</p></a></li>
+        <li><a href='#tab2' class="tab2"><img src="assets/icons/images.svg">
+        <p>Gallery</p></a></li>
+        <li><a href='#tab3' class="tab3"><img src="assets/icons/network.svg">
+        <p>Projects</p></a></li>
+    </ul>
+
+    <div class="tabContent bx">
+        <div id='tab1'>
+            <div class="biography">
+                <table>
+                    <tr>
+                        <th style="border-right: 1px solid #d9ffff;">
+                            <h5 style="margin:0 auto;background:#9ac3c3;color:#fbfbfb;font-weight:600;font-size:14px;padding:8px 20px;border-top-left-radius:8px;border-top-right-radius:0;">Biography</h5>
+                            <table>
+                                <tr>
+                                    <td>Full Name</td>
+                                    <td>:</td>
+                                    <td>test</td>
+                                </tr>
+                                <tr>
+                                    <td>Gender</td>
+                                    <td>:</td>
+                                    <td>Female</td>
+                                </tr>
+                                <tr>
+                                    <td>Birth</td>
+                                    <td>:</td>
+                                    <td>Female</td>
+                                </tr>
+                                <tr>
+                                    <td>Live in</td>
+                                    <td>:</td>
+                                    <td>Female</td>
+                                </tr>
+                                <tr>
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+                                </tr>
+                            </table>
+                        </th>
+
+                        <th style="border-right: 1px solid #d9ffff;">
+                            <h5 style="margin:0 auto;background:#9ac3c3;color:#fbfbfb;font-weight:600;font-size:14px;padding:8px 20px;border-top-left-radius:0;border-top-right-radius:0;">Body Meassurements</h5>
+                            <table>
+                                <tr>
+                                    <td>Height</td>
+                                    <td>:</td>
+                                    <td>186 cm</td>
+                                </tr>
+                                <tr>
+                                    <td>Weight</td>
+                                    <td>:</td>
+                                    <td>70 kg</td>
+                                </tr>
+                                <tr>
+                                    <td>Chest</td>
+                                    <td>:</td>
+                                    <td>36</td>
+                                </tr>
+                                <tr>
+                                    <td>Waist</td>
+                                    <td>:</td>
+                                    <td>34</td>
+                                </tr>
+                                <tr>
+                                    <td>Hips</td>
+                                    <td>:</td>
+                                    <td>33</td>
+                                </tr>
+                            </table>
+                        </th>
+
+                        <th>
+                            <h5 style="margin:0 auto;background:#9ac3c3;color:#fbfbfb;font-weight:600;font-size:14px;padding:8px 20px;border-top-left-radius:0;border-top-right-radius:8px;">Costume Size</h5>
+                            <table>
+                                <tr>
+                                    <td>Dress</td>
+                                    <td>:</td>
+                                    <td>S</td>
+                                </tr>
+                                <tr>
+                                    <td>Skirt</td>
+                                    <td>:</td>
+                                    <td>S</td>
+                                </tr>
+                                <tr>
+                                    <td>Shirt</td>
+                                    <td>:</td>
+                                    <td>XS</td>
+                                </tr>
+                                <tr>
+                                    <td>Shoes</td>
+                                    <td>:</td>
+                                    <td>40</td>
+                                </tr>
+                                <tr>
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+                                </tr>
+                            </table>
+                        </th>
+
+
+
+                    </tr>
+
+                </table>
+            </div>
+
+
+            <div class="pseula">
+                <h6>** This data may change overtime</h6>
+            </div>
+        </div>
+        <div id='tab2'>
+            <div class="fullGallery">
+                <div ng-model="talents">
+                    <img ng-src="{{talents[which].images}}">
+                    <img ng-src="{{talents[which].images02}}">
+                    <img ng-src="{{talents[which].images03}}">
+                </div>
+            </div>
+
+            <div class="pseula">
+                <h6 style="font-style: italic;color: #777;">Warning!! This Images is copyright protected and cannot be shared or spreaded, you need to input client Key to download these images.</h6>
+            </div>
+        </div>
+        <div id='tab3'>
+            <p>And this is the 3rd tab.</p>
+        </div>
+    </div>
+</div>
+
+
+<script type="text/javascript" src="js/script.js"></script>
+<div ng-include src="'view/footer.html'"></div>

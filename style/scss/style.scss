@@ -25,6 +25,15 @@ header {
     }
 }
 
+header.minified {
+    background: linear-gradient(95deg, #9ac3c3 40%, #3a7bd5 140%, #0089e1);
+    &:after {
+        content: none;
+        height: 0;
+        width: 0;
+    }
+}
+
 .navigation {
     position: absolute;
     background: #FFF;
@@ -662,13 +671,6 @@ header {
     display: block;
 }
 
-.fulldetails {
-    img {
-        height: 100px;
-    }
-}
-
-
 div.rn-carousel-indicator span {
     display: none;
     &:first-child {
@@ -732,6 +734,48 @@ div.rn-carousel-indicator span {
 .containerVid {
     position: absolute;
     top: 25px;
+    width: 100%;
+    height: 100%;
+
+    input {
+        background: url(../../assets/icons/play-button.svg) no-repeat;
+        z-index: 55;
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        top: 50%;
+        left: 100px;
+        transform: translate(0, -50%);
+        opacity: 0;
+        transition: opacity .2s ease-in-out;
+
+        &:hover {
+            opacity: 1;
+            transition: opacity .2s ease-in-out;
+        }
+    }
+
+    .unavail {
+        top: 50%;
+        left: 50%;
+        width: 100%;
+        transform: translate(-50%, -50%);
+    }
+
+    span {
+        position: absolute;
+        right: 0;
+        font-size: 13px;
+        padding: 5px 10px 0 0;
+        top: 0;
+        z-index: 33;
+        cursor: pointer;
+        color: #ef9090;
+
+        &:hover > img {
+            background: $mainc;
+        }
+    }
 
     video {
         position: absolute;
@@ -739,6 +783,245 @@ div.rn-carousel-indicator span {
         height: 410px;
         left: 0;
         top: 0;
-        background: $g4;
+        background: #eee;
+    }
+}
+
+.headerContainer {
+    height: inherit;
+    line-height: 37px;
+    .miniHeader {
+        position: absolute;
+        width: 100%;
+        margin: 0 auto;
+        height: inherit;
+        top: 0;
+
+        .FrontHeader {
+            width: 980px;
+            margin: 0 auto;
+
+            ul {
+                display: flex;
+
+                li {
+                    flex: 1;
+
+                    a {
+                        color: #fff;
+                        display: block;
+                        text-align: center;
+                        font-size: .89em;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.detailsController {
+    position: absolute;
+    height: 250px;
+    width: 100%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    top: 0;
+
+    .fulldetails {
+        left: 50%;
+        transform: translate(-50%, -50%);
+        top: 50%;
+        position: absolute;
+
+        .userProfile {
+            border-radius: 33px;
+            width: 100px;
+            height: 100px;
+            overflow: hidden;
+            position: relative;
+
+            img {
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%, -50%);
+            }
+        }
+
+        h5 {
+            margin: 0 auto;
+            margin-top: 15px;
+            text-align: center;
+            font-size: 14px;
+            color: #fff;
+            text-transform: uppercase;
+            letter-spacing: 0.3em;
+            min-width: 90px;
+            border: 1.5px solid #fff;
+        }
+    }
+}
+
+.fullDetails_s {
+    position: absolute;
+    top: calc(50% + 90px);
+    left: 50%;
+    transform: translate(-50%, -50%);
+    .userFlash {
+        width: 300px;
+        position: relative;
+        display: inline;
+        ul {
+            li {
+                color: #fff;
+                font-size: 13.5px;
+            }
+        }
+    }
+
+}
+
+.tabbed_info {
+    width: 980px;
+    margin: 0 auto;
+    .tabs {
+        display: flex;
+
+        li {
+            color: #fff;
+            font-size: 13px;
+            display: inline-block;
+            margin: 0 13.5px;
+            text-align: center;
+            width: 33%;
+
+            a {
+                position: relative;
+                display: inline-block;
+                width: 100px;
+                height: 100px;
+                border-radius: 5px;
+                box-shadow: 0px 8px 52px 2px rgba(0, 0, 0, 0.18);
+                transition: $smooth;
+
+                img {
+                    position: absolute;
+                    height: 35px;
+                    top: calc(50% - 6px);
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                }
+
+                p {
+                    margin: 0 auto;
+                    bottom: 0;
+                    text-align: center;
+                    position: absolute;
+                    width: 100%;
+                    padding-bottom: 20px;
+                    font-size: 11px;
+                }
+            }
+
+            a.selectedTab {
+                color: #fff;
+                img {
+                    filter: brightness(0) invert(1);
+                }
+            }
+
+            a.tab1.selectedTab {
+
+                background: #9ac3c3;
+            }
+
+
+            a.tab2.selectedTab {
+
+                background: linear-gradient(95deg, #9ac3c3 40%, #77a9ca 140%);
+            }
+
+            a.tab3.selectedTab {
+
+                background: #78aac9;
+            }
+        }
+    }
+
+    .tabContent {
+        max-width: 980px;
+        margin: 0 auto;
+        padding: 30px;
+        border-radius: 5px;
+        transition: all 0.2s ease-in-out;
+        margin-top: 35px;
+    }
+}
+
+.biography {
+    display: flex;
+    position: relative;
+
+    td {
+        height: 30px;
+        padding-left: 25px;
+        font-size: 13px;
+        border-bottom: 1px solid #eee;
+        font-weight: 400;
+        color: #777;
+    }
+
+    h5 {
+        margin: 0 auto;
+        background: #9ac3c3;
+        color: #fbfbfb;
+        font-weight: 400;
+        font-size: 14px;
+        padding: 8px 20px;
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+    }
+
+    p {
+
+        font-size: 13px;
+        color: #666;
+        padding-left: 18px;
+        margin: 10px auto;
+        border-bottom: 1px solid #eee;
+        padding-bottom: 10px;
+    }
+
+    p:last-child {
+
+        border-bottom: 1px solid #fff;
+    }
+}
+
+
+.pseula {
+    text-align: right;
+    box-shadow: 0px 8px 52px 2px rgba(0, 0, 0, 0.18);
+    float: right;
+    margin-right: -32px;
+    display: inline-block;
+    margin-top: 45px;
+    ;
+    h6 {
+        margin: 0;
+        padding: 10px;
+    }
+}
+
+.fullGallery {
+    text-align: left;
+    margin: 0 auto;
+    display: flex;
+    width: 100%;
+    img {
+        flex: 1;
+        max-width: 30%;
+        margin: 1%;
+        vertical-align: middle;
     }
 }

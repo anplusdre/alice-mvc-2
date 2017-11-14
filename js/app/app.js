@@ -27,7 +27,6 @@
                 $scope.talents = res.data.talents;
                 $scope.open = false;
 
-
             });
         }]);
     alice.controller("detailsController", ['$scope', '$http', '$routeParams', function ($scope, $http, $routeParams) {

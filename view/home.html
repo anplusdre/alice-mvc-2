@@ -2,7 +2,7 @@
 <div ng-controller="AliceController" class="talent-container">
     <div ng-repeat="talent in talents" class="card boxed" ng-class=" {{talent.indexing}}">
         <div class="actionlist">
-            <div class="vid-icon"><a href="#" ng-click="showVid = ! showVid">video</a></div>
+            <div class="vid-icon"><a href="#" ng-click="showVid = true">video</a></div>
             <div class="addBtn">
                 <a href="#"><img src="assets/icons/plus.svg"></a>
             </div>
@@ -34,9 +34,10 @@
 
 
         <div class="containerVid" ng-model="talents" ng-show="showVid">
-            <video controls autoplay loop>
-            <source src="{{talent.video}}">
-            </video>
+            <span ng-click="showVid = false">close</span>
+            <!--            <input class="playerBtn" type="button" ng-click="pauseOrPlay($event)"></input>-->
+            <video class="video" controls loop><source src="{{talent.video}}"></video>
+            <!--            <span class="unavail">Video Not Available</span>-->
         </div>
 
     </div>
