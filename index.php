@@ -38,7 +38,6 @@
     <script src="js/lib/touch.js"></script>
     <script type="text/javascript" src="js/script.js"></script>
     <script src="js/app/app.js"></script>
-    <!--<script src="js/app.js"></script>-->
 </body>
 
 </html>
