@@ -14,7 +14,8 @@ html {
   height: 100% !important;
 }
 
-/* line 55, D:/xampp/htdocs/alice/style/scss/basic.scss */
+/* fallback for old browsers */
+/* line 59, D:/xampp/htdocs/alice/style/scss/basic.scss */
 ol,
 ul {
   padding: 0;
@@ -22,28 +23,28 @@ ul {
   list-style: none;
 }
 
-/* line 62, D:/xampp/htdocs/alice/style/scss/basic.scss */
+/* line 66, D:/xampp/htdocs/alice/style/scss/basic.scss */
 li {
   display: inline-block;
 }
 
-/* line 66, D:/xampp/htdocs/alice/style/scss/basic.scss */
+/* line 70, D:/xampp/htdocs/alice/style/scss/basic.scss */
 a {
   color: #989898;
   text-decoration: none;
 }
 
-/* line 71, D:/xampp/htdocs/alice/style/scss/basic.scss */
+/* line 75, D:/xampp/htdocs/alice/style/scss/basic.scss */
 input {
   border: 0;
 }
 
-/* line 73, D:/xampp/htdocs/alice/style/scss/basic.scss */
+/* line 77, D:/xampp/htdocs/alice/style/scss/basic.scss */
 input:focus {
   outline: 0;
 }
 
-/* line 78, D:/xampp/htdocs/alice/style/scss/basic.scss */
+/* line 82, D:/xampp/htdocs/alice/style/scss/basic.scss */
 *,
 *:before,
 *:after {
@@ -52,18 +53,18 @@ input:focus {
   box-sizing: border-box;
 }
 
-/* line 86, D:/xampp/htdocs/alice/style/scss/basic.scss */
+/* line 90, D:/xampp/htdocs/alice/style/scss/basic.scss */
 img {
   max-width: 100%;
 }
 
-/* line 90, D:/xampp/htdocs/alice/style/scss/basic.scss */
+/* line 94, D:/xampp/htdocs/alice/style/scss/basic.scss */
 table {
   border-collapse: collapse;
   width: 100%;
 }
 
-/* line 95, D:/xampp/htdocs/alice/style/scss/basic.scss */
+/* line 99, D:/xampp/htdocs/alice/style/scss/basic.scss */
 td,
 th {
   text-align: left;
@@ -71,34 +72,42 @@ th {
   margin: 0;
 }
 
-/* line 102, D:/xampp/htdocs/alice/style/scss/basic.scss */
+/* line 106, D:/xampp/htdocs/alice/style/scss/basic.scss */
+input,
+textarea,
+select,
+button {
+  font-family: "Open Sans", sans-serif;
+}
+
+/* line 114, D:/xampp/htdocs/alice/style/scss/basic.scss */
 button {
   border: 0;
   cursor: pointer;
 }
 
-/* line 105, D:/xampp/htdocs/alice/style/scss/basic.scss */
+/* line 117, D:/xampp/htdocs/alice/style/scss/basic.scss */
 button:focus {
   outline: none;
 }
 
-/* line 110, D:/xampp/htdocs/alice/style/scss/basic.scss */
+/* line 122, D:/xampp/htdocs/alice/style/scss/basic.scss */
 ::-webkit-scrollbar-track {
   background-color: #ddd;
 }
 
-/* line 114, D:/xampp/htdocs/alice/style/scss/basic.scss */
+/* line 126, D:/xampp/htdocs/alice/style/scss/basic.scss */
 ::-webkit-scrollbar {
   width: 4px;
   background-color: #F5F5F5;
 }
 
-/* line 119, D:/xampp/htdocs/alice/style/scss/basic.scss */
+/* line 131, D:/xampp/htdocs/alice/style/scss/basic.scss */
 ::-webkit-scrollbar-thumb {
   background-color: #9ac3c3;
 }
 
-/* line 124, D:/xampp/htdocs/alice/style/scss/basic.scss */
+/* line 136, D:/xampp/htdocs/alice/style/scss/basic.scss */
 .button {
   display: inline-block;
   float: right;
@@ -106,142 +115,142 @@ button:focus {
   top: -15px;
 }
 
-/* line 131, D:/xampp/htdocs/alice/style/scss/basic.scss */
+/* line 143, D:/xampp/htdocs/alice/style/scss/basic.scss */
 .rl-container {
   position: relative;
 }
 
-/* line 135, D:/xampp/htdocs/alice/style/scss/basic.scss */
+/* line 147, D:/xampp/htdocs/alice/style/scss/basic.scss */
 .boxed {
   box-shadow: 0px 11px 83px 3px rgba(0, 0, 0, 0.18);
   -moz-box-sizing: border-box;
 }
 
-/* line 141, D:/xampp/htdocs/alice/style/scss/basic.scss */
+/* line 153, D:/xampp/htdocs/alice/style/scss/basic.scss */
 .boxedSmall {
   box-shadow: 0 1px 1px #66abab;
   -moz-box-sizing: border-box;
 }
 
-/* line 146, D:/xampp/htdocs/alice/style/scss/basic.scss */
+/* line 158, D:/xampp/htdocs/alice/style/scss/basic.scss */
 .boxed.fixed {
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.19);
   -moz-box-sizing: border-box;
 }
 
-/* line 151, D:/xampp/htdocs/alice/style/scss/basic.scss */
+/* line 163, D:/xampp/htdocs/alice/style/scss/basic.scss */
 .bx {
   box-shadow: 0px 8px 52px 2px rgba(0, 0, 0, 0.18);
 }
 
-/* line 155, D:/xampp/htdocs/alice/style/scss/basic.scss */
+/* line 167, D:/xampp/htdocs/alice/style/scss/basic.scss */
 .clear {
   clear: both;
 }
 
-/* line 159, D:/xampp/htdocs/alice/style/scss/basic.scss */
+/* line 171, D:/xampp/htdocs/alice/style/scss/basic.scss */
 .slow {
   transition: all .2s ease-in-out;
 }
 
-/* line 163, D:/xampp/htdocs/alice/style/scss/basic.scss */
+/* line 175, D:/xampp/htdocs/alice/style/scss/basic.scss */
 .row {
   width: 1124px;
   margin: 0 auto;
 }
 
-/* line 168, D:/xampp/htdocs/alice/style/scss/basic.scss */
+/* line 180, D:/xampp/htdocs/alice/style/scss/basic.scss */
 .center {
   text-align: center;
 }
 
-/* line 172, D:/xampp/htdocs/alice/style/scss/basic.scss */
+/* line 184, D:/xampp/htdocs/alice/style/scss/basic.scss */
 .left {
   text-align: left;
 }
 
-/* line 176, D:/xampp/htdocs/alice/style/scss/basic.scss */
+/* line 188, D:/xampp/htdocs/alice/style/scss/basic.scss */
 .spacer.huge {
   height: 20vh;
 }
 
-/* line 180, D:/xampp/htdocs/alice/style/scss/basic.scss */
+/* line 192, D:/xampp/htdocs/alice/style/scss/basic.scss */
 .spacer.big {
   height: 10vh;
   position: relative;
 }
 
-/* line 185, D:/xampp/htdocs/alice/style/scss/basic.scss */
+/* line 197, D:/xampp/htdocs/alice/style/scss/basic.scss */
 .gr-2 {
   width: 50%;
 }
 
-/* line 189, D:/xampp/htdocs/alice/style/scss/basic.scss */
+/* line 201, D:/xampp/htdocs/alice/style/scss/basic.scss */
 .gr-2-5 {
   width: 55%;
   min-height: 1px;
 }
 
-/* line 194, D:/xampp/htdocs/alice/style/scss/basic.scss */
+/* line 206, D:/xampp/htdocs/alice/style/scss/basic.scss */
 .gr-2-4 {
   width: 40%;
 }
 
-/* line 198, D:/xampp/htdocs/alice/style/scss/basic.scss */
+/* line 210, D:/xampp/htdocs/alice/style/scss/basic.scss */
 .gr-3 {
   width: 33%;
   min-height: 1px;
 }
 
-/* line 204, D:/xampp/htdocs/alice/style/scss/basic.scss */
+/* line 216, D:/xampp/htdocs/alice/style/scss/basic.scss */
 .gr-3-5 {
   width: 30%;
   min-height: 1px;
 }
 
-/* line 209, D:/xampp/htdocs/alice/style/scss/basic.scss */
+/* line 221, D:/xampp/htdocs/alice/style/scss/basic.scss */
 .gr-4 {
   width: 25%;
   min-height: 1px;
 }
 
-/* line 214, D:/xampp/htdocs/alice/style/scss/basic.scss */
+/* line 226, D:/xampp/htdocs/alice/style/scss/basic.scss */
 .gr-5 {
   width: 20%;
   min-height: 1px;
 }
 
-/* line 219, D:/xampp/htdocs/alice/style/scss/basic.scss */
+/* line 231, D:/xampp/htdocs/alice/style/scss/basic.scss */
 .gr-10 {
   width: 10%;
   min-height: 1px;
 }
 
-/* line 224, D:/xampp/htdocs/alice/style/scss/basic.scss */
+/* line 236, D:/xampp/htdocs/alice/style/scss/basic.scss */
 .talent-container {
   width: 100%;
   margin: 0 auto;
   text-align: center;
 }
 
-/* line 230, D:/xampp/htdocs/alice/style/scss/basic.scss */
+/* line 242, D:/xampp/htdocs/alice/style/scss/basic.scss */
 .clearfix:before,
 .clearfix:after {
   content: "";
   display: table;
 }
 
-/* line 236, D:/xampp/htdocs/alice/style/scss/basic.scss */
+/* line 248, D:/xampp/htdocs/alice/style/scss/basic.scss */
 .clearfix:after {
   clear: both;
 }
 
-/* line 240, D:/xampp/htdocs/alice/style/scss/basic.scss */
+/* line 252, D:/xampp/htdocs/alice/style/scss/basic.scss */
 .clearfix {
   zoom: 1;
 }
 
-/* line 244, D:/xampp/htdocs/alice/style/scss/basic.scss */
+/* line 256, D:/xampp/htdocs/alice/style/scss/basic.scss */
 .relative {
   position: relative !important;
 }
@@ -278,17 +287,22 @@ header:after {
 
 /* line 28, D:/xampp/htdocs/alice/style/scss/style.scss */
 header.minified {
-  background: linear-gradient(95deg, #9ac3c3 40%, #3a7bd5 140%, #0089e1);
+  background: #EB3349;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #F45C43, #EB3349);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #F45C43, #EB3349);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
-/* line 30, D:/xampp/htdocs/alice/style/scss/style.scss */
+/* line 35, D:/xampp/htdocs/alice/style/scss/style.scss */
 header.minified:after {
   content: none;
   height: 0;
   width: 0;
 }
 
-/* line 37, D:/xampp/htdocs/alice/style/scss/style.scss */
+/* line 42, D:/xampp/htdocs/alice/style/scss/style.scss */
 .navigation {
   position: absolute;
   background: #FFF;
@@ -301,12 +315,12 @@ header.minified:after {
   z-index: 2;
 }
 
-/* line 48, D:/xampp/htdocs/alice/style/scss/style.scss */
+/* line 53, D:/xampp/htdocs/alice/style/scss/style.scss */
 .navigation ul li {
   padding-left: 35px;
 }
 
-/* line 50, D:/xampp/htdocs/alice/style/scss/style.scss */
+/* line 55, D:/xampp/htdocs/alice/style/scss/style.scss */
 .navigation ul li a {
   display: block;
   padding: 15px 0;
@@ -316,13 +330,13 @@ header.minified:after {
   position: relative;
 }
 
-/* line 58, D:/xampp/htdocs/alice/style/scss/style.scss */
+/* line 63, D:/xampp/htdocs/alice/style/scss/style.scss */
 .navigation ul li a.active {
-  color: #ff004f;
+  color: #EB3349;
   font-weight: bold;
 }
 
-/* line 62, D:/xampp/htdocs/alice/style/scss/style.scss */
+/* line 67, D:/xampp/htdocs/alice/style/scss/style.scss */
 .navigation ul li a.active:before {
   content: " ";
   display: inline-block;
@@ -337,28 +351,28 @@ header.minified:after {
   position: absolute;
 }
 
-/* line 76, D:/xampp/htdocs/alice/style/scss/style.scss */
+/* line 81, D:/xampp/htdocs/alice/style/scss/style.scss */
 .navigation ul li:first-child {
   padding-left: 0;
 }
 
-/* line 82, D:/xampp/htdocs/alice/style/scss/style.scss */
+/* line 87, D:/xampp/htdocs/alice/style/scss/style.scss */
 .stackMenu {
   display: inline;
   padding-left: 80px;
 }
 
-/* line 85, D:/xampp/htdocs/alice/style/scss/style.scss */
+/* line 90, D:/xampp/htdocs/alice/style/scss/style.scss */
 .stackMenu a {
   display: inline-block;
 }
 
-/* line 87, D:/xampp/htdocs/alice/style/scss/style.scss */
+/* line 92, D:/xampp/htdocs/alice/style/scss/style.scss */
 .stackMenu a img {
   width: 30px;
 }
 
-/* line 93, D:/xampp/htdocs/alice/style/scss/style.scss */
+/* line 98, D:/xampp/htdocs/alice/style/scss/style.scss */
 .topMenu {
   margin: 0 auto;
   position: relative;
@@ -366,15 +380,15 @@ header.minified:after {
   padding-right: 80px;
 }
 
-/* line 98, D:/xampp/htdocs/alice/style/scss/style.scss */
+/* line 103, D:/xampp/htdocs/alice/style/scss/style.scss */
 .topMenu .menuPost {
   float: right;
 }
 
-/* line 102, D:/xampp/htdocs/alice/style/scss/style.scss */
+/* line 107, D:/xampp/htdocs/alice/style/scss/style.scss */
 .topMenu .menuPost ul li a {
   display: block;
-  color: #ff004f;
+  color: #EB3349;
   font-family: "Open Sans", sans-serif;
   font-size: 13px;
   padding: 4px;
@@ -384,12 +398,12 @@ header.minified:after {
   transition: all 0.2s ease-in-out;
 }
 
-/* line 112, D:/xampp/htdocs/alice/style/scss/style.scss */
+/* line 117, D:/xampp/htdocs/alice/style/scss/style.scss */
 .topMenu .menuPost ul li a:hover {
   background: #c5e0e0;
 }
 
-/* line 119, D:/xampp/htdocs/alice/style/scss/style.scss */
+/* line 124, D:/xampp/htdocs/alice/style/scss/style.scss */
 .topMenu .menuPost ul li .joinBtn {
   background: #9ac3c3;
   color: #fff;
@@ -397,13 +411,13 @@ header.minified:after {
   -moz-box-sizing: border-box;
 }
 
-/* line 124, D:/xampp/htdocs/alice/style/scss/style.scss */
+/* line 129, D:/xampp/htdocs/alice/style/scss/style.scss */
 .topMenu .menuPost ul li .joinBtn:hover {
   background: #9ac3c3;
   box-shadow: none;
 }
 
-/* line 134, D:/xampp/htdocs/alice/style/scss/style.scss */
+/* line 139, D:/xampp/htdocs/alice/style/scss/style.scss */
 .topMenuContent {
   position: relative;
   float: left;
@@ -411,7 +425,7 @@ header.minified:after {
   top: -70px;
 }
 
-/* line 139, D:/xampp/htdocs/alice/style/scss/style.scss */
+/* line 144, D:/xampp/htdocs/alice/style/scss/style.scss */
 .topMenuContent .rw {
   position: relative;
   transform: translateY(-150%);
@@ -422,22 +436,22 @@ header.minified:after {
   height: 250px;
 }
 
-/* line 147, D:/xampp/htdocs/alice/style/scss/style.scss */
+/* line 152, D:/xampp/htdocs/alice/style/scss/style.scss */
 .topMenuContent .rw ul {
   height: 250px;
 }
 
-/* line 149, D:/xampp/htdocs/alice/style/scss/style.scss */
+/* line 154, D:/xampp/htdocs/alice/style/scss/style.scss */
 .topMenuContent .rw ul li {
   display: block;
 }
 
-/* line 151, D:/xampp/htdocs/alice/style/scss/style.scss */
+/* line 156, D:/xampp/htdocs/alice/style/scss/style.scss */
 .topMenuContent .rw ul li:hover > a {
   letter-spacing: 4px;
 }
 
-/* line 154, D:/xampp/htdocs/alice/style/scss/style.scss */
+/* line 159, D:/xampp/htdocs/alice/style/scss/style.scss */
 .topMenuContent .rw ul li a {
   padding: 18px 0;
   display: block;
@@ -449,24 +463,24 @@ header.minified:after {
   transition: all 0.2s ease-in-out;
 }
 
-/* line 165, D:/xampp/htdocs/alice/style/scss/style.scss */
+/* line 170, D:/xampp/htdocs/alice/style/scss/style.scss */
 .topMenuContent .rw ul li:last-child {
   border-bottom: 0;
 }
 
-/* line 170, D:/xampp/htdocs/alice/style/scss/style.scss */
+/* line 175, D:/xampp/htdocs/alice/style/scss/style.scss */
 .topMenuContent .rw.active {
   transform: translateY(0%);
   opacity: 1 !important;
 }
 
-/* line 176, D:/xampp/htdocs/alice/style/scss/style.scss */
+/* line 181, D:/xampp/htdocs/alice/style/scss/style.scss */
 .ov-pa {
   overflow: hidden;
   padding: 5px;
 }
 
-/* line 181, D:/xampp/htdocs/alice/style/scss/style.scss */
+/* line 186, D:/xampp/htdocs/alice/style/scss/style.scss */
 .grid {
   position: relative;
   margin-top: 50px;
@@ -474,7 +488,7 @@ header.minified:after {
   margin: 0 auto;
 }
 
-/* line 187, D:/xampp/htdocs/alice/style/scss/style.scss */
+/* line 192, D:/xampp/htdocs/alice/style/scss/style.scss */
 .grid .card {
   background: #fff;
   flex: 1;
@@ -485,7 +499,7 @@ header.minified:after {
   margin-bottom: 5em;
 }
 
-/* line 195, D:/xampp/htdocs/alice/style/scss/style.scss */
+/* line 200, D:/xampp/htdocs/alice/style/scss/style.scss */
 .grid .card .media {
   padding-top: 0;
   max-width: 230px;
@@ -493,25 +507,25 @@ header.minified:after {
   cursor: pointer;
 }
 
-/* line 200, D:/xampp/htdocs/alice/style/scss/style.scss */
+/* line 205, D:/xampp/htdocs/alice/style/scss/style.scss */
 .grid .card .media ul {
   width: 230px;
   height: 344px;
 }
 
-/* line 203, D:/xampp/htdocs/alice/style/scss/style.scss */
+/* line 208, D:/xampp/htdocs/alice/style/scss/style.scss */
 .grid .card .media ul li {
   height: 344px;
 }
 
-/* line 205, D:/xampp/htdocs/alice/style/scss/style.scss */
+/* line 210, D:/xampp/htdocs/alice/style/scss/style.scss */
 .grid .card .media ul li img {
   height: 344px;
   min-width: 230px;
   max-width: 230px;
 }
 
-/* line 212, D:/xampp/htdocs/alice/style/scss/style.scss */
+/* line 217, D:/xampp/htdocs/alice/style/scss/style.scss */
 .grid .card .media .overlay {
   opacity: 0;
   position: absolute;
@@ -524,7 +538,7 @@ header.minified:after {
   transition: background 1s ease-out;
 }
 
-/* line 222, D:/xampp/htdocs/alice/style/scss/style.scss */
+/* line 227, D:/xampp/htdocs/alice/style/scss/style.scss */
 .grid .card .media .overlay .gallery {
   top: 50%;
   color: #5188ea;
@@ -534,7 +548,7 @@ header.minified:after {
   transform: translate(-50%, -50%);
 }
 
-/* line 233, D:/xampp/htdocs/alice/style/scss/style.scss */
+/* line 238, D:/xampp/htdocs/alice/style/scss/style.scss */
 .grid .card .information {
   position: absolute;
   text-align: right;
@@ -542,13 +556,13 @@ header.minified:after {
   right: 50px;
 }
 
-/* line 239, D:/xampp/htdocs/alice/style/scss/style.scss */
+/* line 244, D:/xampp/htdocs/alice/style/scss/style.scss */
 .grid .card .moreBtn {
   padding: 4px 10px;
   display: block;
   font-size: 12px;
   font-weight: 500;
-  background: #0089e1;
+  background: #EB3349;
   color: #fff;
   border-radius: 4px;
   font-family: "opens", sans-serif;
@@ -556,14 +570,14 @@ header.minified:after {
   -moz-box-sizing: border-box;
 }
 
-/* line 251, D:/xampp/htdocs/alice/style/scss/style.scss */
+/* line 256, D:/xampp/htdocs/alice/style/scss/style.scss */
 .grid .card .actionlist {
   position: relative;
   height: 25px;
   overflow: hidden;
 }
 
-/* line 255, D:/xampp/htdocs/alice/style/scss/style.scss */
+/* line 260, D:/xampp/htdocs/alice/style/scss/style.scss */
 .grid .card .actionlist .addBtn {
   display: inline;
   position: absolute;
@@ -571,12 +585,12 @@ header.minified:after {
   line-height: 31px;
 }
 
-/* line 260, D:/xampp/htdocs/alice/style/scss/style.scss */
+/* line 265, D:/xampp/htdocs/alice/style/scss/style.scss */
 .grid .card .actionlist .addBtn img {
   width: 15px;
 }
 
-/* line 264, D:/xampp/htdocs/alice/style/scss/style.scss */
+/* line 269, D:/xampp/htdocs/alice/style/scss/style.scss */
 .grid .card .actionlist .loveBtn {
   display: inline;
   position: absolute;
@@ -584,25 +598,25 @@ header.minified:after {
   line-height: 31px;
 }
 
-/* line 269, D:/xampp/htdocs/alice/style/scss/style.scss */
+/* line 274, D:/xampp/htdocs/alice/style/scss/style.scss */
 .grid .card .actionlist .loveBtn img {
   width: 15px;
 }
 
-/* line 277, D:/xampp/htdocs/alice/style/scss/style.scss */
+/* line 282, D:/xampp/htdocs/alice/style/scss/style.scss */
 .grid.display {
   min-height: 100%;
   display: flex;
 }
 
-/* line 282, D:/xampp/htdocs/alice/style/scss/style.scss */
+/* line 287, D:/xampp/htdocs/alice/style/scss/style.scss */
 #id {
   display: inline;
   float: left;
   padding-left: 12px;
 }
 
-/* line 286, D:/xampp/htdocs/alice/style/scss/style.scss */
+/* line 291, D:/xampp/htdocs/alice/style/scss/style.scss */
 #id span {
   font-size: 12px;
   font-weight: 600;
@@ -610,12 +624,12 @@ header.minified:after {
   color: #999;
 }
 
-/* line 291, D:/xampp/htdocs/alice/style/scss/style.scss */
+/* line 296, D:/xampp/htdocs/alice/style/scss/style.scss */
 #id span:before {
   content: "#";
 }
 
-/* line 297, D:/xampp/htdocs/alice/style/scss/style.scss */
+/* line 302, D:/xampp/htdocs/alice/style/scss/style.scss */
 .info {
   position: relative;
   padding: 0 13px;
@@ -624,7 +638,7 @@ header.minified:after {
   margin-bottom: 7px;
 }
 
-/* line 303, D:/xampp/htdocs/alice/style/scss/style.scss */
+/* line 308, D:/xampp/htdocs/alice/style/scss/style.scss */
 .info #name {
   position: relative;
   float: left;
@@ -635,7 +649,7 @@ header.minified:after {
   font-weight: 600;
 }
 
-/* line 314, D:/xampp/htdocs/alice/style/scss/style.scss */
+/* line 319, D:/xampp/htdocs/alice/style/scss/style.scss */
 .skills-thumb {
   padding-bottom: 12px;
   width: 80%;
@@ -645,7 +659,7 @@ header.minified:after {
   border-top: 1px solid #e2e2e2;
 }
 
-/* line 321, D:/xampp/htdocs/alice/style/scss/style.scss */
+/* line 326, D:/xampp/htdocs/alice/style/scss/style.scss */
 .skills-thumb .boxedMedium {
   display: inline-block;
   font-size: 12px;
@@ -655,12 +669,12 @@ header.minified:after {
   transition: all 0.2s ease-in-out;
 }
 
-/* line 328, D:/xampp/htdocs/alice/style/scss/style.scss */
+/* line 333, D:/xampp/htdocs/alice/style/scss/style.scss */
 .skills-thumb .boxedMedium:hover {
-  color: #ff004f;
+  color: #EB3349;
 }
 
-/* line 334, D:/xampp/htdocs/alice/style/scss/style.scss */
+/* line 339, D:/xampp/htdocs/alice/style/scss/style.scss */
 .key-form {
   width: 400px;
   margin: 0 auto;
@@ -676,12 +690,12 @@ header.minified:after {
   border-image-slice: 1;
 }
 
-/* line 347, D:/xampp/htdocs/alice/style/scss/style.scss */
+/* line 352, D:/xampp/htdocs/alice/style/scss/style.scss */
 .key-form form {
   position: relative;
 }
 
-/* line 349, D:/xampp/htdocs/alice/style/scss/style.scss */
+/* line 354, D:/xampp/htdocs/alice/style/scss/style.scss */
 .key-form form input[type=text] {
   background: #eee;
   width: 225px;
@@ -692,7 +706,7 @@ header.minified:after {
   height: 21px;
 }
 
-/* line 358, D:/xampp/htdocs/alice/style/scss/style.scss */
+/* line 363, D:/xampp/htdocs/alice/style/scss/style.scss */
 .key-form form span {
   margin-right: 30px;
   font-size: 12px;
@@ -700,7 +714,7 @@ header.minified:after {
   color: #888;
 }
 
-/* line 364, D:/xampp/htdocs/alice/style/scss/style.scss */
+/* line 369, D:/xampp/htdocs/alice/style/scss/style.scss */
 .key-form form .keyBtn {
   border: 0;
   outline: none;
@@ -710,7 +724,7 @@ header.minified:after {
   top: 0;
 }
 
-/* line 376, D:/xampp/htdocs/alice/style/scss/style.scss */
+/* line 381, D:/xampp/htdocs/alice/style/scss/style.scss */
 .logo {
   text-align: center;
   position: relative;
@@ -718,13 +732,13 @@ header.minified:after {
   margin: 0 auto;
 }
 
-/* line 382, D:/xampp/htdocs/alice/style/scss/style.scss */
+/* line 387, D:/xampp/htdocs/alice/style/scss/style.scss */
 .logo a img {
   height: 100px;
   transform: translateZ(40px);
 }
 
-/* line 390, D:/xampp/htdocs/alice/style/scss/style.scss */
+/* line 395, D:/xampp/htdocs/alice/style/scss/style.scss */
 .logo-ico-fixed {
   position: absolute;
   top: 5px;
@@ -735,12 +749,12 @@ header.minified:after {
   transform: translate(-50%, 0);
 }
 
-/* line 399, D:/xampp/htdocs/alice/style/scss/style.scss */
+/* line 404, D:/xampp/htdocs/alice/style/scss/style.scss */
 .logo-ico-fixed img {
   height: 25px;
 }
 
-/* line 406, D:/xampp/htdocs/alice/style/scss/style.scss */
+/* line 411, D:/xampp/htdocs/alice/style/scss/style.scss */
 #footer {
   border-top: 1px solid #eee;
   background: #fff;
@@ -761,7 +775,7 @@ header.minified:after {
     }*/
 }
 
-/* line 425, D:/xampp/htdocs/alice/style/scss/style.scss */
+/* line 430, D:/xampp/htdocs/alice/style/scss/style.scss */
 #footer .boxing {
   padding: 0 15px;
   float: left;
@@ -770,27 +784,27 @@ header.minified:after {
   margin-right: -15px;
 }
 
-/* line 433, D:/xampp/htdocs/alice/style/scss/style.scss */
+/* line 438, D:/xampp/htdocs/alice/style/scss/style.scss */
 #footer .lg-footer {
   display: inline-block;
   width: auto;
 }
 
-/* line 436, D:/xampp/htdocs/alice/style/scss/style.scss */
+/* line 441, D:/xampp/htdocs/alice/style/scss/style.scss */
 #footer .lg-footer img {
   height: 100px;
   left: 0;
   top: 0;
 }
 
-/* line 443, D:/xampp/htdocs/alice/style/scss/style.scss */
+/* line 448, D:/xampp/htdocs/alice/style/scss/style.scss */
 #footer .seo-footer {
   max-height: 100px;
   overflow: hidden;
   position: relative;
 }
 
-/* line 447, D:/xampp/htdocs/alice/style/scss/style.scss */
+/* line 452, D:/xampp/htdocs/alice/style/scss/style.scss */
 #footer .seo-footer p {
   margin-top: 0;
   margin-bottom: 0;
@@ -801,25 +815,25 @@ header.minified:after {
   text-align: justify;
 }
 
-/* line 458, D:/xampp/htdocs/alice/style/scss/style.scss */
+/* line 463, D:/xampp/htdocs/alice/style/scss/style.scss */
 #footer .sitemap {
   display: block;
   padding: 0 30px;
 }
 
-/* line 462, D:/xampp/htdocs/alice/style/scss/style.scss */
+/* line 467, D:/xampp/htdocs/alice/style/scss/style.scss */
 #footer .sitemap ul h5 {
   margin: 0;
   padding-bottom: 5px;
-  color: #ff004f;
+  color: #EB3349;
 }
 
-/* line 468, D:/xampp/htdocs/alice/style/scss/style.scss */
+/* line 473, D:/xampp/htdocs/alice/style/scss/style.scss */
 #footer .sitemap ul li {
   display: inline-block;
 }
 
-/* line 471, D:/xampp/htdocs/alice/style/scss/style.scss */
+/* line 476, D:/xampp/htdocs/alice/style/scss/style.scss */
 #footer .sitemap ul li a {
   display: block;
   font-size: 11.5px;
@@ -827,26 +841,26 @@ header.minified:after {
   color: #3d3bee;
 }
 
-/* line 481, D:/xampp/htdocs/alice/style/scss/style.scss */
+/* line 486, D:/xampp/htdocs/alice/style/scss/style.scss */
 #footer .howto-map {
   display: block;
   padding: 0 30px;
   margin-top: 15px;
 }
 
-/* line 486, D:/xampp/htdocs/alice/style/scss/style.scss */
+/* line 491, D:/xampp/htdocs/alice/style/scss/style.scss */
 #footer .howto-map ul h5 {
   margin: 0;
   padding-bottom: 5px;
-  color: #ff004f;
+  color: #EB3349;
 }
 
-/* line 492, D:/xampp/htdocs/alice/style/scss/style.scss */
+/* line 497, D:/xampp/htdocs/alice/style/scss/style.scss */
 #footer .howto-map ul li {
   display: inline-block;
 }
 
-/* line 495, D:/xampp/htdocs/alice/style/scss/style.scss */
+/* line 500, D:/xampp/htdocs/alice/style/scss/style.scss */
 #footer .howto-map ul li a {
   display: block;
   font-size: 11.5px;
@@ -854,13 +868,13 @@ header.minified:after {
   color: #3d3bee;
 }
 
-/* line 505, D:/xampp/htdocs/alice/style/scss/style.scss */
+/* line 510, D:/xampp/htdocs/alice/style/scss/style.scss */
 #footer .payment-logo {
   display: block;
   margin-top: 15px;
 }
 
-/* line 509, D:/xampp/htdocs/alice/style/scss/style.scss */
+/* line 514, D:/xampp/htdocs/alice/style/scss/style.scss */
 #footer .payment-logo ul li {
   display: inline-block;
   zoom: 0.7;
@@ -870,40 +884,40 @@ header.minified:after {
   margin-right: 10px;
 }
 
-/* line 519, D:/xampp/htdocs/alice/style/scss/style.scss */
+/* line 524, D:/xampp/htdocs/alice/style/scss/style.scss */
 #footer .payment-logo ul .bca {
   background: url(../../assets/images/sprites.png) -82px 0px no-repeat;
   width: 68px;
   height: 24px;
 }
 
-/* line 524, D:/xampp/htdocs/alice/style/scss/style.scss */
+/* line 529, D:/xampp/htdocs/alice/style/scss/style.scss */
 #footer .payment-logo ul .mandiri {
   background: url(../../assets/images/sprites.png) 0px 0px no-repeat;
   width: 48px;
   height: 24px;
 }
 
-/* line 530, D:/xampp/htdocs/alice/style/scss/style.scss */
+/* line 535, D:/xampp/htdocs/alice/style/scss/style.scss */
 #footer .payment-logo ul .visa {
   background: url(../../assets/images/sprites.png) -54px -78px no-repeat;
   width: 50px;
   height: 24px;
 }
 
-/* line 535, D:/xampp/htdocs/alice/style/scss/style.scss */
+/* line 540, D:/xampp/htdocs/alice/style/scss/style.scss */
 #footer .payment-logo ul .mastercard {
   background: url(../../assets/images/sprites.png) -43px -106px no-repeat;
   width: 40px;
   height: 24px;
 }
 
-/* line 543, D:/xampp/htdocs/alice/style/scss/style.scss */
+/* line 548, D:/xampp/htdocs/alice/style/scss/style.scss */
 #footer .social-sprites {
   display: block;
 }
 
-/* line 546, D:/xampp/htdocs/alice/style/scss/style.scss */
+/* line 551, D:/xampp/htdocs/alice/style/scss/style.scss */
 #footer .social-sprites ul li {
   display: inline-block;
   zoom: 0.7;
@@ -913,7 +927,7 @@ header.minified:after {
   margin-right: 15px;
 }
 
-/* line 556, D:/xampp/htdocs/alice/style/scss/style.scss */
+/* line 561, D:/xampp/htdocs/alice/style/scss/style.scss */
 #footer .social-sprites ul .facebook {
   background: url(../../assets/images/social-sprites.png) 0 -168px no-repeat;
   width: 80px;
@@ -921,7 +935,7 @@ header.minified:after {
   zoom: 0.3 !important;
 }
 
-/* line 562, D:/xampp/htdocs/alice/style/scss/style.scss */
+/* line 567, D:/xampp/htdocs/alice/style/scss/style.scss */
 #footer .social-sprites ul .twitter {
   background: url(../../assets/images/social-sprites.png) -671px -168px no-repeat;
   width: 80px;
@@ -929,7 +943,7 @@ header.minified:after {
   zoom: 0.3 !important;
 }
 
-/* line 569, D:/xampp/htdocs/alice/style/scss/style.scss */
+/* line 574, D:/xampp/htdocs/alice/style/scss/style.scss */
 #footer .social-sprites ul .googlep {
   background: url(../../assets/images/social-sprites.png) -248px -168px no-repeat;
   width: 80px;
@@ -937,7 +951,7 @@ header.minified:after {
   zoom: 0.3 !important;
 }
 
-/* line 575, D:/xampp/htdocs/alice/style/scss/style.scss */
+/* line 580, D:/xampp/htdocs/alice/style/scss/style.scss */
 #footer .social-sprites ul .instagram {
   background: url(../../assets/images/social-sprites.png) -420px -168px no-repeat;
   width: 80px;
@@ -945,7 +959,7 @@ header.minified:after {
   zoom: 0.3 !important;
 }
 
-/* line 584, D:/xampp/htdocs/alice/style/scss/style.scss */
+/* line 589, D:/xampp/htdocs/alice/style/scss/style.scss */
 #footer .copyrights {
   position: absolute;
   bottom: 0;
@@ -953,11 +967,11 @@ header.minified:after {
   width: 100%;
   height: 20px;
   display: block;
-  background: #9ac3c3;
+  background: #EB3349;
   line-height: 20px;
 }
 
-/* line 594, D:/xampp/htdocs/alice/style/scss/style.scss */
+/* line 599, D:/xampp/htdocs/alice/style/scss/style.scss */
 #footer .copyrights p {
   text-align: center;
   font-size: 12px;
@@ -965,12 +979,12 @@ header.minified:after {
   color: #fff;
 }
 
-/* line 602, D:/xampp/htdocs/alice/style/scss/style.scss */
+/* line 607, D:/xampp/htdocs/alice/style/scss/style.scss */
 #footer .fopad {
   padding: 25px 0;
 }
 
-/* line 607, D:/xampp/htdocs/alice/style/scss/style.scss */
+/* line 612, D:/xampp/htdocs/alice/style/scss/style.scss */
 .fixedMenu {
   display: none;
   position: fixed;
@@ -980,7 +994,7 @@ header.minified:after {
   background: #ffffffe8;
 }
 
-/* line 615, D:/xampp/htdocs/alice/style/scss/style.scss */
+/* line 620, D:/xampp/htdocs/alice/style/scss/style.scss */
 .fixedMenu .topMenu {
   padding-top: 0;
   padding-bottom: 0;
@@ -989,27 +1003,27 @@ header.minified:after {
   margin: 0 auto;
 }
 
-/* line 622, D:/xampp/htdocs/alice/style/scss/style.scss */
+/* line 627, D:/xampp/htdocs/alice/style/scss/style.scss */
 .fixedMenu .topMenu .stackMenu a {
   line-height: 60px;
 }
 
-/* line 626, D:/xampp/htdocs/alice/style/scss/style.scss */
+/* line 631, D:/xampp/htdocs/alice/style/scss/style.scss */
 .fixedMenu .topMenu .menuPost {
   line-height: 27px;
 }
 
-/* line 634, D:/xampp/htdocs/alice/style/scss/style.scss */
+/* line 639, D:/xampp/htdocs/alice/style/scss/style.scss */
 .fixedMenu .topMenu .menuPost ul li a:hover {
   background: none;
 }
 
-/* line 639, D:/xampp/htdocs/alice/style/scss/style.scss */
+/* line 644, D:/xampp/htdocs/alice/style/scss/style.scss */
 .fixedMenu .topMenu .menuPost ul li a.joinBtn {
   line-height: 15px;
 }
 
-/* line 648, D:/xampp/htdocs/alice/style/scss/style.scss */
+/* line 653, D:/xampp/htdocs/alice/style/scss/style.scss */
 .dataContainer {
   width: 100%;
   height: 100%;
@@ -1017,7 +1031,7 @@ header.minified:after {
   position: relative;
 }
 
-/* line 655, D:/xampp/htdocs/alice/style/scss/style.scss */
+/* line 660, D:/xampp/htdocs/alice/style/scss/style.scss */
 .recommend {
   display: inline;
   vertical-align: text-top;
@@ -1026,7 +1040,7 @@ header.minified:after {
   top: -25px;
 }
 
-/* line 661, D:/xampp/htdocs/alice/style/scss/style.scss */
+/* line 666, D:/xampp/htdocs/alice/style/scss/style.scss */
 .recommend span {
   font-size: 12px;
   vertical-align: initial;
@@ -1034,38 +1048,38 @@ header.minified:after {
   font-weight: 600;
 }
 
-/* line 669, D:/xampp/htdocs/alice/style/scss/style.scss */
+/* line 674, D:/xampp/htdocs/alice/style/scss/style.scss */
 .colorText {
   color: #fff;
   display: block;
 }
 
-/* line 674, D:/xampp/htdocs/alice/style/scss/style.scss */
+/* line 679, D:/xampp/htdocs/alice/style/scss/style.scss */
 div.rn-carousel-indicator span {
   display: none;
 }
 
-/* line 676, D:/xampp/htdocs/alice/style/scss/style.scss */
+/* line 681, D:/xampp/htdocs/alice/style/scss/style.scss */
 div.rn-carousel-indicator span:first-child {
   display: inline-block;
 }
 
-/* line 680, D:/xampp/htdocs/alice/style/scss/style.scss */
+/* line 685, D:/xampp/htdocs/alice/style/scss/style.scss */
 div.rn-carousel-indicator span:nth-child(2n) {
   display: inline-block;
 }
 
-/* line 684, D:/xampp/htdocs/alice/style/scss/style.scss */
+/* line 689, D:/xampp/htdocs/alice/style/scss/style.scss */
 div.rn-carousel-indicator span:nth-child(3n) {
   display: inline-block;
 }
 
-/* line 688, D:/xampp/htdocs/alice/style/scss/style.scss */
+/* line 693, D:/xampp/htdocs/alice/style/scss/style.scss */
 div.rn-carousel-indicator span:nth-child(4n) {
   display: none;
 }
 
-/* line 694, D:/xampp/htdocs/alice/style/scss/style.scss */
+/* line 699, D:/xampp/htdocs/alice/style/scss/style.scss */
 .indicator-thumb {
   position: absolute;
   width: 100%;
@@ -1074,7 +1088,7 @@ div.rn-carousel-indicator span:nth-child(4n) {
   z-index: 3;
 }
 
-/* line 701, D:/xampp/htdocs/alice/style/scss/style.scss */
+/* line 706, D:/xampp/htdocs/alice/style/scss/style.scss */
 .indicator-thumb span {
   display: inline-block;
   width: 30%;
@@ -1085,12 +1099,12 @@ div.rn-carousel-indicator span:nth-child(4n) {
   margin: 0 3px;
 }
 
-/* line 711, D:/xampp/htdocs/alice/style/scss/style.scss */
+/* line 716, D:/xampp/htdocs/alice/style/scss/style.scss */
 .indicator-thumb span.active {
   background: #ffffff;
 }
 
-/* line 716, D:/xampp/htdocs/alice/style/scss/style.scss */
+/* line 721, D:/xampp/htdocs/alice/style/scss/style.scss */
 .vid-icon {
   display: inline;
   float: left;
@@ -1098,7 +1112,7 @@ div.rn-carousel-indicator span:nth-child(4n) {
   line-height: 28px;
 }
 
-/* line 722, D:/xampp/htdocs/alice/style/scss/style.scss */
+/* line 727, D:/xampp/htdocs/alice/style/scss/style.scss */
 .vid-icon a {
   display: block;
   font-size: 13px;
@@ -1110,7 +1124,7 @@ div.rn-carousel-indicator span:nth-child(4n) {
   margin-top: 5px;
 }
 
-/* line 734, D:/xampp/htdocs/alice/style/scss/style.scss */
+/* line 739, D:/xampp/htdocs/alice/style/scss/style.scss */
 .containerVid {
   position: absolute;
   top: 25px;
@@ -1118,7 +1132,7 @@ div.rn-carousel-indicator span:nth-child(4n) {
   height: 100%;
 }
 
-/* line 740, D:/xampp/htdocs/alice/style/scss/style.scss */
+/* line 745, D:/xampp/htdocs/alice/style/scss/style.scss */
 .containerVid input {
   background: url(../../assets/icons/play-button.svg) no-repeat;
   z-index: 55;
@@ -1132,13 +1146,13 @@ div.rn-carousel-indicator span:nth-child(4n) {
   transition: opacity .2s ease-in-out;
 }
 
-/* line 752, D:/xampp/htdocs/alice/style/scss/style.scss */
+/* line 757, D:/xampp/htdocs/alice/style/scss/style.scss */
 .containerVid input:hover {
   opacity: 1;
   transition: opacity .2s ease-in-out;
 }
 
-/* line 758, D:/xampp/htdocs/alice/style/scss/style.scss */
+/* line 763, D:/xampp/htdocs/alice/style/scss/style.scss */
 .containerVid .unavail {
   top: 50%;
   left: 50%;
@@ -1146,7 +1160,7 @@ div.rn-carousel-indicator span:nth-child(4n) {
   transform: translate(-50%, -50%);
 }
 
-/* line 765, D:/xampp/htdocs/alice/style/scss/style.scss */
+/* line 770, D:/xampp/htdocs/alice/style/scss/style.scss */
 .containerVid span {
   position: absolute;
   right: 0;
@@ -1158,12 +1172,12 @@ div.rn-carousel-indicator span:nth-child(4n) {
   color: #ef9090;
 }
 
-/* line 775, D:/xampp/htdocs/alice/style/scss/style.scss */
+/* line 780, D:/xampp/htdocs/alice/style/scss/style.scss */
 .containerVid span:hover > img {
-  background: #ff004f;
+  background: #EB3349;
 }
 
-/* line 780, D:/xampp/htdocs/alice/style/scss/style.scss */
+/* line 785, D:/xampp/htdocs/alice/style/scss/style.scss */
 .containerVid video {
   position: absolute;
   width: 230px;
@@ -1173,13 +1187,13 @@ div.rn-carousel-indicator span:nth-child(4n) {
   background: #eee;
 }
 
-/* line 790, D:/xampp/htdocs/alice/style/scss/style.scss */
+/* line 795, D:/xampp/htdocs/alice/style/scss/style.scss */
 .headerContainer {
   height: inherit;
   line-height: 37px;
 }
 
-/* line 793, D:/xampp/htdocs/alice/style/scss/style.scss */
+/* line 798, D:/xampp/htdocs/alice/style/scss/style.scss */
 .headerContainer .miniHeader {
   position: absolute;
   width: 100%;
@@ -1188,23 +1202,23 @@ div.rn-carousel-indicator span:nth-child(4n) {
   top: 0;
 }
 
-/* line 800, D:/xampp/htdocs/alice/style/scss/style.scss */
+/* line 805, D:/xampp/htdocs/alice/style/scss/style.scss */
 .headerContainer .miniHeader .FrontHeader {
   width: 980px;
   margin: 0 auto;
 }
 
-/* line 804, D:/xampp/htdocs/alice/style/scss/style.scss */
+/* line 809, D:/xampp/htdocs/alice/style/scss/style.scss */
 .headerContainer .miniHeader .FrontHeader ul {
   display: flex;
 }
 
-/* line 807, D:/xampp/htdocs/alice/style/scss/style.scss */
+/* line 812, D:/xampp/htdocs/alice/style/scss/style.scss */
 .headerContainer .miniHeader .FrontHeader ul li {
   flex: 1;
 }
 
-/* line 810, D:/xampp/htdocs/alice/style/scss/style.scss */
+/* line 815, D:/xampp/htdocs/alice/style/scss/style.scss */
 .headerContainer .miniHeader .FrontHeader ul li a {
   color: #fff;
   display: block;
@@ -1212,7 +1226,7 @@ div.rn-carousel-indicator span:nth-child(4n) {
   font-size: .89em;
 }
 
-/* line 822, D:/xampp/htdocs/alice/style/scss/style.scss */
+/* line 827, D:/xampp/htdocs/alice/style/scss/style.scss */
 .detailsController {
   position: absolute;
   height: 250px;
@@ -1222,7 +1236,7 @@ div.rn-carousel-indicator span:nth-child(4n) {
   top: 0;
 }
 
-/* line 830, D:/xampp/htdocs/alice/style/scss/style.scss */
+/* line 835, D:/xampp/htdocs/alice/style/scss/style.scss */
 .detailsController .fulldetails {
   left: 50%;
   transform: translate(-50%, -50%);
@@ -1230,16 +1244,17 @@ div.rn-carousel-indicator span:nth-child(4n) {
   position: absolute;
 }
 
-/* line 836, D:/xampp/htdocs/alice/style/scss/style.scss */
+/* line 841, D:/xampp/htdocs/alice/style/scss/style.scss */
 .detailsController .fulldetails .userProfile {
   border-radius: 33px;
   width: 100px;
   height: 100px;
   overflow: hidden;
   position: relative;
+  box-shadow: 0px 0px 83px 11px rgba(156, 16, 16, 0.74);
 }
 
-/* line 843, D:/xampp/htdocs/alice/style/scss/style.scss */
+/* line 849, D:/xampp/htdocs/alice/style/scss/style.scss */
 .detailsController .fulldetails .userProfile img {
   position: absolute;
   left: 50%;
@@ -1247,7 +1262,7 @@ div.rn-carousel-indicator span:nth-child(4n) {
   transform: translate(-50%, -50%);
 }
 
-/* line 851, D:/xampp/htdocs/alice/style/scss/style.scss */
+/* line 857, D:/xampp/htdocs/alice/style/scss/style.scss */
 .detailsController .fulldetails h5 {
   margin: 0 auto;
   margin-top: 15px;
@@ -1260,7 +1275,7 @@ div.rn-carousel-indicator span:nth-child(4n) {
   border: 1.5px solid #fff;
 }
 
-/* line 865, D:/xampp/htdocs/alice/style/scss/style.scss */
+/* line 871, D:/xampp/htdocs/alice/style/scss/style.scss */
 .fullDetails_s {
   position: absolute;
   top: calc(50% + 90px);
@@ -1268,31 +1283,36 @@ div.rn-carousel-indicator span:nth-child(4n) {
   transform: translate(-50%, -50%);
 }
 
-/* line 870, D:/xampp/htdocs/alice/style/scss/style.scss */
+/* line 876, D:/xampp/htdocs/alice/style/scss/style.scss */
 .fullDetails_s .userFlash {
   width: 300px;
   position: relative;
   display: inline;
 }
 
-/* line 875, D:/xampp/htdocs/alice/style/scss/style.scss */
+/* line 881, D:/xampp/htdocs/alice/style/scss/style.scss */
 .fullDetails_s .userFlash ul li {
   color: #fff;
   font-size: 13.5px;
 }
 
-/* line 884, D:/xampp/htdocs/alice/style/scss/style.scss */
+/* line 890, D:/xampp/htdocs/alice/style/scss/style.scss */
 .tabbed_info {
-  width: 980px;
+  width: 80%;
+  min-height: 500px;
+  flex: 1;
   margin: 0 auto;
+  padding-top: 45px;
 }
 
-/* line 887, D:/xampp/htdocs/alice/style/scss/style.scss */
+/* line 896, D:/xampp/htdocs/alice/style/scss/style.scss */
 .tabbed_info .tabs {
   display: flex;
+  width: 480px;
+  padding-left: 15px;
 }
 
-/* line 890, D:/xampp/htdocs/alice/style/scss/style.scss */
+/* line 901, D:/xampp/htdocs/alice/style/scss/style.scss */
 .tabbed_info .tabs li {
   color: #fff;
   font-size: 13px;
@@ -1302,18 +1322,18 @@ div.rn-carousel-indicator span:nth-child(4n) {
   width: 33%;
 }
 
-/* line 898, D:/xampp/htdocs/alice/style/scss/style.scss */
+/* line 909, D:/xampp/htdocs/alice/style/scss/style.scss */
 .tabbed_info .tabs li a {
   position: relative;
   display: inline-block;
-  width: 100px;
-  height: 100px;
+  width: 80px;
+  height: 80px;
   border-radius: 5px;
   box-shadow: 0px 8px 52px 2px rgba(0, 0, 0, 0.18);
   transition: all 0.2s ease-in-out;
 }
 
-/* line 907, D:/xampp/htdocs/alice/style/scss/style.scss */
+/* line 919, D:/xampp/htdocs/alice/style/scss/style.scss */
 .tabbed_info .tabs li a img {
   position: absolute;
   height: 35px;
@@ -1322,59 +1342,64 @@ div.rn-carousel-indicator span:nth-child(4n) {
   transform: translate(-50%, -50%);
 }
 
-/* line 915, D:/xampp/htdocs/alice/style/scss/style.scss */
+/* line 927, D:/xampp/htdocs/alice/style/scss/style.scss */
 .tabbed_info .tabs li a p {
   margin: 0 auto;
   bottom: 0;
   text-align: center;
   position: absolute;
   width: 100%;
-  padding-bottom: 20px;
+  padding-bottom: 9px;
   font-size: 11px;
 }
 
-/* line 926, D:/xampp/htdocs/alice/style/scss/style.scss */
+/* line 938, D:/xampp/htdocs/alice/style/scss/style.scss */
 .tabbed_info .tabs li a.selectedTab {
   color: #fff;
 }
 
-/* line 928, D:/xampp/htdocs/alice/style/scss/style.scss */
+/* line 940, D:/xampp/htdocs/alice/style/scss/style.scss */
 .tabbed_info .tabs li a.selectedTab img {
   filter: brightness(0) invert(1);
 }
 
-/* line 933, D:/xampp/htdocs/alice/style/scss/style.scss */
+/* line 945, D:/xampp/htdocs/alice/style/scss/style.scss */
 .tabbed_info .tabs li a.tab1.selectedTab {
-  background: #9ac3c3;
-}
-
-/* line 939, D:/xampp/htdocs/alice/style/scss/style.scss */
-.tabbed_info .tabs li a.tab2.selectedTab {
-  background: linear-gradient(95deg, #9ac3c3 40%, #77a9ca 140%);
-}
-
-/* line 944, D:/xampp/htdocs/alice/style/scss/style.scss */
-.tabbed_info .tabs li a.tab3.selectedTab {
-  background: #78aac9;
+  background: linear-gradient(to right, #F45C43, #EB3349);
 }
 
 /* line 951, D:/xampp/htdocs/alice/style/scss/style.scss */
-.tabbed_info .tabContent {
-  max-width: 980px;
-  margin: 0 auto;
-  padding: 30px;
-  border-radius: 5px;
-  transition: all 0.2s ease-in-out;
-  margin-top: 35px;
+.tabbed_info .tabs li a.tab2.selectedTab {
+  background: linear-gradient(to right, #F45C43, #EB3349);
 }
 
-/* line 961, D:/xampp/htdocs/alice/style/scss/style.scss */
+/* line 956, D:/xampp/htdocs/alice/style/scss/style.scss */
+.tabbed_info .tabs li a.tab3.selectedTab {
+  background: linear-gradient(to right, #F45C43, #EB3349);
+}
+
+/* line 960, D:/xampp/htdocs/alice/style/scss/style.scss */
+.tabbed_info .tabs li a.tab4.selectedTab {
+  background: linear-gradient(to right, #F45C43, #EB3349);
+}
+
+/* line 966, D:/xampp/htdocs/alice/style/scss/style.scss */
+.tabbed_info .tabContent {
+  width: 100%;
+  margin: 0 auto;
+  padding: 5px 32px;
+  border-radius: 5px;
+  transition: all 0.2s ease-in-out;
+  margin-top: 30px;
+}
+
+/* line 976, D:/xampp/htdocs/alice/style/scss/style.scss */
 .biography {
   display: flex;
   position: relative;
 }
 
-/* line 965, D:/xampp/htdocs/alice/style/scss/style.scss */
+/* line 980, D:/xampp/htdocs/alice/style/scss/style.scss */
 .biography td {
   height: 30px;
   padding-left: 25px;
@@ -1384,11 +1409,11 @@ div.rn-carousel-indicator span:nth-child(4n) {
   color: #777;
 }
 
-/* line 974, D:/xampp/htdocs/alice/style/scss/style.scss */
+/* line 989, D:/xampp/htdocs/alice/style/scss/style.scss */
 .biography h5 {
   margin: 0 auto;
-  background: #9ac3c3;
-  color: #fbfbfb;
+  background: #e4e4e4;
+  color: #a9a9a9;
   font-weight: 400;
   font-size: 14px;
   padding: 8px 20px;
@@ -1396,7 +1421,7 @@ div.rn-carousel-indicator span:nth-child(4n) {
   border-top-right-radius: 8px;
 }
 
-/* line 985, D:/xampp/htdocs/alice/style/scss/style.scss */
+/* line 1000, D:/xampp/htdocs/alice/style/scss/style.scss */
 .biography p {
   font-size: 13px;
   color: #666;
@@ -1406,50 +1431,44 @@ div.rn-carousel-indicator span:nth-child(4n) {
   padding-bottom: 10px;
 }
 
-/* line 995, D:/xampp/htdocs/alice/style/scss/style.scss */
+/* line 1010, D:/xampp/htdocs/alice/style/scss/style.scss */
 .biography p:last-child {
   border-bottom: 1px solid #fff;
 }
 
-/* line 1002, D:/xampp/htdocs/alice/style/scss/style.scss */
-.pseula {
-  text-align: right;
-  box-shadow: 0px 8px 52px 2px rgba(0, 0, 0, 0.18);
-  float: right;
-  margin-right: -32px;
-  display: inline-block;
-  margin-top: 45px;
-}
-
-/* line 1010, D:/xampp/htdocs/alice/style/scss/style.scss */
+/* line 1019, D:/xampp/htdocs/alice/style/scss/style.scss */
 .pseula h6 {
   margin: 0;
   padding: 10px;
 }
 
-/* line 1016, D:/xampp/htdocs/alice/style/scss/style.scss */
+/* line 1025, D:/xampp/htdocs/alice/style/scss/style.scss */
 .fullGallery {
-  text-align: left;
   margin: 0 auto;
   display: flex;
   width: 100%;
 }
 
-/* line 1021, D:/xampp/htdocs/alice/style/scss/style.scss */
-.fullGallery img {
-  flex: 1;
-  max-width: 30%;
+/* line 1030, D:/xampp/htdocs/alice/style/scss/style.scss */
+.fullGallery ul li {
+  display: inline-block;
+  width: 31%;
   margin: 1%;
-  vertical-align: middle;
 }
 
-/* line 1035, D:/xampp/htdocs/alice/style/scss/style.scss */
+/* line 1034, D:/xampp/htdocs/alice/style/scss/style.scss */
+.fullGallery ul li img {
+  flex: 1;
+  vertical-align: top;
+}
+
+/* line 1048, D:/xampp/htdocs/alice/style/scss/style.scss */
 .search {
   box-shadow: 0 20px 10px -10px rgba(200, 200, 200, 0.5);
   display: inline-block;
 }
 
-/* line 1040, D:/xampp/htdocs/alice/style/scss/style.scss */
+/* line 1053, D:/xampp/htdocs/alice/style/scss/style.scss */
 .search__input {
   border: 0;
   outline: 0;
@@ -1459,7 +1478,7 @@ div.rn-carousel-indicator span:nth-child(4n) {
   float: left;
 }
 
-/* line 1049, D:/xampp/htdocs/alice/style/scss/style.scss */
+/* line 1062, D:/xampp/htdocs/alice/style/scss/style.scss */
 .search__button {
   box-shadow: -10px 0 10px -5px rgba(90, 238, 209, 0.5);
   color: #fff;
@@ -1474,19 +1493,20 @@ div.rn-carousel-indicator span:nth-child(4n) {
   transition: box-shadow .3s ease-out;
 }
 
-/* line 1062, D:/xampp/htdocs/alice/style/scss/style.scss */
+/* line 1075, D:/xampp/htdocs/alice/style/scss/style.scss */
 .search__button:active {
   box-shadow: -10px 0 10px -10px rgba(90, 238, 209, 0.5);
 }
 
-/* line 1068, D:/xampp/htdocs/alice/style/scss/style.scss */
+/* line 1081, D:/xampp/htdocs/alice/style/scss/style.scss */
 .modal-wrapper {
   width: 100%;
   height: 100%;
   position: fixed;
+  z-index: 99;
+  background: rgba(74, 74, 74, 0.75);
   top: 0;
   left: 0;
-  background: rgba(255, 255, 153, 0.75);
   visibility: hidden;
   opacity: 0;
   -webkit-transition: all 0.25s ease-in-out;
@@ -1495,15 +1515,16 @@ div.rn-carousel-indicator span:nth-child(4n) {
   transition: all 0.25s ease-in-out;
 }
 
-/* line 1081, D:/xampp/htdocs/alice/style/scss/style.scss */
+/* line 1095, D:/xampp/htdocs/alice/style/scss/style.scss */
 .modal-wrapper .modal {
   width: 600px;
-  height: 400px;
-  display: block;
-  margin: 50% 0 0 -300px;
-  position: relative;
+  min-height: 540px;
   top: 50%;
-  left: 50%;
+  transform: translate(0, -50%);
+  border-radius: 12px;
+  display: block;
+  margin: 0 auto;
+  position: relative;
   background: #fff;
   opacity: 0;
   -webkit-transition: all 0.5s ease-in-out;
@@ -1512,21 +1533,144 @@ div.rn-carousel-indicator span:nth-child(4n) {
   transition: all 0.5s ease-in-out;
 }
 
-/* line 1097, D:/xampp/htdocs/alice/style/scss/style.scss */
+/* line 1112, D:/xampp/htdocs/alice/style/scss/style.scss */
 .modal-wrapper .modal .content {
-  padding: 5%;
+  padding: 25px 35px;
+  font-family: inherit;
 }
 
-/* line 1103, D:/xampp/htdocs/alice/style/scss/style.scss */
+/* line 1116, D:/xampp/htdocs/alice/style/scss/style.scss */
+.modal-wrapper .modal .content .createEvent {
+  position: relative;
+}
+
+/* line 1119, D:/xampp/htdocs/alice/style/scss/style.scss */
+.modal-wrapper .modal .content .createEvent form {
+  display: block;
+}
+
+/* line 1122, D:/xampp/htdocs/alice/style/scss/style.scss */
+.modal-wrapper .modal .content .createEvent form h5 {
+  margin: 0;
+  margin-bottom: 10px;
+  padding-left: 7px;
+}
+
+/* line 1128, D:/xampp/htdocs/alice/style/scss/style.scss */
+.modal-wrapper .modal .content .createEvent form .forms {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+/* line 1132, D:/xampp/htdocs/alice/style/scss/style.scss */
+.modal-wrapper .modal .content .createEvent form .forms input {
+  flex: 1;
+  margin: 0 1%;
+  min-height: 34px;
+  background: #f8f8f8;
+  border: 1px solid #eaeaea;
+  padding-left: 15px;
+  border-radius: 4px;
+  font-size: 11.5px;
+}
+
+/* line 1142, D:/xampp/htdocs/alice/style/scss/style.scss */
+.modal-wrapper .modal .content .createEvent form .forms input:focus {
+  box-shadow: 0px 11px 83px 3px rgba(0, 0, 0, 0.18);
+  background: #fff;
+  border: 1px solid #fff;
+  color: #3d3bee;
+}
+
+/* line 1148, D:/xampp/htdocs/alice/style/scss/style.scss */
+.modal-wrapper .modal .content .createEvent form .forms input:focus::placeholder {
+  color: transparent;
+}
+
+/* line 1153, D:/xampp/htdocs/alice/style/scss/style.scss */
+.modal-wrapper .modal .content .createEvent form .forms textarea {
+  width: 100%;
+  margin-top: 5px;
+  min-height: 130px;
+  padding: 10px 15px;
+  background: #f8f8f8;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+/* line 1161, D:/xampp/htdocs/alice/style/scss/style.scss */
+.modal-wrapper .modal .content .createEvent form .forms textarea:focus {
+  box-shadow: 0px 11px 83px 3px rgba(0, 0, 0, 0.18);
+  background: #fff;
+  border: 1px solid #fff;
+}
+
+/* line 1167, D:/xampp/htdocs/alice/style/scss/style.scss */
+.modal-wrapper .modal .content .createEvent form .forms textarea:focus::placeholder {
+  color: transparent;
+}
+
+/* line 1173, D:/xampp/htdocs/alice/style/scss/style.scss */
+.modal-wrapper .modal .content .createEvent form .dateSelect {
+  display: inline-block;
+  width: 100%;
+}
+
+/* line 1177, D:/xampp/htdocs/alice/style/scss/style.scss */
+.modal-wrapper .modal .content .createEvent form .dateSelect p {
+  width: 50%;
+  display: inline-block;
+  float: left;
+  font-size: 12px;
+  padding-left: 7px;
+  margin-top: 0;
+  color: #EB3349;
+  font-weight: bold;
+}
+
+/* line 1188, D:/xampp/htdocs/alice/style/scss/style.scss */
+.modal-wrapper .modal .content .createEvent form .dateSelect input {
+  flex: 1;
+  min-width: 47.5%;
+}
+
+/* line 1194, D:/xampp/htdocs/alice/style/scss/style.scss */
+.modal-wrapper .modal .content .createEvent form .creatEvent-btn {
+  float: right;
+  padding: 3px 25px;
+  border-radius: 4px;
+  background: #1fcd97;
+  color: #fff;
+}
+
+/* line 1208, D:/xampp/htdocs/alice/style/scss/style.scss */
 .modal-wrapper .modal .head {
   width: 90%;
-  height: 32px;
-  padding: 1.5em 5%;
-  overflow: hidden;
-  background: #01bce5;
+  margin: 0 auto;
+  height: 45px;
+  line-height: 45px;
+  background: #ffffff;
+  position: relative;
 }
 
-/* line 1111, D:/xampp/htdocs/alice/style/scss/style.scss */
+/* line 1215, D:/xampp/htdocs/alice/style/scss/style.scss */
+.modal-wrapper .modal .head:after {
+  position: absolute;
+  content: '';
+  top: 45px;
+  width: 100%;
+  left: 0;
+  height: 1px;
+  border-bottom: 1px solid #eee;
+}
+
+/* line 1226, D:/xampp/htdocs/alice/style/scss/style.scss */
+.modal-wrapper .modal .head h4 {
+  margin: 0;
+  display: inline-block;
+}
+
+/* line 1232, D:/xampp/htdocs/alice/style/scss/style.scss */
 .modal-wrapper .modal .head .btn-close {
   width: 32px;
   height: 32px;
@@ -1534,55 +1678,42 @@ div.rn-carousel-indicator span:nth-child(4n) {
   float: right;
 }
 
-/* line 1118, D:/xampp/htdocs/alice/style/scss/style.scss */
-.modal-wrapper .modal .head .btn-close::before,
-.modal-wrapper .modal .head .btn-close::after {
+/* line 1239, D:/xampp/htdocs/alice/style/scss/style.scss */
+.modal-wrapper .modal .head .btn-close::before {
   content: '';
-  width: 32px;
-  height: 6px;
-  display: block;
-  background: #fff;
+  background: url(../../assets/icons/close-button.svg) no-repeat;
+  width: 25px;
+  height: 25px;
+  position: absolute;
 }
 
-/* line 1127, D:/xampp/htdocs/alice/style/scss/style.scss */
+/* line 1247, D:/xampp/htdocs/alice/style/scss/style.scss */
 .modal-wrapper .modal .head .btn-close::before {
   margin-top: 12px;
-  -webkit-transform: rotate(45deg);
-  -moz-transform: rotate(45deg);
-  -o-transform: rotate(45deg);
-  transform: rotate(45deg);
 }
 
-/* line 1135, D:/xampp/htdocs/alice/style/scss/style.scss */
-.modal-wrapper .modal .head .btn-close::after {
-  margin-top: -6px;
-  -webkit-transform: rotate(-45deg);
-  -moz-transform: rotate(-45deg);
-  -o-transform: rotate(-45deg);
-  transform: rotate(-45deg);
-}
-
-/* line 1146, D:/xampp/htdocs/alice/style/scss/style.scss */
+/* line 1254, D:/xampp/htdocs/alice/style/scss/style.scss */
 .modal-wrapper.open {
   opacity: 1;
   visibility: visible;
 }
 
-/* line 1152, D:/xampp/htdocs/alice/style/scss/style.scss */
+/* line 1260, D:/xampp/htdocs/alice/style/scss/style.scss */
 .modal-wrapper.open .modal {
-  margin-top: -200px;
   opacity: 1;
 }
 
-/* line 1158, D:/xampp/htdocs/alice/style/scss/style.scss */
+/* line 1265, D:/xampp/htdocs/alice/style/scss/style.scss */
 .back {
   position: relative;
   display: inline-block;
   text-decoration: none;
-  padding: 10px 10px 10px 40px;
+  padding: 5px 0px 0px 50px;
+  margin-left: 35px;
+  margin-top: 10px;
 }
 
-/* line 1163, D:/xampp/htdocs/alice/style/scss/style.scss */
+/* line 1272, D:/xampp/htdocs/alice/style/scss/style.scss */
 .back h4 {
   color: #4A4F6A;
   font-size: 16px;
@@ -1590,18 +1721,19 @@ div.rn-carousel-indicator span:nth-child(4n) {
   transition: transform 500ms 0s cubic-bezier(0.2, 0, 0, 1);
 }
 
-/* line 1169, D:/xampp/htdocs/alice/style/scss/style.scss */
+/* line 1278, D:/xampp/htdocs/alice/style/scss/style.scss */
 .back span {
   opacity: 0;
-  color: #858BA9;
+  color: #fff;
+  top: 0;
   font-size: 12px;
   font-weight: 300;
-  display: inline-block;
+  display: inline;
   transform: translateY(10px);
   transition: transform 500ms 0s cubic-bezier(0.2, 0, 0, 1), opacity 500ms 0s cubic-bezier(0.2, 0, 0, 1);
 }
 
-/* line 1178, D:/xampp/htdocs/alice/style/scss/style.scss */
+/* line 1288, D:/xampp/htdocs/alice/style/scss/style.scss */
 .back div {
   top: 11px;
   left: 0;
@@ -1617,7 +1749,7 @@ div.rn-carousel-indicator span:nth-child(4n) {
   transition: transform 400ms 0s cubic-bezier(0.2, 0, 0, 1.6);
 }
 
-/* line 1191, D:/xampp/htdocs/alice/style/scss/style.scss */
+/* line 1301, D:/xampp/htdocs/alice/style/scss/style.scss */
 .back div::after {
   top: 0;
   left: 0;
@@ -1626,33 +1758,203 @@ div.rn-carousel-indicator span:nth-child(4n) {
   height: 30px;
   position: absolute;
   background-position: 0 0;
-  background-image: url("https://s3-eu-west-1.amazonaws.com/thomascullen-codepen/back.svg");
+  background-image: url("../../assets/icons/back.svg");
   transition: transform 400ms 0s cubic-bezier(0.2, 0, 0, 1);
 }
 
-/* line 1204, D:/xampp/htdocs/alice/style/scss/style.scss */
+/* line 1314, D:/xampp/htdocs/alice/style/scss/style.scss */
 .back:hover h4 {
   color: #171922;
   opacity: 1;
   transform: translateY(0);
 }
 
-/* line 1209, D:/xampp/htdocs/alice/style/scss/style.scss */
+/* line 1319, D:/xampp/htdocs/alice/style/scss/style.scss */
 .back:hover span {
   opacity: 1;
   transform: translateY(0);
 }
 
-/* line 1213, D:/xampp/htdocs/alice/style/scss/style.scss */
+/* line 1323, D:/xampp/htdocs/alice/style/scss/style.scss */
 .back:hover div {
   transform: scale(1.1);
   background-color: white;
   box-shadow: 0 2px 10px 0 rgba(185, 182, 198, 0), 0 1px 3px 0 rgba(175, 172, 189, 0.25);
 }
 
-/* line 1217, D:/xampp/htdocs/alice/style/scss/style.scss */
+/* line 1327, D:/xampp/htdocs/alice/style/scss/style.scss */
 .back:hover div::after {
   transform: translateX(-30px);
+}
+
+/* line 1335, D:/xampp/htdocs/alice/style/scss/style.scss */
+.bookMe {
+  position: relative;
+  float: right;
+  padding: 25px 35px;
+}
+
+/* line 1340, D:/xampp/htdocs/alice/style/scss/style.scss */
+.bookMe a {
+  color: #fff;
+  padding: 5px 15px;
+  font-size: 12px;
+  background: #b71e2d;
+  font-family: "Open Sans", sans-serif;
+  border-radius: 4px;
+}
+
+/* line 1351, D:/xampp/htdocs/alice/style/scss/style.scss */
+.scDetails {
+  display: flex;
+  position: relative;
+}
+
+/* line 1355, D:/xampp/htdocs/alice/style/scss/style.scss */
+.scDetails .aside {
+  width: 20%;
+  padding: 20px 0;
+  padding-left: 70px;
+  position: relative;
+  overflow: hidden;
+  background: #f7f7f7;
+}
+
+/* line 1363, D:/xampp/htdocs/alice/style/scss/style.scss */
+.scDetails .aside:before {
+  content: '';
+  position: absolute;
+  height: 100%;
+  width: 50px;
+  top: 0;
+  box-shadow: 0px 35px 75px 2px rgba(0, 0, 0, 0.08);
+  right: 0;
+}
+
+/* line 1374, D:/xampp/htdocs/alice/style/scss/style.scss */
+.scDetails .aside .navigation-side {
+  padding-top: 25px;
+}
+
+/* line 1380, D:/xampp/htdocs/alice/style/scss/style.scss */
+.scDetails .aside .navigation-side ul li {
+  display: block;
+  margin-bottom: 25px;
+  padding-left: 15px;
+}
+
+/* line 1387, D:/xampp/htdocs/alice/style/scss/style.scss */
+.scDetails .aside .navigation-side ul li .sub-acc {
+  padding-top: 20px;
+}
+
+/* line 1390, D:/xampp/htdocs/alice/style/scss/style.scss */
+.scDetails .aside .navigation-side ul li .sub-acc li {
+  margin-bottom: 20px;
+}
+
+/* line 1393, D:/xampp/htdocs/alice/style/scss/style.scss */
+.scDetails .aside .navigation-side ul li .sub-acc li:hover > a {
+  color: #EB3349;
+}
+
+/* line 1397, D:/xampp/htdocs/alice/style/scss/style.scss */
+.scDetails .aside .navigation-side ul li .sub-acc li a {
+  color: midnightblue;
+}
+
+/* line 1403, D:/xampp/htdocs/alice/style/scss/style.scss */
+.scDetails .aside .navigation-side ul li a {
+  display: block;
+  position: relative;
+  font-size: 10.5px;
+  letter-spacing: 0.8px;
+  font-family: 'Open sans';
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+/* line 1412, D:/xampp/htdocs/alice/style/scss/style.scss */
+.scDetails .aside .navigation-side ul li a:before {
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  left: -35px;
+  top: 0;
+}
+
+/* line 1423, D:/xampp/htdocs/alice/style/scss/style.scss */
+.scDetails .aside .navigation-side ul li .tltls:before {
+  content: '';
+  background: url(../../assets/icons/list.svg) no-repeat;
+}
+
+/* line 1431, D:/xampp/htdocs/alice/style/scss/style.scss */
+.scDetails .aside .navigation-side ul li .svcs:before {
+  content: '';
+  background: url(../../assets/icons/services-portfolio.svg) no-repeat;
+}
+
+/* line 1440, D:/xampp/htdocs/alice/style/scss/style.scss */
+.scDetails .aside .navigation-side ul li .prj:before {
+  content: '';
+  background: url(../../assets/icons/win.svg) no-repeat;
+}
+
+/* line 1449, D:/xampp/htdocs/alice/style/scss/style.scss */
+.scDetails .aside .navigation-side ul li .blg:before {
+  content: '';
+  background: url(../../assets/icons/icon.svg) no-repeat;
+}
+
+/* line 1457, D:/xampp/htdocs/alice/style/scss/style.scss */
+.scDetails .aside .navigation-side ul li .con:before {
+  content: '';
+  background: url(../../assets/icons/mail.svg) no-repeat;
+}
+
+/* line 1470, D:/xampp/htdocs/alice/style/scss/style.scss */
+.rateBtn {
+  position: fixed;
+  right: 0;
+  z-index: 99;
+}
+
+/* line 1475, D:/xampp/htdocs/alice/style/scss/style.scss */
+.rateBtn a {
+  display: block;
+  display: block;
+  background: #fff;
+  width: 93px;
+  height: 83px;
+  box-shadow: 0px 4px 83px 3px rgba(0, 0, 0, 0.18);
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+}
+
+/* line 1485, D:/xampp/htdocs/alice/style/scss/style.scss */
+.rateBtn a h6 {
+  margin: 0;
+  font-size: 10px;
+  padding: 5px 10px;
+  padding-bottom: 0;
+  letter-spacing: 0.8px;
+}
+
+/* line 1493, D:/xampp/htdocs/alice/style/scss/style.scss */
+.rateBtn a h2 {
+  margin: 0 auto;
+  font-size: 43px;
+  text-align: center;
+  font-weight: normal;
+  color: #58bd9c;
+}
+
+/* line 1500, D:/xampp/htdocs/alice/style/scss/style.scss */
+.rateBtn a h2:after {
+  content: '+';
+  font-size: 20px;
+  color: #58bd9c;
 }
 
 /*# sourceMappingURL=../css/style.map */
