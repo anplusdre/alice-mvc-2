@@ -1,12 +1,12 @@
 @font-face {
-    font-family: 'Myriad Set Pro Thin';
-    src: url('../../assets/fonts/MyriadSetPro-Thin.eot');
+    font-family: 'Open Sans',
+    sans-serif;
+    src: url('../../assets/fonts/open/OpenSans-Regular-webfont.eot');
     /* IE9 Compat Modes */
-    src: url('../../assets/fonts/MyriadSetPro-Thin.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-    url('../../assets/fonts/MyriadSetPro-Thin.woff2') format('woff2'), /* Super Modern Browsers */
-    url('../../assets/fonts/MyriadSetPro-Thin.woff') format('woff'), /* Pretty Modern Browsers */
-    url('../../assets/fonts/MyriadSetPro-Thin.ttf') format('truetype'), /* Safari, Android, iOS */
-    url('../../assets/fonts/MyriadSetPro-Thin.svg#svgFontName') format('svg');
+    src: url('../../assets/fonts/open/OpenSans-Regular-webfont?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('../../assets/fonts/OpenSans-Regular-webfont.woff') format('woff'), /* Pretty Modern Browsers */
+    url('../../assets/fonts/OpenSans-Regular-webfont.ttf') format('truetype'), /* Safari, Android, iOS */
+    url('../../assets/fonts/OpenSans-Regular-webfont.svg#svgFontName') format('svg');
     /* Legacy iOS */
 }
 
@@ -21,13 +21,16 @@ html {
     height: 100%!important;
 }
 
-$blue: #0089e1;
-$mainb: #9ac3c3;
-$mainc: #b18646;
-$font: 'PT Sans',
+$opens: 'Open Sans',
 sans-serif;
-$bold: 'Myriad Set Pro Bold';
-$ubuntu: 'Ubuntu',
+$blue: #0089e1;
+$mainb: #3d3bee;
+$mainr: #ff004f;
+$boxs: 0px 4px 83px 3px rgba(0,
+0,
+0,
+0.18);
+$font: 'PT Sans',
 sans-serif;
 $black: #222222;
 $less-black: #989898;
@@ -68,7 +71,6 @@ a {
 input {
     border: 0;
     &:focus {
-        border: 0;
         outline: 0;
     }
 }
@@ -132,7 +134,7 @@ button {
 
 .boxed {
 
-    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.26);
+    box-shadow: 0px 11px 83px 3px rgba(0, 0, 0, 0.18);
     -moz-box-sizing: border-box;
 }
 

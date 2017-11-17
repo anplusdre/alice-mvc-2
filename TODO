@@ -30,13 +30,21 @@
 
 
 </div>
+#0095fa
+
+linear-gradient(151deg, #3d3bee 23%, #ff004f 140%, #ff004f);
 
 
+/* AuthName "Only Authorized Admin"
+AuthType basic
+AuthUserFile assets/.htpasswd
 
 
-
-
-
+ require user admin
+ 
+ 
+admin:$apr1$aFGzzicl$UeWq5u/VCaq6bzb3X4On0/
+*/
 
     <!--
 //header("Content-Type: application/json; charset=UTF-8"); //$conn = new mysqli("localhost", "root", "", "application"); //$result = $conn->query("SELECT * FROM talents"); //$outp = array(); //while ($rs = $result->fetch_array(MYSQLI_ASSOC)) { // $outp // [$rs["id"]] = [ // "tag"=> $rs["tag"], // "name" => $rs["name"], // "images" => $rs["images"], // "images02" => $rs["images02"], // "images03" => $rs["images02"], // "skills" => $rs["skills"], // "skills02" => $rs["skills02"], // "indexing" => $rs["indexing"] // ]; //} //$conn->close(); //echo (json_encode($outp));

@@ -56,7 +56,7 @@ header.minified {
                 position: relative;
             }
             a.active {
-                color: $mainc;
+                color: $mainr;
                 font-weight: bold;
             }
             a.active:before {
@@ -101,8 +101,8 @@ header.minified {
             li {
                 a {
                     display: block;
-                    color: $mainc;
-                    font-family: $ubuntu;
+                    color: $mainr;
+                    font-family: $opens;
                     font-size: 13px;
                     padding: 4px;
                     width: 70px;
@@ -154,7 +154,7 @@ header.minified {
                 a {
                     padding: 18px 0;
                     display: block;
-                    font-family: $ubuntu;
+                    font-family: $opens;
                     font-size: 13px;
                     color: #ffffff;
                     text-align: left;
@@ -244,7 +244,7 @@ header.minified {
             background: $blue;
             color: #fff;
             border-radius: 4px;
-            font-family: "Ubuntu", sans-serif;
+            font-family: "opens", sans-serif;
             box-shadow: 0 1px 5px rgba(4, 42, 117, 0.33);
             -moz-box-sizing: border-box;
         }
@@ -326,7 +326,7 @@ header.minified {
         color: #9a9a9a;
         transition: $smooth;
         &:hover {
-            color: $mainc;
+            color: $mainr;
         }
     }
 }
@@ -462,7 +462,7 @@ header.minified {
             h5 {
                 margin: 0;
                 padding-bottom: 5px;
-                color: $mainc;
+                color: $mainr;
 
             }
             li {
@@ -486,7 +486,7 @@ header.minified {
             h5 {
                 margin: 0;
                 padding-bottom: 5px;
-                color: $mainc;
+                color: $mainr;
 
             }
             li {
@@ -773,7 +773,7 @@ div.rn-carousel-indicator span {
         color: #ef9090;
 
         &:hover > img {
-            background: $mainc;
+            background: $mainr;
         }
     }
 
@@ -822,7 +822,7 @@ div.rn-carousel-indicator span {
 .detailsController {
     position: absolute;
     height: 250px;
-    width: 100%;
+    width: 500px;
     left: 50%;
     transform: translate(-50%, 0);
     top: 0;
@@ -1023,5 +1023,200 @@ div.rn-carousel-indicator span {
         max-width: 30%;
         margin: 1%;
         vertical-align: middle;
+    }
+}
+
+// SEARCH BAR
+$background-color: #EAEDF2;
+$button-color: #5AEED1;
+$button-text-color: #fff;
+$search-height: 50px;
+$search-font-size: 14px;
+.search {
+    box-shadow: 0 20px 10px -10px rgba(200, 200, 200, .5);
+    display: inline-block;
+}
+
+.search__input {
+    border: 0;
+    outline: 0;
+    line-height: $search-height;
+    font-size: $search-font-size;
+    padding: 0 ($search-height - $search-font-size)/2;
+    float: left;
+}
+
+.search__button {
+    box-shadow: -10px 0 10px -5px rgba($button-color, .5);
+    color: $button-text-color;
+    background-color: $button-color;
+    width: $search-height;
+    line-height: $search-height;
+    text-align: center;
+    border: 0;
+    padding: 0;
+    cursor: pointer;
+    outline: 0;
+    transition: box-shadow .3s ease-out;
+
+    &:active {
+        box-shadow: -10px 0 10px -10px rgba($button-color, .5);
+    }
+}
+
+// modal
+.modal-wrapper {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(255, 257, 153, 0.75);
+    visibility: hidden;
+    opacity: 0;
+    -webkit-transition: all 0.25s ease-in-out;
+    -moz-transition: all 0.25s ease-in-out;
+    -o-transition: all 0.25s ease-in-out;
+    transition: all 0.25s ease-in-out;
+    .modal {
+        width: 600px;
+        height: 400px;
+        display: block;
+        margin: 50% 0 0 -300px;
+        position: relative;
+        top: 50%;
+        left: 50%;
+        background: #fff;
+        opacity: 0;
+        -webkit-transition: all 0.5s ease-in-out;
+        -moz-transition: all 0.5s ease-in-out;
+        -o-transition: all 0.5s ease-in-out;
+        transition: all 0.5s ease-in-out;
+
+
+        .content {
+            padding: 5%;
+        }
+
+
+
+        .head {
+            width: 90%;
+            height: 32px;
+            padding: 1.5em 5%;
+            overflow: hidden;
+            background: #01bce5;
+
+
+            .btn-close {
+                width: 32px;
+                height: 32px;
+                display: block;
+                float: right;
+            }
+
+            .btn-close::before,
+            .btn-close::after {
+                content: '';
+                width: 32px;
+                height: 6px;
+                display: block;
+                background: #fff;
+            }
+
+            .btn-close::before {
+                margin-top: 12px;
+                -webkit-transform: rotate(45deg);
+                -moz-transform: rotate(45deg);
+                -o-transform: rotate(45deg);
+                transform: rotate(45deg);
+            }
+
+            .btn-close::after {
+                margin-top: -6px;
+                -webkit-transform: rotate(-45deg);
+                -moz-transform: rotate(-45deg);
+                -o-transform: rotate(-45deg);
+                transform: rotate(-45deg);
+            }
+        }
+    }
+}
+
+.modal-wrapper.open {
+    opacity: 1;
+    visibility: visible;
+}
+
+
+.modal-wrapper.open .modal {
+    margin-top: -200px;
+    opacity: 1;
+}
+
+
+.back {
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+    padding: 10px 10px 10px 40px;
+    h4 {
+        color: #4A4F6A;
+        font-size: 16px;
+        transform: translateY(8px);
+        transition: transform 500ms 0s cubic-bezier(0.2, 0, 0, 1);
+    }
+    span {
+        opacity: 0;
+        color: #858BA9;
+        font-size: 12px;
+        font-weight: 300;
+        display: inline-block;
+        transform: translateY(10px);
+        transition: transform 500ms 0s cubic-bezier(0.2, 0, 0, 1), opacity 500ms 0s cubic-bezier(0.2, 0, 0, 1);
+    }
+    div {
+        top: 11px;
+        left: 0;
+        content: '';
+        width: 30px;
+        height: 30px;
+        display: block;
+        overflow: hidden;
+        position: absolute;
+        border-radius: 50%;
+        transform: scale(1);
+        background-color: #E9E7F2;
+        transition: transform 400ms 0s cubic-bezier(0.2, 0, 0, 1.6);
+        &::after {
+            top: 0;
+            left: 0;
+            content: '';
+            width: 60px;
+            height: 30px;
+            position: absolute;
+            background-position: 0 0;
+            background-image: url('https://s3-eu-west-1.amazonaws.com/thomascullen-codepen/back.svg');
+            transition: transform 400ms 0s cubic-bezier(0.2, 0, 0, 1);
+        }
+    }
+    &:hover {
+        h4 {
+            color: #171922;
+            opacity: 1;
+            transform: translateY(0);
+        }
+        span {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        div {
+            transform: scale(1.1);
+            background-color: white;
+            box-shadow: 0 2px 10px 0 rgba(185, 182, 198, 0.00), 0 1px 3px 0 rgba(175, 172, 189, 0.25);
+            &::after {
+                transform: translateX(-30px);
+            }
+        }
     }
 }

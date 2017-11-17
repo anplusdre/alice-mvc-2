@@ -28,7 +28,21 @@
                 $scope.open = false;
 
             });
-        }]);
+        }]).filter('searchMain', function () {
+            return function (arr, searchString) {
+                if (!searchString) {
+                    return arr;
+                }
+                var result = [];
+                searchString = searchString.toLowerCase();
+                angular.forEach(arr, function (talent) {
+                    if (talent.name.toLowerCase().indexOf(searchString) !== -1) {
+                        result.push(talent);
+                    }
+                });
+                return result;
+            };
+        });
     alice.controller("detailsController", ['$scope', '$http', '$routeParams', function ($scope, $http, $routeParams) {
         $http.get('api.php')
             .then(function (res) {

@@ -11,6 +11,7 @@
 
     <base href="/alice/">
     <link rel="stylesheet" href="style/css/style.css">
+    <link rel="stylesheet" href="lib/lib.css">
     <link rel="stylesheet" href="lib/angular-carousel.css">
 
     <!--[if lt IE 9]>
@@ -29,13 +30,11 @@
 
 
 
-
-    <script src="js/lib/jquery-3.2.1.min.js"></script>
+    <script src="js/libs.js"></script>
     <script src="js/lib/angular.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.9/angular-touch.min.js"></script>
     <script src="js/lib/angular-route.min.js"></script>
     <script src="js/lib/angular-carousel.js"></script>
-    <script src="js/lib/touch.js"></script>
     <script type="text/javascript" src="js/script.js"></script>
     <script src="js/app/app.js"></script>
 </body>

@@ -5,3 +5,9 @@
     RewriteRule ^.*$ - [NC,L]
 
     RewriteRule ^(.*) http://localhost/alice/index.php [NC,L]
+    
+    
+    RewriteEngine on 
+RewriteCond %{HTTP_REFERER} !^http://(www\.)?localhost [NC] 
+RewriteCond %{HTTP_REFERER} !^http://(www\.)?localhost.*$ [NC] 
+    RewriteRule .*\.(wav|swf|jpg|jpeg|gif|png|bmp|js|css)$ - [F,NC,L]

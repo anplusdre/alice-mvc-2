@@ -34,152 +34,312 @@
 
 
 </div>
-
-
-
-
-<div class="spacer big"></div>
-
-
-<div class="tabbed_info" ng-controller="detailsController">
-    <ul class='tabs'>
-        <li><a href='#tab1' class="tab1 selectedTab"><img src="assets/icons/inbox.svg">
-        <p>Database</p></a></li>
-        <li><a href='#tab2' class="tab2"><img src="assets/icons/images.svg">
-        <p>Gallery</p></a></li>
-        <li><a href='#tab3' class="tab3"><img src="assets/icons/network.svg">
-        <p>Projects</p></a></li>
-    </ul>
-
-    <div class="tabContent bx">
-        <div id='tab1'>
-            <div class="biography">
-                <table>
-                    <tr>
-                        <th style="border-right: 1px solid #d9ffff;">
-                            <h5 style="margin:0 auto;background:#9ac3c3;color:#fbfbfb;font-weight:600;font-size:14px;padding:8px 20px;border-top-left-radius:8px;border-top-right-radius:0;">Biography</h5>
-                            <table>
-                                <tr>
-                                    <td>Full Name</td>
-                                    <td>:</td>
-                                    <td>test</td>
-                                </tr>
-                                <tr>
-                                    <td>Gender</td>
-                                    <td>:</td>
-                                    <td>Female</td>
-                                </tr>
-                                <tr>
-                                    <td>Birth</td>
-                                    <td>:</td>
-                                    <td>Female</td>
-                                </tr>
-                                <tr>
-                                    <td>Live in</td>
-                                    <td>:</td>
-                                    <td>Female</td>
-                                </tr>
-                                <tr>
-                                    <td> </td>
-                                    <td> </td>
-                                    <td> </td>
-                                </tr>
-                            </table>
-                        </th>
-
-                        <th style="border-right: 1px solid #d9ffff;">
-                            <h5 style="margin:0 auto;background:#9ac3c3;color:#fbfbfb;font-weight:600;font-size:14px;padding:8px 20px;border-top-left-radius:0;border-top-right-radius:0;">Body Meassurements</h5>
-                            <table>
-                                <tr>
-                                    <td>Height</td>
-                                    <td>:</td>
-                                    <td>186 cm</td>
-                                </tr>
-                                <tr>
-                                    <td>Weight</td>
-                                    <td>:</td>
-                                    <td>70 kg</td>
-                                </tr>
-                                <tr>
-                                    <td>Chest</td>
-                                    <td>:</td>
-                                    <td>36</td>
-                                </tr>
-                                <tr>
-                                    <td>Waist</td>
-                                    <td>:</td>
-                                    <td>34</td>
-                                </tr>
-                                <tr>
-                                    <td>Hips</td>
-                                    <td>:</td>
-                                    <td>33</td>
-                                </tr>
-                            </table>
-                        </th>
-
-                        <th>
-                            <h5 style="margin:0 auto;background:#9ac3c3;color:#fbfbfb;font-weight:600;font-size:14px;padding:8px 20px;border-top-left-radius:0;border-top-right-radius:8px;">Costume Size</h5>
-                            <table>
-                                <tr>
-                                    <td>Dress</td>
-                                    <td>:</td>
-                                    <td>S</td>
-                                </tr>
-                                <tr>
-                                    <td>Skirt</td>
-                                    <td>:</td>
-                                    <td>S</td>
-                                </tr>
-                                <tr>
-                                    <td>Shirt</td>
-                                    <td>:</td>
-                                    <td>XS</td>
-                                </tr>
-                                <tr>
-                                    <td>Shoes</td>
-                                    <td>:</td>
-                                    <td>40</td>
-                                </tr>
-                                <tr>
-                                    <td> </td>
-                                    <td> </td>
-                                    <td> </td>
-                                </tr>
-                            </table>
-                        </th>
-
-
-
-                    </tr>
-
-                </table>
-            </div>
-
-
-            <div class="pseula">
-                <h6>** This data may change overtime</h6>
-            </div>
+<div class="modal-wrapper">
+    <div class="modal">
+        <div class="head">
+            <h4>Create your Project</h4>
+            <a class="btn-close trigger" href="#"></a>
         </div>
-        <div id='tab2'>
-            <div class="fullGallery">
-                <div ng-model="talents">
-                    <img ng-src="{{talents[which].images}}">
-                    <img ng-src="{{talents[which].images02}}">
-                    <img ng-src="{{talents[which].images03}}">
+        <div class="content">
+            <div class="createEvent">
+                <form method="post" name="myemailform" action="email.php">
+
+                <h5>Contact Details</h5>
+                <div class="forms">
+                    <input type="text" class="name"  name="name" placeholder="Full Name">
+                    <input type="email" class="email"  name="email" placeholder="Email Address">
                 </div>
-            </div>
 
-            <div class="pseula">
-                <h6 style="font-style: italic;color: #777;">Warning!! This Images is copyright protected and cannot be shared or spreaded, you need to input client Key to download these images.</h6>
+                <div class="forms">
+
+
+                    <input type="text" class="company" placeholder="Company Name">
+                    <input type="tel" class="tel" placeholder="Phone Number">
+
+
+                </div>
+
+
+                <h5>Project Details</h5>
+
+                <div class="forms">
+                    <input type="text" class="pname" placeholder="Project Name">
+                    <input type="text" class="address" placeholder="Project Location">
+                </div>
+                
+                <div class="dateSelect forms">
+                   <p>Project started at</p>
+                   <p>Project End at</p>
+                    <input type="text" id="dateStart" class="datestart" placeholder="Project Start Date">
+                    <input type="text" id="dateEnd" class="datend" placeholder="Project End">
+                </div>
+
+
+                <div class="forms">
+                    <textarea placeholder="Your Project Description"></textarea>
+                </div>
+                
+                <button type="submit" class="creatEvent-btn" name="submit">create</button>
+                </form>
             </div>
-        </div>
-        <div id='tab3'>
-            <p>And this is the 3rd tab.</p>
         </div>
     </div>
 </div>
 
+
+<section class="scDetails">
+    <div class="aside">
+        <div class="navigation-side">
+
+            <ul>
+                <li><a href="#" class="tltls">Talent List</a>
+                    <ul class="sub-acc">
+                        <li><a href="#">Model</a></li>
+                        <li><a href="#">Escort</a></li>
+                        <li><a href="#">Usher</a></li>
+                        <li><a href="#">Model</a></li>
+                    </ul>
+
+                </li>
+                <li><a href="#" class="svcs">Services</a>
+                    <ul class="sub-acc">
+                        <li><a href="#">Model</a></li>
+                        <li><a href="#">Escort</a></li>
+                        <li><a href="#">Usher</a></li>
+                        <li><a href="#">Model</a></li>
+                    </ul>
+
+                </li>
+                <li><a href="#" class="prj">Projects</a></li>
+                <li><a href="#" class="blg">Blog</a></li>
+                <li><a href="#" class="con">Contact</a></li>
+            </ul>
+
+        </div>
+    </div>
+    <div class="tabbed_info" ng-controller="detailsController">
+        <ul class='tabs'>
+            <li><a href='#tab1' class="tab1 selectedTab boxed"><img src="assets/icons/inbox.svg">
+        <p>Profile</p></a></li>
+            <li><a href='#tab2' class="tab2 boxed"><img src="assets/icons/images.svg">
+        <p>Gallery</p></a></li>
+            <li><a href='#tab3' class="tab3 boxed"><img src="assets/icons/network.svg">
+        <p>Projects</p></a></li>
+            <li>
+                <a href='#tab4' class="tab4 boxed"><img src="assets/icons/date.svg">
+                <p>Availability</p>
+            </a>
+            </li>
+        </ul>
+
+        <div class="tabContent" ng-model="talents">
+            <div id='tab1'>
+                <div class="biography">
+                    <table>
+                        <tr>
+                            <th style="    border-right: 1px solid #ffffff;">
+                                <h5 style="margin:0 auto;font-weight:600;font-size:14px;padding:8px 20px;border-top-left-radius:8px;border-top-right-radius:0;">Biography</h5>
+                                <table>
+                                    <tr>
+                                        <td>Alias</td>
+                                        <td>:</td>
+                                        <td>{{talents[which].name}}</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Gender</td>
+                                        <td>:</td>
+                                        <td>{{talents[which].gender}}</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Age</td>
+                                        <td>:</td>
+                                        <td>{{talents[which].age}}</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Live in</td>
+                                        <td>:</td>
+                                        <td>Female</td>
+                                    </tr>
+                                    <tr>
+                                        <td> </td>
+                                        <td> </td>
+                                        <td> </td>
+                                    </tr>
+                                </table>
+                            </th>
+
+                            <th style="    border-right: 1px solid #ffffff;">
+                                <h5 style="margin:0 auto;font-weight:600;font-size:14px;padding:8px 20px;border-top-left-radius:0;border-top-right-radius:0;">Body Meassurements</h5>
+                                <table>
+                                    <tr>
+                                        <td>Height</td>
+                                        <td>:</td>
+                                        <td>186 cm</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Weight</td>
+                                        <td>:</td>
+                                        <td>70 kg</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Chest</td>
+                                        <td>:</td>
+                                        <td>36</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Waist</td>
+                                        <td>:</td>
+                                        <td>34</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Hips</td>
+                                        <td>:</td>
+                                        <td>33</td>
+                                    </tr>
+                                </table>
+                            </th>
+
+                            <th>
+                                <h5 style="margin:0 auto;font-weight:600;font-size:14px;padding:8px 20px;border-top-left-radius:0;border-top-right-radius:8px;">Costume Size</h5>
+                                <table>
+                                    <tr>
+                                        <td>Dress</td>
+                                        <td>:</td>
+                                        <td>S</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Skirt</td>
+                                        <td>:</td>
+                                        <td>S</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Shirt</td>
+                                        <td>:</td>
+                                        <td>XS</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Shoes</td>
+                                        <td>:</td>
+                                        <td>40</td>
+                                    </tr>
+                                    <tr>
+                                        <td> </td>
+                                        <td> </td>
+                                        <td> </td>
+                                    </tr>
+                                </table>
+                            </th>
+
+
+
+                        </tr>
+
+                    </table>
+                </div>
+
+
+                <div class="pseula">
+                    <h6>** This data may change overtime</h6>
+                </div>
+            </div>
+            <div id='tab2'>
+                <div class="fullGallery">
+                    <ul ng-model="talents">
+                        <li><img ng-src="{{talents[which].images}}"></li>
+                        <li><img ng-src="{{talents[which].images02}}"></li>
+                        <li><img ng-src="{{talents[which].images03}}"></li>
+                    </ul>
+                </div>
+
+                <div class="pseula">
+                    <h6 style="font-style: italic;color: #777;">Warning!! This Images is copyright protected and cannot be shared or spreaded, you need to input client Key to download these images.</h6>
+                </div>
+            </div>
+            <div id='tab3'>
+                <div class="experiences">
+                    <h3>Experiences</h3>
+                    <table>
+                        <th></th>
+                    </table>
+                </div>
+            </div>
+            <!--        <div id="tab4"></div>-->
+        </div>
+    </div>
+
+
+    <div class="rateBtn">
+        <a href="#" class="bttn rafter">
+            <h6>RATE</h6>
+            <h2>A</h2>
+        </a>
+    </div>
+
+</section>
+
+<script type="text/javascript">
+    
+const picker = datepicker(document.querySelector('#dateStart'),{
+    position: 'br', // Top right.
+  startDate: new Date(), // This month.
+  dateSelected: new Date(), // Today is selected.
+  minDate: new Date(2016, 5, 1), // June 1st, 2016.
+  maxDate: new Date(2099, 0, 1), // Jan 1st, 2099.
+  noWeekends: false, // Weekends will be unselectable.
+  formatter: function(el, date) {
+    // This will display the date as `1/1/2017`.
+    el.value = date.toDateString();
+  },
+  onSelect: function(instance) {
+    // Show which date was selected.
+    console.log(instance.dateSelected);
+  },
+  onShow: function(instance) {
+    console.log('Calendar showing.');
+  },
+  onHide: function(instance) {
+    console.log('Calendar hidden.');
+  },
+  onMonthChange: function(instance) {
+    // Show the month of the selected date.
+    console.log(instance.currentMonthName);
+  },
+  customMonths: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
+  customDays: ['S', 'M', 'T', 'W', 'Th', 'F', 'S'],
+  overlayPlaceholder: 'Enter a 4-digit year'
+});
+    
+    
+    const dateEnd = datepicker(document.querySelector('#dateEnd'),{
+    position: 'br', // Top right.
+  startDate: new Date(), // This month.
+  dateSelected: new Date(), // Today is selected.
+  minDate: new Date(2016, 5, 1), // June 1st, 2016.
+  maxDate: new Date(2099, 0, 1), // Jan 1st, 2099.
+  noWeekends: false, // Weekends will be unselectable.
+  formatter: function(el, date) {
+    // This will display the date as `1/1/2017`.
+    el.value = date.toDateString();
+  },
+  onSelect: function(instance) {
+    // Show which date was selected.
+    console.log(instance.dateSelected);
+  },
+  onShow: function(instance) {
+    console.log('Calendar showing.');
+  },
+  onHide: function(instance) {
+    console.log('Calendar hidden.');
+  },
+  onMonthChange: function(instance) {
+    // Show the month of the selected date.
+    console.log(instance.currentMonthName);
+  },
+  customMonths: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
+  customDays: ['S', 'M', 'T', 'W', 'Th', 'F', 'S'],
+  overlayPlaceholder: 'Enter a 4-digit year'
+});
+</script>
 <script type="text/javascript" src="js/script.js">
 
 

@@ -1,11 +1,10 @@
 <div class="topMenu">
     <div class="stackMenu"><a href="#" ng-click="toggle = !toggle" ng-class="{'active' : toggle}"><img src="assets/icons/menu.svg"></a></div>
     <div class="menuPost">
-        <ul>
-            <li><a href="#" class="joinBtn">Join</a></li>
-            <li><a href="#">Blog</a></li>
-            <li><a href="#">Contact</a></li>
-        </ul>
+        <div class="search">
+            <input class="search__input" ng-model="searchMain" placeholder="Search" />
+            <button class="search__button"><img src="assets/icons/magnifying-glass.svg"></button>
+        </div>
     </div>
 </div>
 
