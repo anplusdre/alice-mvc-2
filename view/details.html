@@ -70,8 +70,8 @@
                     <div class="dateSelect forms">
                         <p>Project started at</p>
                         <p>Project End at</p>
-                        <input type="text" id="dateStart" class="datestart" placeholder="Project Start Date">
-                        <input type="text" id="dateEnd" class="datend" placeholder="Project End">
+                        <input type="text" class="dateStart" placeholder="Project Start Date">
+                        <input type="text" class="dateEnd" placeholder="Project End">
                     </div>
 
 
@@ -122,11 +122,13 @@
             <li><a href='#tab1' class="tab1 selectedTab boxed"><img src="assets/icons/inbox.svg">
         <p>Profile</p></a></li>
             <li><a href='#tab2' class="tab2 boxed"><img src="assets/icons/images.svg">
-        <p>Gallery</p></a></li>
-            <li><a href='#tab3' class="tab3 boxed"><img src="assets/icons/network.svg">
+        <p>Photos</p></a></li>
+            <li><a href='#tab3' class="tab3 boxed"><img src="assets/icons/video-player-outline.svg">
+        <p>Videos</p></a></li>
+            <li><a href='#tab4' class="tab4 boxed"><img src="assets/icons/network.svg">
         <p>Projects</p></a></li>
             <li>
-                <a href='#tab4' class="tab4 boxed"><img src="assets/icons/date.svg">
+                <a href='#tab5' class="tab5 boxed"><img src="assets/icons/date.svg">
                 <p>Availability</p>
             </a>
             </li>
@@ -256,14 +258,27 @@
                 </div>
             </div>
             <div id='tab3'>
-                <div class="experiences">
-                    <h3>Experiences</h3>
-                    <table>
-                        <th></th>
-                    </table>
+                <div class="fullGallery">
+                    <ul ng-model="talents">
+                        <li><video controls loop ng-src="{{talents[which].video}}"></video></li>
+                        <li><video controls loop ng-src="{{talents[which].video02}}"></video></li>
+                        <li><video controls loop ng-src="{{talents[which].video03}}"></video></li>
+                    </ul>
+                </div>
+
+                <div class="pseula">
+                    <h6 style="font-style: italic;color: #777;">Warning!! This Videos is copyright protected and cannot be shared or spreaded, you need to input client Key to download these images.</h6>
                 </div>
             </div>
-            <!--        <div id="tab4"></div>-->
+            <div id='tab4'>
+                <div class="experiences">
+                    <h3>Experiences</h3>
+                    <h5>We're sorry, this feature is under development</h5>
+                </div>
+            </div>
+            <div id="tab5">
+                <h5>We're sorry, this feature is under development</h5>
+            </div>
         </div>
     </div>
 
@@ -278,7 +293,7 @@
 </section>
 
 <script type="text/javascript">
-    const picker = datepicker(document.querySelector('#dateStart'), {
+    var picker = datepicker(document.querySelector('.dateStart'), {
         position: 'br', // Top right.
         startDate: new Date(), // This month.
         dateSelected: new Date(), // Today is selected.
@@ -308,8 +323,7 @@
         overlayPlaceholder: 'Enter a 4-digit year'
     });
 
-
-    const dateEnd = datepicker(document.querySelector('#dateEnd'), {
+    var ficker = datepicker(document.querySelector('.dateEnd'), {
         position: 'br', // Top right.
         startDate: new Date(), // This month.
         dateSelected: new Date(), // Today is selected.

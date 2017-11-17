@@ -15,7 +15,7 @@ header {
     position: relative;
     &:after {
         content: " ";
-        box-shadow: inset 0 -11px 8px -10px rgba(102, 146, 146, 0.46);
+        box-shadow: inset 0 -11px 21px -10px rgba(187, 187, 187, 0.46);
         -moz-box-sizing: border-box;
         width: 100%;
         height: 20px;
@@ -26,11 +26,10 @@ header {
 }
 
 header.minified {
-    background: #EB3349;
+    background: linear-gradient(45deg, #0093e5, #0095ff);
     /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #F45C43, #EB3349);
-    /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #F45C43, #EB3349);
+    //    background: -webkit-linear-gradient(to right, #0093e5, #EB3349);//    /* Chrome 10-25, Safari 5.1-6 */
+    //    background: linear-gradient(to right, #0093e5, #EB3349);
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     &:after {
         content: none;
@@ -56,12 +55,12 @@ header.minified {
                 display: block;
                 padding: 15px 0;
                 font-family: $font;
-                color: $less-black;
+                color: $grey;
                 font-size: 0.85em;
                 position: relative;
             }
             a.active {
-                color: $mainr;
+                color: $blue;
                 font-weight: bold;
             }
             a.active:before {
@@ -88,9 +87,18 @@ header.minified {
     display: inline;
     padding-left: 80px;
     a {
+        height: 45px;
+        width: 45px;
+        display: inline-flex;
+        box-shadow: 0px -1px 69px 17px rgba(0, 0, 0, 0.09);
+        border-radius: 100%;
         display: inline-block;
         img {
-            width: 30px;
+            width: 22px;
+            vertical-align: middle;
+            top: 13px;
+            left: 10px;
+            position: relative;
         }
     }
 }
@@ -106,7 +114,7 @@ header.minified {
             li {
                 a {
                     display: block;
-                    color: $mainr;
+                    color: $blue;
                     font-family: $opens;
                     font-size: 13px;
                     padding: 4px;
@@ -139,29 +147,34 @@ header.minified {
 .topMenuContent {
     position: relative;
     float: left;
-    left: 120px;
-    top: -70px;
+    left: 160px;
+    top: -65px;
     .rw {
+
         position: relative;
         transform: translateY(-150%);
         text-align: center;
-        background: #9ac3c3;
+        border-radius: 12px;
+        background: #fff;
         transition: all .35s ease-in-out;
         width: 150px;
-        height: 250px;
+        border: 1px solid #eee;
+        height: 200px;
+        box-shadow: 0px 4px 71px -8px rgba(71, 107, 128, 0.29);
         ul {
-            height: 250px;
+
             li {
                 display: block;
                 &:hover > a {
                     letter-spacing: 4px;
                 }
                 a {
-                    padding: 18px 0;
+                    padding: 12px 0;
                     display: block;
-                    font-family: $opens;
-                    font-size: 13px;
-                    color: #ffffff;
+                    font-family: "Open Sans", sans-serif;
+                    font-size: 11px;
+                    font-weight: 600;
+                    color: #0093e5;
                     text-align: left;
                     padding-left: 53px;
                     transition: $smooth;
@@ -179,13 +192,12 @@ header.minified {
 }
 
 .ov-pa {
-    overflow: hidden;
     padding: 5px;
+    border-radius: 12px;
 }
 
 .grid {
     position: relative;
-    margin-top: 50px;
 
     width: 100%;
     margin: 0 auto;
@@ -246,7 +258,7 @@ header.minified {
             display: block;
             font-size: 12px;
             font-weight: 500;
-            background: $cherry;
+            background: $blue;
             color: #fff;
             border-radius: 4px;
             font-family: "opens", sans-serif;
@@ -282,6 +294,8 @@ header.minified {
 .grid.display {
     min-height: 100%;
     display: flex;
+    position: relative;
+    margin-top: 50px;
 }
 
 #id {
@@ -331,7 +345,7 @@ header.minified {
         color: #9a9a9a;
         transition: $smooth;
         &:hover {
-            color: $mainr;
+            color: $blue;
         }
     }
 }
@@ -453,7 +467,7 @@ header.minified {
             margin-top: 0;
             margin-bottom: 0;
             font-size: 11px;
-            color: #9e9e9e;
+            color: $grey;
             line-height: 17px;
             letter-spacing: .04em;
             text-align: justify;
@@ -467,7 +481,7 @@ header.minified {
             h5 {
                 margin: 0;
                 padding-bottom: 5px;
-                color: $mainr;
+                color: $blue;
 
             }
             li {
@@ -477,7 +491,7 @@ header.minified {
                     display: block;
                     font-size: 11.5px;
                     margin-right: 10px;
-                    color: $mainb;
+                    color: $grey;
                 }
             }
         }
@@ -491,7 +505,7 @@ header.minified {
             h5 {
                 margin: 0;
                 padding-bottom: 5px;
-                color: $mainr;
+                color: $blue;
 
             }
             li {
@@ -501,7 +515,7 @@ header.minified {
                     display: block;
                     font-size: 11.5px;
                     margin-right: 10px;
-                    color: $mainb;
+                    color: $grey;
                 }
             }
         }
@@ -593,7 +607,7 @@ header.minified {
         width: 100%;
         height: 20px;
         display: block;
-        background: $cherry;
+        background: $blue;
         line-height: 20px;
 
         p {
@@ -666,7 +680,7 @@ header.minified {
     span {
         font-size: 12px;
         vertical-align: initial;
-        color: $less-black;
+        color: $grey;
         font-weight: 600;
     }
 }
@@ -731,7 +745,7 @@ div.rn-carousel-indicator span {
         padding: 0px 4px;
         line-height: 14px;
         border-radius: 3px;
-        color: #9ac3c3;
+        color: $blue;
         margin-top: 5px;
     }
 }
@@ -778,7 +792,7 @@ div.rn-carousel-indicator span {
         color: #ef9090;
 
         &:hover > img {
-            background: $mainr;
+            background: $blue;
         }
     }
 
@@ -844,7 +858,7 @@ div.rn-carousel-indicator span {
             height: 100px;
             overflow: hidden;
             position: relative;
-            box-shadow: 0px 0px 83px 11px rgba(156, 16, 16, 0.74);
+            box-shadow: 0px -2px 81px 3px rgb(18, 107, 156);
 
             img {
                 position: absolute;
@@ -944,21 +958,24 @@ div.rn-carousel-indicator span {
 
             a.tab1.selectedTab {
 
-                background: linear-gradient(to right, #F45C43, #EB3349);
+                background: $blue;
             }
 
 
             a.tab2.selectedTab {
 
-                background: linear-gradient(to right, #F45C43, #EB3349);
+                background: $blue;
             }
 
             a.tab3.selectedTab {
 
-                background: linear-gradient(to right, #F45C43, #EB3349);
+                background: $blue;
             }
             a.tab4.selectedTab {
-                background: linear-gradient(to right, #F45C43, #EB3349);
+                background: $blue;
+            }
+            a.tab5.selectedTab {
+                background: $blue;
             }
         }
     }
@@ -983,13 +1000,13 @@ div.rn-carousel-indicator span {
         font-size: 13px;
         border-bottom: 1px solid #eee;
         font-weight: 400;
-        color: #777;
+        color: $grey;
     }
 
     h5 {
         margin: 0 auto;
         background: #e4e4e4;
-        color: #a9a9a9;
+        color: $grey;
         font-weight: 400;
         font-size: 14px;
         padding: 8px 20px;
@@ -1019,6 +1036,7 @@ div.rn-carousel-indicator span {
     h6 {
         margin: 0;
         padding: 10px;
+        margin-bottom: 25px;
     }
 }
 
@@ -1030,10 +1048,27 @@ div.rn-carousel-indicator span {
         li {
             display: inline-block;
             width: 31%;
+            flex: 1;
+            vertical-align: top;
+            max-height: 472px;
             margin: 1%;
+            overflow: hidden;
+            -webkit-transition: all 0.8s ease-in-out;
+            transition: all 0.8s ease-in-out;
+
+            &:hover > img {
+                -webkit-transform: scale(1.1);
+                transform: scale(1.1);
+                -webkit-transition: all 0.8s ease-in-out;
+                transition: all 0.8s ease-in-out;
+            }
             img {
                 flex: 1;
-                vertical-align: top;
+            }
+
+            video {
+                flex: 1;
+                width: 100%;
             }
         }
     }
@@ -1043,28 +1078,42 @@ div.rn-carousel-indicator span {
 $background-color: #EAEDF2;
 $button-color: #5AEED1;
 $button-text-color: #fff;
-$search-height: 50px;
-$search-font-size: 14px;
+$search-height: 33px;
+$search-font-size: 12px;
 .search {
-    box-shadow: 0 20px 10px -10px rgba(200, 200, 200, .5);
     display: inline-block;
+
+    input {
+
+        &:focus {
+            box-shadow: $boxs;
+        }
+
+        &:focus::placeholder {
+            color: transparent;
+        }
+    }
 }
 
 .search__input {
+    min-width: 225px;
     border: 0;
     outline: 0;
-    line-height: $search-height;
-    font-size: $search-font-size;
-    padding: 0 ($search-height - $search-font-size)/2;
+    line-height: 33px;
+    font-size: 12px;
+    background: #f2f2f2;
+    border-radius: 6px 0 0 6px;
+    padding: 0 18px;
     float: left;
 }
 
 .search__button {
-    box-shadow: -10px 0 10px -5px rgba($button-color, .5);
-    color: $button-text-color;
-    background-color: $button-color;
-    width: $search-height;
-    line-height: $search-height;
+    color: #fff;
+    background-color: $blue;
+    width: 40px;
+    height: 33px;
+    line-height: 41px;
+    border-radius: 0 6px 6px 0;
     text-align: center;
     border: 0;
     padding: 0;
@@ -1181,7 +1230,7 @@ $search-font-size: 14px;
                             font-size: 12px;
                             padding-left: 7px;
                             margin-top: 0;
-                            color: $mainr;
+                            color: $blue;
                             font-weight: bold;
                         }
 
@@ -1335,13 +1384,13 @@ $search-font-size: 14px;
 .bookMe {
     position: relative;
     float: right;
-    padding: 25px 35px;
+    padding: 15px 35px;
 
     a {
         color: #fff;
         padding: 5px 15px;
         font-size: 12px;
-        background: rgb(183, 30, 45);
+        background: #185e86;
         font-family: $opens;
         border-radius: 4px;
     }
@@ -1391,11 +1440,11 @@ $search-font-size: 14px;
                             margin-bottom: 20px;
 
                             &:hover > a {
-                                color: $cherry;
+                                color: $blue;
                             }
 
                             a {
-                                color: midnightblue;
+                                color: $grey;
                             }
                         }
                     }
@@ -1496,9 +1545,12 @@ $search-font-size: 14px;
             text-align: center;
             font-weight: normal;
             color: #58bd9c;
+            position: relative;
 
             &:after {
                 content: '+';
+                position: absolute;
+                top: 0;
                 font-size: 20px;
                 color: #58bd9c;
             }
