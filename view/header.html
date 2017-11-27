@@ -1,9 +1,20 @@
 <div class="topMenu">
     <div class="stackMenu"><a href="#" ng-click="toggle = !toggle" ng-class="{'active' : toggle}"><img src="assets/icons/menu.svg"></a></div>
     <div class="menuPost">
-        <div class="search">
-            <input class="search__input" ng-model="searchMain" placeholder="Search" />
-            <button class="search__button"><img src="assets/icons/magnifying-glass.svg"></button>
+        <!--
+        <div class="search"><input class="search__input" ng-model="searchMain" placeholder="Search" />
+<button class="search__button"><img src="assets/icons/magnifying-glass.svg"></button>
+</div>
+-->
+
+        <div class="rightMenu">
+            <ul>
+                <!--                <li><a href="#"><img src="assets/icons/user.svg"></a></li>-->
+
+                <li><a href="#"><img src="assets/icons/inbox.svg"></a>
+                    <span>0</span>
+                </li>
+            </ul>
         </div>
     </div>
 </div>
@@ -27,13 +38,13 @@
 
 <div class="topMenuContent">
     <div class="ov-pa">
-        <div class="rw boxedSmall slow animated" ng-class="{'active' : toggle}">
+        <div class="rw slow animated" ng-class="{'active' : toggle}">
             <ul>
                 <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Projects</a></li>
-                <li><a href="#">How To</a></li>
+                <li><a href="./about">About</a></li>
+                <li><a href="./services">Services</a></li>
+                <li><a href="./project">Projects</a></li>
+                <li><a href="./contact">Contact</a></li>
             </ul>
         </div>
     </div>

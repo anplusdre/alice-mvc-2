@@ -1,3 +1,13 @@
+<div class="clientZone">
+    <h3>client zone</h3>
+</div>
+
+
+<div id="welcomeClient">
+    <h5>Welcome, Dear <em>{{user}}</em></h5>
+</div>
+
+
 <div class="grid display">
     <div class="row left">
         <!-- START DISPLAY -->
@@ -35,7 +45,7 @@
                 <div class="info">
                     <div id="name">{{talent.name}}</div>
                     <div class="button medium">
-                        <a href="#" class="moreBtn" ng-click="goToLogin()">MORE</a>
+                        <a ng-href="./details/{{ talents.indexOf(talent) }}" class="moreBtn">MORE</a>
                     </div>
                 </div>
                 <div class="skills-thumb">
@@ -57,7 +67,6 @@
 
     </div>
 </div>
-
 
 <script>
     $(document).ready(function() {

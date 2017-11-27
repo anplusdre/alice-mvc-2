@@ -1,9 +1,15 @@
-<header class="minified" ng-include src="'view/header-mini.html'"></header>
+<header class="minified">
+    <a href="#" class="back">
+        <div></div>
+        <span>Back to home</span>
+    </a>
+</header>
 
 
 
-
-
+<a href='#' class="bookBtn">
+    <h5>BOOK <em>{{talents[which].name}}</em></h5>
+</a>
 <div ng-controller="detailsController" class="detailsController">
 
     <div class="fulldetails" ng-model="talents">
@@ -32,7 +38,6 @@
 
     </div>
 
-
 </div>
 <div class="modal-wrapper">
     <div class="modal">
@@ -48,16 +53,11 @@
                     <div class="forms">
                         <input type="text" class="name" name="name" placeholder="Full Name">
                         <input type="email" class="email" name="email" placeholder="Email Address">
-                    </div>
-
-                    <div class="forms">
-
-
                         <input type="text" class="company" placeholder="Company Name">
                         <input type="tel" class="tel" placeholder="Phone Number">
-
-
                     </div>
+
+
 
 
                     <h5>Project Details</h5>
@@ -66,6 +66,8 @@
                         <input type="text" class="pname" placeholder="Project Name">
                         <input type="text" class="address" placeholder="Project Location">
                     </div>
+
+
 
                     <div class="dateSelect forms">
                         <p>Project started at</p>
@@ -79,6 +81,37 @@
                         <textarea placeholder="Your Project Description"></textarea>
                     </div>
 
+
+
+                    <h5>Fees (Fixed Price)</h5>
+                    <div class="forms fees">
+
+
+                        <em>Rp</em>
+                        <input type="text" class="fee" placeholder="min. Rp 200.000">
+
+
+                    </div>
+                    <h5>Payment Options</h5>
+                    <label class="payform">
+
+
+                        <input type="radio" class="fee">
+                        <img src="assets/icons/payment/credit-card.svg">
+                        <span>Credit Card</span>
+
+
+                    </label>
+                    <label class="payform">
+
+
+                        <input type="radio" class="fee">
+                        <img src="assets/icons/payment/transfer.svg">
+                        <span>Bank Transfer</span>
+
+
+                    </label>
+
                     <button type="submit" class="creatEvent-btn" name="submit">create</button>
                 </form>
             </div>
@@ -87,7 +120,7 @@
 </div>
 
 
-<section class="scDetails">
+<section class="pages">
     <div class="aside">
         <div class="navigation-side">
 
@@ -119,18 +152,21 @@
     </div>
     <div class="tabbed_info" ng-controller="detailsController">
         <ul class='tabs'>
-            <li><a href='#tab1' class="tab1 selectedTab boxed"><img src="assets/icons/inbox.svg">
+            <li><a href='#tab1' class="tab1 selectedTab box2"><img src="assets/icons/profile.svg">
         <p>Profile</p></a></li>
-            <li><a href='#tab2' class="tab2 boxed"><img src="assets/icons/images.svg">
+            <li><a href='#tab2' class="tab2 box2"><img src="assets/icons/images.svg">
         <p>Photos</p></a></li>
-            <li><a href='#tab3' class="tab3 boxed"><img src="assets/icons/video-player-outline.svg">
+            <li><a href='#tab3' class="tab3 box2"><img src="assets/icons/video-player-outline.svg">
         <p>Videos</p></a></li>
-            <li><a href='#tab4' class="tab4 boxed"><img src="assets/icons/network.svg">
+            <li><a href='#tab4' class="tab4 box2"><img src="assets/icons/network.svg">
         <p>Projects</p></a></li>
             <li>
-                <a href='#tab5' class="tab5 boxed"><img src="assets/icons/date.svg">
+                <a href='#tab5' class="tab5 box2"><img src="assets/icons/date.svg">
                 <p>Availability</p>
             </a>
+            </li>
+
+            <li>
             </li>
         </ul>
 
@@ -140,7 +176,7 @@
                     <table>
                         <tr>
                             <th style="    border-right: 1px solid #ffffff;">
-                                <h5 style="margin:0 auto;font-weight:600;font-size:14px;padding:8px 20px;border-top-left-radius:8px;border-top-right-radius:0;">Biography</h5>
+                                <h5 style="margin:0 auto;font-weight:600;font-size:12px;padding:8px 20px;border-top-left-radius:8px;border-top-right-radius:0;">Biography</h5>
                                 <table>
                                     <tr>
                                         <td>Alias</td>
@@ -171,7 +207,7 @@
                             </th>
 
                             <th style="    border-right: 1px solid #ffffff;">
-                                <h5 style="margin:0 auto;font-weight:600;font-size:14px;padding:8px 20px;border-top-left-radius:0;border-top-right-radius:0;">Body Meassurements</h5>
+                                <h5 style="margin:0 auto;font-weight:600;font-size:12px;padding:8px 20px;border-top-left-radius:0;border-top-right-radius:0;">Body Meassurements</h5>
                                 <table>
                                     <tr>
                                         <td>Height</td>
@@ -202,7 +238,7 @@
                             </th>
 
                             <th>
-                                <h5 style="margin:0 auto;font-weight:600;font-size:14px;padding:8px 20px;border-top-left-radius:0;border-top-right-radius:8px;">Costume Size</h5>
+                                <h5 style="margin:0 auto;font-weight:600;font-size:12px;padding:8px 20px;border-top-left-radius:0;border-top-right-radius:8px;">Costume Size</h5>
                                 <table>
                                     <tr>
                                         <td>Dress</td>
@@ -238,6 +274,8 @@
 
                     </table>
                 </div>
+
+
 
 
                 <div class="pseula">
@@ -279,6 +317,10 @@
             <div id="tab5">
                 <h5>We're sorry, this feature is under development</h5>
             </div>
+
+
+
+
         </div>
     </div>
 
@@ -289,6 +331,9 @@
             <h2>A</h2>
         </a>
     </div>
+
+
+
 
 </section>
 
@@ -354,8 +399,4 @@
     });
 
 </script>
-<script type="text/javascript" src="js/script.js">
-
-
-</script>
-<div ng-include src="'view/footer.html'"></div>
+<script type="text/javascript" src="js/script.js"></script>

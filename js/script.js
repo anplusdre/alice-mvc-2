@@ -61,7 +61,7 @@ $(document).ready(function () {
     navSide.hide();
 
 
-    $('.bookMe').click(function () {
+    $('.bookBtn').click(function () {
         $('.modal-wrapper').toggleClass('open');
         $('.page-wrapper').toggleClass('blur');
         return false;
@@ -71,8 +71,20 @@ $(document).ready(function () {
         $('.modal-wrapper').removeClass('open');
         $('.page-wrapper').removeClass('blur');
         return false;
-    })
+    });
 
+
+    var $items = $('.card');
+    var $btns = $('.nav-unsorted li a').click(function () {
+        if (this.id == 'all') {
+            $items.show().fadeIn(450);
+        } else {
+            var $el = $('.' + this.id).show().fadeIn(450);
+            $items.not($el).hide().fadeOut(450);
+        }
+        $btns.removeClass('active');
+        $(this).addClass('active');
+    });
 
 
 
