@@ -1,15 +1,35 @@
-<div id="loginForm">
-    <div class="key">
-        <input type="text" autocomplete="off" ng-model="username" placeholder="Username">
-    </div>
-    <div class="key">
-        <input type="Password" autocomplete="off" ng-model="password" placeholder="Client Key">
-    </div>
-    <div class="keysubmit">
-        <button ng-click="login()">Submit</button>
-    </div>
+<div class="loginBg"></div>
+<div class="loginSide">
+    <div id="loginForm">
+        <h2>You must Sign In to do that</h2>
+        <p>Please enter your username and Client Key below, if you don't have one you can request <a href="#" style="color: orangered;">here</a></p>
 
+        <div class="key">
+            <h6>* Username</h6>
+            <input type="text" autocomplete="off" ng-model="username" placeholder="Your username">
+        </div>
+        <div class="key">
+            <h6>* Client Key</h6>
+            <input type="Password" autocomplete="off" ng-model="password" placeholder="Client Key" id="pass">
+        </div>
+        <div class="keysubmit">
+            <button id="loginBtn" ng-click="login()">Submit</button>
+        </div>
 
+        <h6 class="forgotPass">Forgot your password? Click <a href="#">here</a></h6>
+
+    </div>
 </div>
 
-<div style="margin-top: 25px;font-size: 13px;">hint : 97DgLUzfE9</div>
+
+<script>
+    $('#pass').bind("enterKey", function(e) {
+        $('#loginBtn').click();
+    });
+    $('#pass').keyup(function(e) {
+        if (e.keyCode == 13) {
+            $(this).trigger("enterKey");
+        }
+    });
+
+</script>

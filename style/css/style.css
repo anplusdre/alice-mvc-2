@@ -33,17 +33,17 @@ html {
 }
 
 /* fallback for old browsers */
-/* line 63, D:/xampp/htdocs/alice/style/scss/basic.scss */
+/* line 64, D:/xampp/htdocs/alice/style/scss/basic.scss */
 .boxb {
   box-shadow: 0px 8px 52px 2px rgba(0, 0, 0, 0.18);
 }
 
-/* line 70, D:/xampp/htdocs/alice/style/scss/basic.scss */
+/* line 71, D:/xampp/htdocs/alice/style/scss/basic.scss */
 .box2 {
   box-shadow: 0 7px 14px rgba(50, 50, 93, 0.1), 0 3px 6px rgba(0, 0, 0, 0.08);
 }
 
-/* line 74, D:/xampp/htdocs/alice/style/scss/basic.scss */
+/* line 75, D:/xampp/htdocs/alice/style/scss/basic.scss */
 ol,
 ul {
   padding: 0;
@@ -51,28 +51,28 @@ ul {
   list-style: none;
 }
 
-/* line 81, D:/xampp/htdocs/alice/style/scss/basic.scss */
+/* line 82, D:/xampp/htdocs/alice/style/scss/basic.scss */
 li {
   display: inline-block;
 }
 
-/* line 85, D:/xampp/htdocs/alice/style/scss/basic.scss */
+/* line 86, D:/xampp/htdocs/alice/style/scss/basic.scss */
 a {
   color: #989898;
   text-decoration: none;
 }
 
-/* line 90, D:/xampp/htdocs/alice/style/scss/basic.scss */
+/* line 91, D:/xampp/htdocs/alice/style/scss/basic.scss */
 input {
   border: 0;
 }
 
-/* line 92, D:/xampp/htdocs/alice/style/scss/basic.scss */
+/* line 93, D:/xampp/htdocs/alice/style/scss/basic.scss */
 input:focus {
   outline: 0;
 }
 
-/* line 97, D:/xampp/htdocs/alice/style/scss/basic.scss */
+/* line 98, D:/xampp/htdocs/alice/style/scss/basic.scss */
 *,
 *:before,
 *:after {
@@ -81,18 +81,18 @@ input:focus {
   box-sizing: border-box;
 }
 
-/* line 105, D:/xampp/htdocs/alice/style/scss/basic.scss */
+/* line 106, D:/xampp/htdocs/alice/style/scss/basic.scss */
 img {
   max-width: 100%;
 }
 
-/* line 109, D:/xampp/htdocs/alice/style/scss/basic.scss */
+/* line 110, D:/xampp/htdocs/alice/style/scss/basic.scss */
 table {
   border-collapse: collapse;
   width: 100%;
 }
 
-/* line 114, D:/xampp/htdocs/alice/style/scss/basic.scss */
+/* line 115, D:/xampp/htdocs/alice/style/scss/basic.scss */
 td,
 th {
   text-align: left;
@@ -100,7 +100,7 @@ th {
   margin: 0;
 }
 
-/* line 121, D:/xampp/htdocs/alice/style/scss/basic.scss */
+/* line 122, D:/xampp/htdocs/alice/style/scss/basic.scss */
 input,
 textarea,
 select,
@@ -108,34 +108,34 @@ button {
   font-family: "Open Sans", sans-serif;
 }
 
-/* line 129, D:/xampp/htdocs/alice/style/scss/basic.scss */
+/* line 130, D:/xampp/htdocs/alice/style/scss/basic.scss */
 button {
   border: 0;
   cursor: pointer;
 }
 
-/* line 132, D:/xampp/htdocs/alice/style/scss/basic.scss */
+/* line 133, D:/xampp/htdocs/alice/style/scss/basic.scss */
 button:focus {
   outline: none;
 }
 
-/* line 137, D:/xampp/htdocs/alice/style/scss/basic.scss */
+/* line 138, D:/xampp/htdocs/alice/style/scss/basic.scss */
 ::-webkit-scrollbar-track {
   background-color: #ddd;
 }
 
-/* line 141, D:/xampp/htdocs/alice/style/scss/basic.scss */
+/* line 142, D:/xampp/htdocs/alice/style/scss/basic.scss */
 ::-webkit-scrollbar {
   width: 4px;
   background-color: #F5F5F5;
 }
 
-/* line 146, D:/xampp/htdocs/alice/style/scss/basic.scss */
+/* line 147, D:/xampp/htdocs/alice/style/scss/basic.scss */
 ::-webkit-scrollbar-thumb {
   background-color: #9ac3c3;
 }
 
-/* line 151, D:/xampp/htdocs/alice/style/scss/basic.scss */
+/* line 152, D:/xampp/htdocs/alice/style/scss/basic.scss */
 .button {
   display: inline-block;
   float: right;
@@ -143,149 +143,149 @@ button:focus {
   top: -15px;
 }
 
-/* line 158, D:/xampp/htdocs/alice/style/scss/basic.scss */
+/* line 159, D:/xampp/htdocs/alice/style/scss/basic.scss */
 .rl-container {
   position: relative;
 }
 
-/* line 162, D:/xampp/htdocs/alice/style/scss/basic.scss */
+/* line 163, D:/xampp/htdocs/alice/style/scss/basic.scss */
 .boxed {
   box-shadow: 0px 11px 83px 3px rgba(0, 0, 0, 0.18);
   -moz-box-sizing: border-box;
 }
 
-/* line 168, D:/xampp/htdocs/alice/style/scss/basic.scss */
+/* line 169, D:/xampp/htdocs/alice/style/scss/basic.scss */
 .boxedSmall {
   box-shadow: 0 1px 1px #66abab;
   -moz-box-sizing: border-box;
 }
 
-/* line 173, D:/xampp/htdocs/alice/style/scss/basic.scss */
+/* line 174, D:/xampp/htdocs/alice/style/scss/basic.scss */
 .boxed.fixed {
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.19);
   -moz-box-sizing: border-box;
 }
 
-/* line 178, D:/xampp/htdocs/alice/style/scss/basic.scss */
+/* line 179, D:/xampp/htdocs/alice/style/scss/basic.scss */
 .bx {
   box-shadow: 0px 8px 52px 2px rgba(0, 0, 0, 0.18);
 }
 
-/* line 182, D:/xampp/htdocs/alice/style/scss/basic.scss */
+/* line 183, D:/xampp/htdocs/alice/style/scss/basic.scss */
 .clear {
   clear: both;
 }
 
-/* line 186, D:/xampp/htdocs/alice/style/scss/basic.scss */
+/* line 187, D:/xampp/htdocs/alice/style/scss/basic.scss */
 .slow {
   transition: all .2s ease-in-out;
 }
 
-/* line 190, D:/xampp/htdocs/alice/style/scss/basic.scss */
+/* line 191, D:/xampp/htdocs/alice/style/scss/basic.scss */
 .row {
   width: 1124px;
   margin: 0 auto;
 }
 
-/* line 195, D:/xampp/htdocs/alice/style/scss/basic.scss */
+/* line 196, D:/xampp/htdocs/alice/style/scss/basic.scss */
 .center {
   text-align: center;
 }
 
-/* line 199, D:/xampp/htdocs/alice/style/scss/basic.scss */
+/* line 200, D:/xampp/htdocs/alice/style/scss/basic.scss */
 .left {
   text-align: left;
 }
 
-/* line 203, D:/xampp/htdocs/alice/style/scss/basic.scss */
+/* line 204, D:/xampp/htdocs/alice/style/scss/basic.scss */
 .spacer.huge {
   height: 20vh;
 }
 
-/* line 207, D:/xampp/htdocs/alice/style/scss/basic.scss */
+/* line 208, D:/xampp/htdocs/alice/style/scss/basic.scss */
 .spacer.big {
   height: 10vh;
   position: relative;
 }
 
-/* line 212, D:/xampp/htdocs/alice/style/scss/basic.scss */
+/* line 213, D:/xampp/htdocs/alice/style/scss/basic.scss */
 .gr-2 {
   width: 50%;
 }
 
-/* line 216, D:/xampp/htdocs/alice/style/scss/basic.scss */
+/* line 217, D:/xampp/htdocs/alice/style/scss/basic.scss */
 .gr-2-5 {
   width: 55%;
   min-height: 1px;
 }
 
-/* line 221, D:/xampp/htdocs/alice/style/scss/basic.scss */
+/* line 222, D:/xampp/htdocs/alice/style/scss/basic.scss */
 .gr-2-4 {
   width: 40%;
 }
 
-/* line 225, D:/xampp/htdocs/alice/style/scss/basic.scss */
+/* line 226, D:/xampp/htdocs/alice/style/scss/basic.scss */
 .gr-3 {
   width: 33%;
   min-height: 1px;
 }
 
-/* line 231, D:/xampp/htdocs/alice/style/scss/basic.scss */
+/* line 232, D:/xampp/htdocs/alice/style/scss/basic.scss */
 .gr-3-5 {
   width: 30%;
   min-height: 1px;
 }
 
-/* line 236, D:/xampp/htdocs/alice/style/scss/basic.scss */
+/* line 237, D:/xampp/htdocs/alice/style/scss/basic.scss */
 .gr-4 {
   width: 25%;
   min-height: 1px;
 }
 
-/* line 241, D:/xampp/htdocs/alice/style/scss/basic.scss */
+/* line 242, D:/xampp/htdocs/alice/style/scss/basic.scss */
 .gr-5 {
   width: 20%;
   min-height: 1px;
 }
 
-/* line 246, D:/xampp/htdocs/alice/style/scss/basic.scss */
+/* line 247, D:/xampp/htdocs/alice/style/scss/basic.scss */
 .gr-10 {
   width: 10%;
   min-height: 1px;
 }
 
-/* line 251, D:/xampp/htdocs/alice/style/scss/basic.scss */
+/* line 252, D:/xampp/htdocs/alice/style/scss/basic.scss */
 .talent-container {
   width: 100%;
   margin: 0 auto;
   text-align: center;
 }
 
-/* line 257, D:/xampp/htdocs/alice/style/scss/basic.scss */
+/* line 258, D:/xampp/htdocs/alice/style/scss/basic.scss */
 .container {
   width: 980px;
   margin: 0 auto;
   position: relative;
 }
 
-/* line 263, D:/xampp/htdocs/alice/style/scss/basic.scss */
+/* line 264, D:/xampp/htdocs/alice/style/scss/basic.scss */
 .clearfix:before,
 .clearfix:after {
   content: "";
   display: table;
 }
 
-/* line 269, D:/xampp/htdocs/alice/style/scss/basic.scss */
+/* line 270, D:/xampp/htdocs/alice/style/scss/basic.scss */
 .clearfix:after {
   clear: both;
 }
 
-/* line 273, D:/xampp/htdocs/alice/style/scss/basic.scss */
+/* line 274, D:/xampp/htdocs/alice/style/scss/basic.scss */
 .clearfix {
   zoom: 1;
 }
 
-/* line 277, D:/xampp/htdocs/alice/style/scss/basic.scss */
+/* line 278, D:/xampp/htdocs/alice/style/scss/basic.scss */
 .relative {
   position: relative !important;
 }
@@ -2432,50 +2432,111 @@ div.rn-carousel-indicator span:nth-child(4n) {
 }
 
 /* line 1898, D:/xampp/htdocs/alice/style/scss/style.scss */
-#loginForm {
-  position: absolute;
-  top: 35%;
-  width: 500px;
+.loginSide {
+  height: 100vh;
+  position: relative;
+  width: 880px;
+  display: inline-block;
+  background: #fff;
+  z-index: 3;
+}
+
+/* line 1906, D:/xampp/htdocs/alice/style/scss/style.scss */
+.loginSide #loginForm {
+  position: relative;
+  padding: 50px;
+  top: 50%;
   left: 50%;
+  width: 500px;
+  z-index: 3;
+  border-radius: 8px;
   transform: translate(-50%, -50%);
 }
 
-/* line 1905, D:/xampp/htdocs/alice/style/scss/style.scss */
-#loginForm .key {
-  height: 33px;
-  border-bottom: 1px solid #000000;
+/* line 1916, D:/xampp/htdocs/alice/style/scss/style.scss */
+.loginSide #loginForm .forgotPass {
+  position: absolute;
+  bottom: 34px;
+  right: 53px;
+  color: #989898;
+  font-size: 10px;
+}
+
+/* line 1923, D:/xampp/htdocs/alice/style/scss/style.scss */
+.loginSide #loginForm .forgotPass a {
+  color: #EB3349;
+  text-decoration: underline;
+}
+
+/* line 1928, D:/xampp/htdocs/alice/style/scss/style.scss */
+.loginSide #loginForm h2 {
+  margin-bottom: 0;
+  font-size: 30px;
+}
+
+/* line 1932, D:/xampp/htdocs/alice/style/scss/style.scss */
+.loginSide #loginForm p {
+  margin: 8px auto;
+  font-size: 11px;
+  margin-bottom: 25px;
+}
+
+/* line 1938, D:/xampp/htdocs/alice/style/scss/style.scss */
+.loginSide #loginForm .key {
   width: 100%;
-  margin: 10px 0;
+  margin-bottom: 25px;
   display: block;
 }
 
-/* line 1912, D:/xampp/htdocs/alice/style/scss/style.scss */
-#loginForm .key input {
+/* line 1943, D:/xampp/htdocs/alice/style/scss/style.scss */
+.loginSide #loginForm .key h6 {
+  margin: 0 auto;
+  margin-bottom: 5px;
+  color: #0093e5;
+}
+
+/* line 1949, D:/xampp/htdocs/alice/style/scss/style.scss */
+.loginSide #loginForm .key input {
   width: 100%;
   background: #fff;
   color: #000;
+  border: 1px solid #ddd;
   outline: 0;
-  height: 33px;
+  padding: 10px 0;
+  border-radius: 4px;
   padding-left: 15px;
 }
 
-/* line 1920, D:/xampp/htdocs/alice/style/scss/style.scss */
-#loginForm .key input::placeholder {
-  color: #000;
+/* line 1959, D:/xampp/htdocs/alice/style/scss/style.scss */
+.loginSide #loginForm .key input::placeholder {
+  color: #ccc;
 }
 
-/* line 1926, D:/xampp/htdocs/alice/style/scss/style.scss */
-#loginForm .keysubmit {
+/* line 1965, D:/xampp/htdocs/alice/style/scss/style.scss */
+.loginSide #loginForm .keysubmit {
   height: 33px;
 }
 
-/* line 1929, D:/xampp/htdocs/alice/style/scss/style.scss */
-#loginForm .keysubmit button {
-  height: 33px;
-  text-transform: lowercase;
-  padding: 0 15px;
-  background: #000;
+/* line 1968, D:/xampp/htdocs/alice/style/scss/style.scss */
+.loginSide #loginForm .keysubmit button {
+  height: 35px;
+  padding: 0px 30px;
+  background: #0093e5;
   color: #fff;
+  border-radius: 4px;
+  box-shadow: 0 7px 14px rgba(50, 50, 93, 0.1), 0 3px 6px rgba(0, 0, 0, 0.08);
+}
+
+/* line 1980, D:/xampp/htdocs/alice/style/scss/style.scss */
+.loginBg {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  z-index: 1;
+  background: url(../../assets/images/log.jpg) no-repeat;
+  background-size: 800px;
+  background-position-x: 650px;
+  background-position-y: -200px;
 }
 
 /*# sourceMappingURL=../css/style.map */
