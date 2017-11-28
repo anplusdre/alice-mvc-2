@@ -183,7 +183,7 @@ button:focus {
 
 /* line 191, D:/xampp/htdocs/alice/style/scss/basic.scss */
 .row {
-  width: 1124px;
+  width: 1200px;
   margin: 0 auto;
 }
 
@@ -256,14 +256,14 @@ button:focus {
 
 /* line 252, D:/xampp/htdocs/alice/style/scss/basic.scss */
 .talent-container {
-  width: 100%;
+  max-width: 1200px;
   margin: 0 auto;
   text-align: center;
 }
 
 /* line 258, D:/xampp/htdocs/alice/style/scss/basic.scss */
 .container {
-  width: 980px;
+  width: 1200px;
   margin: 0 auto;
   position: relative;
 }

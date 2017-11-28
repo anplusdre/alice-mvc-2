@@ -7,6 +7,7 @@ if(!isset($_POST)) die();
 session_start();
 $response = [];
 $con = mysqli_connect('localhost', 'root', '', 'login');
+//$con = mysqli_connect('localhost:3306', 'lizw8739_andre', '@Defalt123', 'lizw8739_agent');
 $username = mysqli_real_escape_string($con, $_POST['username']);
 $password = mysqli_real_escape_string($con, $_POST['password']);
 $query = "SELECT * FROM `users` WHERE username='$username' AND password='$password'";

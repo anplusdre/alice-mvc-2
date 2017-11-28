@@ -1,0 +1,33 @@
+<div class="userMenu">
+
+    <div class="menuPost">
+        <!--
+        <div class="search"><input class="search__input" ng-model="searchMain" placeholder="Search" />
+<button class="search__button"><img src="assets/icons/magnifying-glass.svg"></button>
+</div>
+-->
+
+        <div class="rightMenu">
+            <ul>
+                <!--                <li><a href="#"><img src="assets/icons/user.svg"></a></li>-->
+
+                <li>
+                    <div id="welcomeClient">
+                        <h5>Welcome, Dear <em>{{user}}</em></h5>
+                    </div>
+                </li>
+                <li><a href="#" ng-click="showChild = !showChild"><img src="assets/icons/gear-big-shape.svg"></a>
+                    <ul class="userset" ng-show="showChild">
+                        <li><a href="#">My Projects</a></li>
+                        <li><a href="#">How to</a></li>
+                        <li><a href="./logout">Logout</a></li>
+                    </ul>
+                </li>
+                <li><a href="#"><img src="assets/icons/inbox.svg"></a>
+                    <span>0</span>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+</div>

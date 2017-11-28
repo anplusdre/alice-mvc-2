@@ -1,13 +1,3 @@
-<div class="clientZone">
-    <h3>client zone</h3>
-</div>
-
-
-<div id="welcomeClient">
-    <h5>Welcome, Dear <em>{{user}}</em></h5>
-</div>
-
-
 <div class="grid display">
     <div class="row left">
         <!-- START DISPLAY -->
@@ -67,20 +57,4 @@
 
     </div>
 </div>
-
-<script>
-    $(document).ready(function() {
-        var $items = $('.card');
-        var $btns = $('.nav-unsorted li a').click(function() {
-            if (this.id == 'all') {
-                $items.show().fadeIn(450);
-            } else {
-                var $el = $('.' + this.id).show().fadeIn(450);
-                $items.not($el).hide().fadeOut(450);
-            }
-            $btns.removeClass('active');
-            $(this).addClass('active');
-        });
-    });
-
-</script>
+<script type="text/javascript" src="js/script.js"></script>

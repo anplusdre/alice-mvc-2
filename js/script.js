@@ -75,7 +75,7 @@ $(document).ready(function () {
 
 
     var $items = $('.card');
-    var $btns = $('.nav-unsorted li a').click(function () {
+    var $btns = $('.nav-unsorted li a').click(function (e) {
         if (this.id == 'all') {
             $items.show().fadeIn(450);
         } else {
@@ -84,6 +84,7 @@ $(document).ready(function () {
         }
         $btns.removeClass('active');
         $(this).addClass('active');
+        e.preventDefault();
     });
 
 

@@ -1,5 +1,23 @@
-<header ng-include src="'view/header.html'"></header>
-<div ng-include src="'view/nav.html'"></div>
+<header>
+    <div class="container">
+        <div class="userMenu">
+            <a href="#" class="inboxBtn"><img src="assets/icons/inbox.svg"></a>
+            <a href="#" class="jobBtn">
+                <h5>FIND JOB</h5>
+            </a>
+            <a href="#" class="loginBtn" ng-click="goToLogin()">
+                <h5>LOGIN</h5>
+            </a>
+        </div>
+        <div class="logo">
+            <a href="index.php"><img src="assets/logo.svg"></a>
+        </div>
+    </div>
+</header>
+
+
+<div ng-include src="'view/nav.html'">
+</div>
 <div ng-include src="'view/home.html'"></div>
 <div class="spacer huge"></div>
 <div ng-include src="'view/footer.html'"></div>

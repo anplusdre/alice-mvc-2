@@ -57,21 +57,4 @@
 
     </div>
 </div>
-
-
-<script>
-    $(document).ready(function() {
-        var $items = $('.card');
-        var $btns = $('.nav-unsorted li a').click(function() {
-            if (this.id == 'all') {
-                $items.show().fadeIn(450);
-            } else {
-                var $el = $('.' + this.id).show().fadeIn(450);
-                $items.not($el).hide().fadeOut(450);
-            }
-            $btns.removeClass('active');
-            $(this).addClass('active');
-        });
-    });
-
-</script>
+<script type="text/javascript" src="js/script.js"></script>

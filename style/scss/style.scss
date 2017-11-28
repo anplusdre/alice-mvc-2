@@ -85,29 +85,96 @@ header.minified {
     }
 }
 
+
+
+.navigation-mobile {
+    display: none;
+    position: absolute;
+    background: #FFF;
+    padding: 0 30px;
+    left: 50%;
+    border-radius: 26px;
+    top: 50%;
+    transform: translate(-50%, 0);
+    margin-top: -26px;
+    z-index: 2;
+
+    .mobile-nav-drop {
+        font-size: 20px;
+        letter-spacing: 5px;
+        position: relative;
+        top: 15px;
+        background: #fff;
+        padding: 5px 20px;
+        box-shadow: 0 7px 14px rgba(50, 50, 93, 0.1), 0 3px 6px rgba(0, 0, 0, 0.08);
+        font-family: $bebas;
+    }
+    ul {
+        display: none;
+        li {
+            padding-left: 35px;
+            display: block;
+            a {
+                display: block;
+                padding: 15px 0;
+                font-family: $font;
+                color: $grey;
+                font-size: 3.2vw;
+                position: relative;
+            }
+            a.active {
+                color: $blue;
+                font-weight: bold;
+            }
+            a.active:before {
+                content: " ";
+                display: inline-block;
+                width: 5px;
+                height: 5px;
+                border-radius: 50%;
+                background-color: #EB3349;
+                vertical-align: middle;
+                top: 50%;
+                transform: translate(-50%, -50%);
+                left: -10px;
+                position: absolute;
+            }
+        }
+        li:first-child {
+            padding-left: 0;
+        }
+    }
+}
+
 .stackMenu {
     display: inline;
-    padding-left: 80px;
+    position: relative;
+    top: 13px;
     a {
         height: 45px;
         width: 45px;
         border-radius: 100%;
-        display: inline-block;
+        display: inline;
         img {
             width: 22px;
             vertical-align: middle;
-            top: 15px;
-            left: 10px;
             position: relative;
         }
     }
 }
 
 .topMenu {
-    margin: 0 auto;
+    position: absolute;
+    padding: 15px 0;
+    top: 0;
+    left: 50px;
+}
+
+.userMenu {
     position: relative;
     padding: 15px 0;
-    padding-right: 80px;
+    top: 0;
+
     .menuPost {
         float: right;
 
@@ -115,15 +182,19 @@ header.minified {
             float: right;
             position: relative;
             top: 10px;
+            right: 30px;
             ul {
 
                 li {
                     position: relative;
+                    display: inline-block;
+                    margin-left: 5px;
 
                     a {
 
                         padding: 0;
                         width: 35px;
+                        display: block;
 
                         &:hover {
                             background: none;
@@ -145,6 +216,31 @@ header.minified {
                         font-size: 10px;
                         text-align: center;
                         border-radius: 100%;
+                    }
+                }
+            }
+
+            .userset {
+                position: absolute;
+                left: 50%;
+                top: calc(100% + 10px);
+                padding: 15px 10px;
+                width: 120px;
+                min-height: 100px;
+                border-radius: 6px;
+                background: #eee;
+                transform: translate(-50%, 0);
+                transition: $smooth;
+
+                li {
+                    display: block;
+                    margin-bottom: 15px;
+
+                    a {
+                        width: 100%;
+                        text-align: left;
+                        font-size: 10.5px;
+                        padding-left: 15px;
                     }
                 }
             }
@@ -185,13 +281,11 @@ header.minified {
 .topMenuContent {
     position: relative;
     float: left;
-    left: 130px;
-    top: -60px;
+    top: 13px;
     overflow: hidden;
     .rw {
 
         position: relative;
-        transform: translateX(-150%);
         text-align: center;
         border-radius: 12px;
         background: #fff;
@@ -256,7 +350,7 @@ header.minified {
         flex: 1;
         display: inline-block;
         position: relative;
-        margin: 0 20px;
+        margin: 0 35px;
         border-radius: 6px;
         margin-bottom: 5em;
         .media {
@@ -310,7 +404,7 @@ header.minified {
             background: $blue;
             color: #fff;
             border-radius: 4px;
-            box-shadow: 0 1px 5px rgba(4, 42, 117, 0.33);
+            box-shadow: 0 1px 5px rgba(66, 66, 66, 0.33);
             -moz-box-sizing: border-box;
         }
         .actionlist {
@@ -465,12 +559,22 @@ header.minified {
     text-align: center;
     position: relative;
     width: 400px;
+    line-height: 250px;
     margin: 0 auto;
+    padding-bottom: 0;
     a {
         img {
             height: 100px;
             transform: translateZ(40px)
         }
+    }
+}
+
+.loginLogo {
+    text-align: left;
+    padding: 20px 55px;
+    img {
+        height: 50px;
     }
 }
 
@@ -521,6 +625,7 @@ header.minified {
     .lg-footer {
         display: inline-block;
         width: auto;
+        line-height: unset;
         img {
             height: 100px;
             left: 0;
@@ -1788,7 +1893,7 @@ $search-font-size: 12px;
 
     .Fmenu {
         transition: all .2s ease-in-out;
-        width: 980px;
+        width: 1200px;
         margin: 0 auto;
         font-family: $font;
 
@@ -1862,9 +1967,9 @@ $search-font-size: 12px;
 }
 
 #welcomeClient {
-    position: absolute;
-    top: 27px;
-    right: 140px;
+    position: relative;
+    top: -5px;
+    margin-right: 10px;
     h5 {
         margin: 0 auto;
         font-size: 11px;
@@ -1987,4 +2092,60 @@ $search-font-size: 12px;
     background-size: 800px;
     background-position-x: 650px;
     background-position-y: -200px;
+}
+
+.loginBtn {
+    background: $blue;
+    position: relative;
+    margin-right: 15px;
+    right: 50px;
+    top: 0;
+    float: right;
+    height: 22px;
+    z-index: 5;
+    @extend .bookBtn;
+
+    h5 {
+        color: #fff;
+    }
+}
+
+.jobBtn {
+    background: #fff;
+    padding: 0 10px;
+    transition: $smooth;
+    @extend .loginBtn;
+    h5 {
+
+        color: $blue;
+    }
+    &:hover {
+        box-shadow: 0 1px 14px rgba(50, 50, 93, 0.1), 0 1px 6px rgba(0, 0, 0, 0.08);
+    }
+}
+
+.inboxBtn {
+    margin-right: 0;
+    padding: 0 10px;
+    @extend .jobBtn;
+
+    img {
+        height: 20px;
+    }
+}
+
+.home {
+    position: absolute;
+    top: 20px;
+    left: 50px;
+
+    h4 {
+        font-family: $bebas;
+        color: #000;
+        &:before {
+            content: "←";
+            margin-right: 10px;
+            font-size: 20px;
+        }
+    }
 }

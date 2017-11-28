@@ -34,6 +34,14 @@
                 templateUrl: 'view/login.html',
                 controller: 'loginCtrl'
             }).
+            when('/logout', {
+                resolve: {
+                    deadResolve: function ($location, user) {
+                        user.clearData();
+                        $location.path('/');
+                    }
+                }
+            }).
             when('/clientzone', {
                 resolve: {
                     check: function ($location, user) {
@@ -51,6 +59,7 @@
     }])
 
         .controller('AliceController', ['$scope', '$http', '$location', function ($scope, $http, $location) {
+
             $scope.quantity = 3;
             //            this is where the JSON from api.php is consumed
             $http.get('api.php').
@@ -112,9 +121,6 @@
         var username;
         var loggedin = false;
         var id;
-        this.setName = function (name) {
-            username = name;
-        };
 
         this.getName = function () {
             return username;
@@ -130,11 +136,31 @@
         };
 
         this.isUserLoggedIn = function () {
+            if (!!localStorage.getItem('login')) {
+                loggedin = true;
+                var data = JSON.parse(localStorage.getItem('login'));
+                username = data.username;
+                id = data.id;
+            }
             return loggedin;
         };
-        this.userLoggedIn = function () {
+
+        this.saveData = function (data) {
+            username = data.user;
+            id = data.id;
             loggedin = true;
+            localStorage.setItem('login', JSON.stringify({
+                username: username,
+                id: id
+            }));
         };
+
+        this.clearData = function () {
+            localStorage.removeItem('login');
+            username = "";
+            id = "";
+            loggedin = false;
+        }
 
     });
 
@@ -151,8 +177,7 @@
                 data: 'username=' + username + '&password=' + password
             }).then(function (res) {
                 if (res.data.status == 'loggedin') {
-                    user.userLoggedIn();
-                    user.setName(res.data.user);
+                    user.saveData(res.data);
                     $location.path('/clientzone');
                 } else {
                     alert('Wrong Client Key');
@@ -165,11 +190,12 @@
     alice.controller("clientCtrl", ['$scope', '$http', '$routeParams', 'user', function ($scope, $http, $routeParams, user) {
 
 
-        $scope.user = user.getName();$http.get('api.php')
-    .then(function (res) {
-        $scope.talents = res.data.talents;
-        $scope.which = $routeParams.userID;
-    });
+        $scope.user = user.getName();
+        $http.get('api.php')
+            .then(function (res) {
+                $scope.talents = res.data.talents;
+                $scope.which = $routeParams.userID;
+            });
     }]);
 
 

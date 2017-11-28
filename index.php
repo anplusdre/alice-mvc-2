@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 
 <html lang="en">
 
@@ -8,9 +8,11 @@
     <title>Project Alice Agency</title>
     <meta name="SPG Agency, Usher Agency, Talent Agency" content="Best Agency in Jakarta">
     <meta name="AndrePR" content="Alcie Agency">
+    <meta name="viewport" content="width=device-width">
 
     <base href="/alice/">
     <link rel="stylesheet" href="style/css/style.css">
+    <link rel="stylesheet" href="style/css/query.css">
     <link rel="stylesheet" href="lib/lib.css">
     <link rel="stylesheet" href="lib/angular-carousel.css">
 

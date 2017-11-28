@@ -4,6 +4,7 @@
 header("Content-Type: application/json; charset=UTF-8");
 
 $conn = new mysqli("localhost", "root", "", "application");
+//$conn = new mysqli("localhost:3306", "lizw8739_andre", "@Defalt123", "lizw8739_agent");
 
 $result = $conn->query("SELECT * FROM talents");
 
