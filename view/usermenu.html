@@ -7,7 +7,7 @@
 </div>
 -->
 
-        <div class="rightMenu">
+        <div class="rightMenu" ng-controller="AliceController">
             <ul>
                 <!--                <li><a href="#"><img src="assets/icons/user.svg"></a></li>-->
 
@@ -16,17 +16,9 @@
                         <h5>Welcome, Dear <em>{{user}}</em></h5>
                     </div>
                 </li>
-                <li><a href="#" ng-click="showChild = !showChild"><img src="assets/icons/gear-big-shape.svg"></a>
-                    <ul class="userset" ng-show="showChild">
-                        <li><a href="#">My Projects</a></li>
-                        <li><a href="#">How to</a></li>
-                        <li><a href="./logout">Logout</a></li>
-                    </ul>
+                <li><a href="#"><img src="assets/icons/gear-big-shape.svg"></a>
                 </li>
-                <li><a href="#"><img src="assets/icons/inbox.svg"></a>
-                    <span>0</span>
-                </li>
-
+                <li ng-include src="'view/cart.html'"></li>
             </ul>
         </div>
     </div>

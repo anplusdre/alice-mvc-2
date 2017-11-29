@@ -8,6 +8,7 @@
     <title>Project Alice Agency</title>
     <meta name="SPG Agency, Usher Agency, Talent Agency" content="Best Agency in Jakarta">
     <meta name="AndrePR" content="Alcie Agency">
+    <meta name="AndrePR" content="Alcie Agency">
     <meta name="viewport" content="width=device-width">
 
     <base href="/alice/">
@@ -34,6 +35,7 @@
 
     <script src="js/libs.js"></script>
     <script src="js/lib/angular.js"></script>
+    <script src="js/lib/cart.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.9/angular-touch.min.js"></script>
     <script src="js/lib/angular-route.min.js"></script>
     <script src="js/lib/angular-carousel.js"></script>

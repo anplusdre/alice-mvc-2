@@ -221,26 +221,25 @@ header.minified {
             }
 
             .userset {
+
                 position: absolute;
-                left: 50%;
+                right: 0;
+                padding: 10px 0;
                 top: calc(100% + 10px);
-                padding: 15px 10px;
-                width: 120px;
-                min-height: 100px;
-                border-radius: 6px;
-                background: #eee;
-                transform: translate(-50%, 0);
+                border-radius: 4px;
+                background: #f3f3f3;
+                box-shadow: 0 7px 14px rgba(50, 50, 93, 0.1), 0 3px 6px rgba(0, 0, 0, 0.08);
                 transition: $smooth;
 
                 li {
                     display: block;
-                    margin-bottom: 15px;
+                    margin-left: 0;
 
                     a {
-                        width: 100%;
+                        width: max-content;
                         text-align: left;
                         font-size: 10.5px;
-                        padding-left: 15px;
+                        padding: 10px 25px;
                     }
                 }
             }

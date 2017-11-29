@@ -30,6 +30,11 @@
                 templateUrl: 'view/contact.html',
                 controller: 'prjController'
             }).
+
+            when('/cart', {
+                templateUrl: 'view/cart.html',
+                controller: 'CartController'
+            }).
             when('/login', {
                 templateUrl: 'view/login.html',
                 controller: 'loginCtrl'
@@ -59,7 +64,6 @@
     }])
 
         .controller('AliceController', ['$scope', '$http', '$location', function ($scope, $http, $location) {
-
             $scope.quantity = 3;
             //            this is where the JSON from api.php is consumed
             $http.get('api.php').
@@ -67,6 +71,7 @@
                 // here the data from the api is assigned to a variable named users
                 $scope.talents = res.data.talents;
                 $scope.open = false;
+                // cart
 
             });
             $scope.goToLogin = function () {
@@ -115,7 +120,9 @@
                 $scope.which = $routeParams.userID;
             })
     }]);
-
+    alice.controller('CartController', function ($scope, productService) {
+        $scope.products = productService.getProducts();
+    });
 
     alice.service('user', function () {
         var username;

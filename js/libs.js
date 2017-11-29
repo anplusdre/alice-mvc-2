@@ -2972,7 +2972,6 @@
             type: "GET",
             dataType: "script",
             cache: !0,
-            async: !1,
             global: !1,
             "throws": !0
         })
@@ -3234,5 +3233,3 @@
         return a.$ === r && (a.$ = Wb), b && a.jQuery === r && (a.jQuery = Vb), r
     }, b || (a.jQuery = a.$ = r), r
 });
-
-    
