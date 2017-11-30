@@ -7,7 +7,7 @@
 </div>
 -->
 
-        <div class="rightMenu" ng-controller="AliceController">
+        <div class="rightMenu">
             <ul>
                 <!--                <li><a href="#"><img src="assets/icons/user.svg"></a></li>-->
 
@@ -16,9 +16,29 @@
                         <h5>Welcome, Dear <em>{{user}}</em></h5>
                     </div>
                 </li>
-                <li><a href="#"><img src="assets/icons/gear-big-shape.svg"></a>
+                <li><a href="#"><img src="assets/icons/gear-big-shape.svg">
+                <label>Options</label></a>
                 </li>
-                <li ng-include src="'view/cart.html'"></li>
+                <li>
+                    <div>
+                        <span>0</span>
+                        <span ng-repeat="c in cart">{{totalItem(0)}}</span>
+                        <a href="#"><img src="assets/icons/inbox.svg">
+                        <label>Booking</label>
+                        </a>
+
+
+                        <ul class="userset" ng-show="cart.length !== 0">
+                            <li ng-repeat="c in cart">
+                                <h6>{{c.name}}
+                                    <!--                                    <p ng-show="cart.length !== 0">({{c.count}})</p>-->
+                                </h6>
+                                <input class="btn btn-danger" type="button" ng-click="removeItemCart(c)" value="x" />
+                            </li>
+                            <button class="bookNow">Book Now</button>
+                        </ul>
+                    </div>
+                </li>
             </ul>
         </div>
     </div>

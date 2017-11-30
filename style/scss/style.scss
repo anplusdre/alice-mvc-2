@@ -203,6 +203,11 @@ header.minified {
                         img {
                             height: 20px;
                         }
+
+                        &:hover > label {
+
+                            opacity: 1;
+                        }
                     }
 
                     span {
@@ -217,6 +222,18 @@ header.minified {
                         text-align: center;
                         border-radius: 100%;
                     }
+
+                    label {
+                        opacity: 0;
+                        position: absolute;
+                        font-size: 9px;
+                        top: calc(100% + 3px);
+                        text-align: center;
+                        width: 70px;
+                        color: $grey;
+                        left: -50%;
+                        transition: $smooth;
+                    }
                 }
             }
 
@@ -224,16 +241,44 @@ header.minified {
 
                 position: absolute;
                 right: 0;
-                padding: 10px 0;
                 top: calc(100% + 10px);
                 border-radius: 4px;
                 background: #f3f3f3;
                 box-shadow: 0 7px 14px rgba(50, 50, 93, 0.1), 0 3px 6px rgba(0, 0, 0, 0.08);
                 transition: $smooth;
 
+                .bookNow {
+                    display: block;
+                    bottom: -25px;
+                    border-bottom-left-radius: 4px;
+                    border-bottom-right-radius: 4px;
+                    height: 24px;
+                    text-transform: uppercase;
+                    font-weight: bold;
+                    color: #fff;
+                    width: 100%;
+                    background: #0093e5;
+                    position: absolute;
+                    font-size: 10px;
+                }
+
                 li {
                     display: block;
+                    position: relative;
                     margin-left: 0;
+                    padding: 10px 0;
+                    min-width: 130px;
+
+                    h6 {
+                        margin: auto;
+                        display: block;
+                        padding-left: 10px;
+
+                        p {
+                            margin: 0;
+                            display: inline;
+                        }
+                    }
 
                     a {
                         width: max-content;
@@ -241,6 +286,20 @@ header.minified {
                         font-size: 10.5px;
                         padding: 10px 25px;
                     }
+
+                    input {
+                        display: inline-block;
+                        position: absolute;
+                        border-radius: 100%;
+                        right: 5px;
+                        color: orangered;
+                        font-weight: bold;
+                        cursor: pointer;
+                        top: 5px;
+                        background: none;
+                    }
+
+
                 }
             }
         }
@@ -416,7 +475,8 @@ header.minified {
                 right: 12px;
                 line-height: 31px;
 
-                a {
+                button {
+                    background: none;
                     &:hover > svg path {
                         fill: #5fba7d;
                     }
@@ -913,7 +973,7 @@ div.rn-carousel-indicator span {
 
     a {
         display: block;
-        font-size: 12px;
+        font-size: 11px;
         padding: 0px 4px;
         line-height: 18px;
         border-radius: 3px;
@@ -2043,6 +2103,7 @@ $search-font-size: 12px;
             width: 100%;
             margin-bottom: 25px;
             display: block;
+            position: relative;
 
             h6 {
                 margin: 0 auto;
@@ -2063,6 +2124,28 @@ $search-font-size: 12px;
                 &::placeholder {
                     color: #ccc;
                 }
+            }
+
+            #invalid {
+                position: absolute;
+                width: 100%;
+                color: orangered;
+                text-align: right;
+                padding: 5px;
+                font-size: 11px;
+            }
+
+            #invaliduser {
+                top: 0;
+                position: absolute;
+                width: 100%;
+                color: orangered;
+                text-align: right;
+                font-size: 11px;
+            }
+
+            .invalidpass {
+                border: 1px solid orangered;
             }
         }
 

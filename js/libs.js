@@ -1580,6 +1580,7 @@
         global: {},
         add: function (a, b, c, d, e) {
             var f, g, h, i, j, k, l, m, n, o, p, q = W.get(a);
+
             if (q) {
                 c.handler && (f = c, c = f.handler, e = f.selector), e && r.find.matchesSelector(ra, e), c.guid || (c.guid = r.guid++), (i = q.events) || (i = q.events = {}), (g = q.handle) || (g = q.handle = function (b) {
                     return "undefined" != typeof r && r.event.triggered !== b.type ? r.event.dispatch.apply(a, arguments) : void 0

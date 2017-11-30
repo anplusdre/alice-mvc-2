@@ -16,11 +16,13 @@
 
         <div class="key">
             <h6>* Username</h6>
-            <input type="text" autocomplete="off" ng-model="username" placeholder="Your username">
+            <div id="invaliduser"></div>
+            <input type="text" autocomplete="off" ng-model="username" placeholder="Your username" id="users">
         </div>
         <div class="key">
             <h6>* Client Key</h6>
             <input type="Password" autocomplete="off" ng-model="password" placeholder="Client Key" id="pass">
+            <div id="invalid"></div>
         </div>
         <div class="keysubmit">
             <button id="loginBtn" ng-click="login()">Submit</button>
