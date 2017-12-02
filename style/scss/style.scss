@@ -2231,3 +2231,281 @@ $search-font-size: 12px;
         }
     }
 }
+
+.empty-event {
+    width: 100%;
+    text-align: center;
+    padding: 25px 0;
+
+    h4 {
+        font-size: 15px;
+        font-weight: normal;
+    }
+
+    button {
+        background: $blue;
+        color: #fff;
+        border-radius: 4px;
+        padding: 5px 25px;
+        text-transform: uppercase;
+    }
+}
+
+
+.bookingLeft {
+    width: 100%;
+    display: inline-block;
+    position: relative;
+    margin-top: 30px;
+    background: #fff;
+    padding: 15px 25px;
+
+    border-radius: 8px;
+    ul {
+        display: flex;
+
+        li {
+
+            display: flex;
+            flex: 1;
+
+            input {
+                cursor: pointer;
+                height: 20px;
+                width: 20px;
+                background: orangered;
+                line-height: 13px;
+                color: #fff;
+                padding: 0;
+            }
+        }
+    }
+}
+
+
+.bookingRight {
+    width: 100%;
+    display: inline-block;
+    position: relative;
+    margin-top: 30px;
+
+    ul {
+        display: flex;
+        margin-bottom: 25px;
+
+        li {
+            flex: 1;
+
+            h4 {
+                margin: auto;
+                padding: 0 5px;
+                font-size: 10px;
+                color: orangered;
+                margin-bottom: 10px;
+                font-family: $bold;
+            }
+
+            a {
+                height: 34px;
+                background: #e8e8e8;
+                font-size: 13px;
+                display: block;
+                width: calc(100% - 20px);
+                padding: 9px 15px;
+                position: relative;
+
+                &:after {
+                    content: "edit";
+                    font-size: 9px;
+                    color: $blue;
+                    right: 0;
+                    padding: 3px 15px;
+                    position: absolute;
+                }
+            }
+
+            pre {
+                position: absolute;
+                top: 0;
+                padding: 10px 0;
+                margin: 0 auto;
+            }
+
+            textarea {
+                overflow-y: hidden;
+                margin: 0px;
+                height: 77px;
+            }
+        }
+    }
+}
+
+.cd {
+    background: #fff;
+    padding: 50px;
+    border-radius: 8px;
+    box-shadow: 0px 11px 83px 3px rgba(0, 0, 0, 0.18);
+    margin-bottom: 30px;
+
+    h3 {
+        font-weight: normal;
+    }
+}
+
+.pd {
+    margin-top: 50px;
+}
+
+.form-control {
+
+    height: 34px;
+    font-size: 13px;
+    display: block;
+    width: calc(100% - 20px);
+    padding: 9px 15px;
+}
+
+.editable-wrap .editable-input {
+
+    display: inline-block;
+    box-shadow: 0px 10px 33px -7px rgba(0, 0, 0, 0.18);
+}
+
+
+.btn {
+    box-shadow: 0 7px 14px rgba(50, 50, 93, 0.1), 0 3px 6px rgba(0, 0, 0, 0.08);
+    background: #fff;
+    padding: 3px 7px;
+    margin-left: 10px;
+    border-radius: 4px;
+}
+
+.editable-hide {
+    display: none !important;
+}
+
+.editable-controls {
+    position: relative;
+}
+
+.editable-buttons {
+    position: absolute;
+    bottom: -30px;
+    right: 30px;
+}
+
+.projects {
+    background: #fff;
+}
+
+.input-group-btn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+
+    button {
+        box-shadow: none;
+    }
+    .glyphicon-calendar:before {
+        content: " ";
+        height: 20px;
+        top: -16px;
+        right: -5px;
+        width: 20px;
+        position: absolute;
+        background: url(../../assets/icons/calendar.svg);
+    }
+}
+
+.uib-daypicker {
+
+    th {
+        font-weight: normal;
+        text-align: center;
+    }
+
+    button {
+        min-width: 100%;
+        box-shadow: none;
+        background: #eee;
+        border-radius: 0;
+        margin: 2px;
+        border-right: 2px solid #fff;
+    }
+}
+
+.bookImage {
+    border-radius: 22px;
+    display: inline-block;
+    width: 75px;
+    height: 75px;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0px -2px 81px 3px rgb(18, 107, 156);
+
+    img {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+.bookDetailed {
+    background: #fff;
+    line-height: 24px;
+    font-size: 12px;
+    padding: 0 15px;
+
+    ul {
+        display: inline-block!important;
+
+        li {
+            display: block;
+        }
+    }
+}
+
+.projectFee {
+    position: relative;
+
+    input {
+        bbackground: #fff;
+        display: block;
+        width: 200px;
+        padding: 15px;
+        height: 34px;
+        transition: $smooth;
+        background: #e8e8e8;
+        font-size: 11px;
+
+        &:focus {
+            background: #fff;
+            box-shadow: 0px 10px 33px -7px rgba(0, 0, 0, 0.18);
+        }
+    }
+
+    span {
+        font-size: 10px;
+        font-family: $bold;
+        font-style: italic;
+    }
+
+    select {
+        position: absolute;
+        top: -3px;
+        left: 150px;
+        border: 0;
+        font-size: 11px;
+    }
+
+    .submitBook {
+        position: absolute;
+        right: 0;
+        margin: 15px;
+        padding: 5px 20px;
+        top: 0;
+        background: $blue;
+        color: #fff;
+    }
+}

@@ -1,10 +1,110 @@
-<!--
-<div>
-    <a href="#"><img src="assets/icons/inbox.svg"></a>
-    <ul class="userset" ng-show="cart.length !== 0">
-        <li ng-repeat="c in cart">
-            <h6>{{c.name}}</h6>
-            <input class="btn btn-danger" type="button" ng-click="removeItemCart(c)" value="Remove" />
-        </li>
-    </ul>
-</div>-->
+<div class="projects">
+    <div class="container">
+        <div class="empty-event">
+            <h4>You don't have a project yet, create it first</h4>
+            <!--            <button class="crtEvent" type="button">create</button>-->
+        </div>
+
+        <!--
+<div ng-repeat="c in cart">
+    <h6>{{c.name}}
+        <p ng-show="cart.length !== 0">({{c.count}})</p>
+    </h6><input class="btn btn-danger" type="button" ng-click="removeItemCart(c)" value="x" />
+</div>
+-->
+
+        <div class="bookingLeft boxed" ng-controller="AliceController" ng-show="cart.length !== 0">
+            <ul>
+                <li ng-repeat="c in cart">
+                    <div class="bookImage boxed"> <img ng-src="{{c.images}}"> </div>
+                    <div class="bookDetailed">
+                        <ul>
+                            <li>name: <b>{{c.name}}</b></li>
+                            <li>age : <b>{{c.age}}</b></li>
+                            <li>height: <b>{{c.domicile}}</b></li>
+                        </ul>
+                    </div>
+
+                    <input class="btn btn-danger" type="button" ng-click="removeItemCart(c)" value="x" />
+                </li>
+            </ul>
+        </div>
+
+
+        <div class="bookingRight" ng-controller="cartCtrl">
+
+            <div class="cd">
+                <h2 style="margin: auto;text-align: right;">CREATE YOUR PROJECT</h2>
+                <h3>Contact Details</h3>
+                <ul class="eventForm">
+                    <li>
+                        <h4>Name</h4>
+                        <a href="#" editable-text="events.name">{{ events.name || 'empty' }}</a>
+                    </li>
+                    <li>
+                        <h4>Email</h4>
+                        <a href="#" editable-text="events.email">{{ events.email || 'empty' }}</a>
+                    </li>
+                    <li>
+                        <h4>Phone Number</h4>
+                        <a href="#" editable-text="events.contact">{{ events.contact || 'empty' }}</a>
+                    </li>
+                    <li>
+                        <h4>Company Name</h4>
+                        <a href="#" editable-text="events.company">{{ events.company || 'empty' }}</a>
+                    </li>
+
+                </ul>
+
+
+                <h3 class="pd">Project Details</h3>
+                <ul class="eventForm">
+                    <li>
+                        <h4>Project</h4>
+                        <a href="#" editable-text="events.ename">{{ events.ename || 'empty' }}</a>
+                    </li>
+                    <li>
+                        <h4>Location</h4>
+                        <a href="#" editable-text="events.elocation">{{ events.elocation || 'empty' }}</a>
+                    </li>
+
+                </ul>
+
+                <ul class="eventForm">
+                    <li>
+
+                        <h4>Address</h4>
+                        <a href="#" editable-textarea="events.eaddress">
+                            <pre>{{ events.eaddress || 'empty' }}</pre>
+                        </a>
+                    </li>
+                    <li>
+                        <h4>Project Start</h4>
+                        <a href="#" editable-bsdate="events.dob" e-is-open="opened.$data" e-ng-click="open($event,'$data')" e-datepicker-popup="dd-MMMM-yyyy">{{ (events.dob | date:"dd/MM/yyyy") || 'empty' }}</a>
+                    </li>
+                    <li>
+                        <h4>Project End</h4>
+                        <a href="#" editable-bsdate="events.dobe" e-is-open="opened.$data" e-ng-click="open($event,'$data')" e-datepicker-popup="dd-MMMM-yyyy">{{ (events.dobe | date:"dd/MM/yyyy") || 'empty' }}</a>
+                    </li>
+
+                </ul>
+
+                <div class="projectFee">
+                    <h6>Project Fee</h6>
+                    <input type="text" placeholder="Your Project Fee /day">
+                    <span>**The fee you post is not entirely fixed and can be changed</span>
+                    <select>
+                        <option>IDR</option>
+                        <option>USD</option>
+                    </select>
+
+
+                    <button type="submit" class="btn submitBook">SUBMIT</button>
+                </div>
+
+
+            </div>
+
+
+        </div>
+    </div>

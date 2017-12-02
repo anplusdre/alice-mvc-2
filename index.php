@@ -36,6 +36,8 @@
     <script src="js/libs.js"></script>
     <script src="js/lib/angular.js"></script>
     <script src="js/lib/cart.js"></script>
+    <script src="lib/xeditable.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/1.3.1/ui-bootstrap-tpls.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.9/angular-touch.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.6/angular-cookies.min.js"></script>
     <script src="js/lib/angular-route.min.js"></script>

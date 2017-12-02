@@ -109,6 +109,7 @@ img {
 
 table {
     border-collapse: collapse;
+    empty-cells: show;
     width: 100%;
 }
 
@@ -299,4 +300,26 @@ button {
     }
 }
 
-// SEARCH
+// ICON
+.glyphicon {
+    position: relative;
+    top: 1px;
+    display: inline-block;
+    font-family: 'Glyphicons Halflings';
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+
+.glyphicon-ok:before {
+    content: "\2713";
+}
+
+.glyphicon-remove:before {
+    content: "\00d7";
+    font-size: 17px;
+    font-weight: 600;
+}

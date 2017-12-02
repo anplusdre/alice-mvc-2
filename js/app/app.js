@@ -2,7 +2,7 @@
 (function () {
 
     var alice = angular
-        .module('alice', ['ngRoute', 'angular-carousel', 'ngTouch', 'angular-carousel.shifty', 'ngCookies']).
+        .module('alice', ['ngRoute', 'angular-carousel', 'ngTouch', 'angular-carousel.shifty', 'ngCookies', 'xeditable', 'ui.bootstrap']).
     config(['$locationProvider', '$routeProvider', function ($locationProvider, $routeProvider) {
             $routeProvider.
             when('/', {
@@ -29,6 +29,9 @@
             }).when('/contact', {
                 templateUrl: 'view/contact.html',
                 controller: 'prjController'
+            }).
+            when('/cart', {
+                templateUrl: 'view/cart.html'
             }).
             when('/login', {
                 templateUrl: 'view/login.html',
@@ -212,6 +215,36 @@
     //        });
     //
     //        }]);
+
+    alice.run(function (editableOptions) {
+        editableOptions.theme = 'bs3';
+    });
+    alice.controller("cartCtrl", ['$scope', function ($scope) {
+        $scope.events = {
+            name: 'your name',
+            email: 'your email',
+            contact: 'your phone number',
+            company: 'your company name',
+            ename: 'project name',
+            elocation: 'project location',
+            eaddress: 'project address',
+            dob: new Date(2017, 12, 01),
+            dobe: new Date(2018, 01, 01),
+            estart: 'project start date',
+            eend: 'project end date',
+            fee: 'project fees (per day)'
+
+        }
+
+        $scope.opened = {};
+
+        $scope.open = function ($event, elementOpened) {
+            $event.preventDefault();
+            $event.stopPropagation();
+
+            $scope.opened[elementOpened] = !$scope.opened[elementOpened];
+        };
+    }]);
     alice.controller("detailsController", ['$scope', '$http', '$routeParams', function ($scope, $http, $routeParams) {
         $http.get('api.php')
             .then(function (res) {
