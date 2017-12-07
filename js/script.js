@@ -1,3 +1,4 @@
+
 $(document).ready(function () {
 
     $('html, body').animate({
@@ -87,7 +88,37 @@ $(document).ready(function () {
         e.preventDefault();
     });
 
+    
+    $('#opt').click(function(){
+        $(this).next('.opsubmenu').slideToggle("fast");
+    });
+    
+    $('.userset').hide();
+    $('#inbBtn').click(function(e){
+        $(this).next('.userset').css({
+            transform: 'translateY(10px)'
+        });
+        $(this).next('.userset').stop(true).fadeToggle();
+    });
+    
+    $('.addBtn').click(function () {
+        
+        $('.rightMenu').append('<div class="addnotif"><span>added</span></div>');
+                setTimeout(function () {
+                    $('.addnotif').remove();
+                }, 1000);
 
+    });
+//    
+//    $('.userset').mouseleave(function(){
+//        $(this).hide();
+//    });
+    
+    
+    
+    
+    
+    
 }); //END JQUERY SCRIPT
 
 

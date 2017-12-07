@@ -1,12 +1,14 @@
-<div class="userMenu">
 
+    <div class="clientMenu">
     <div class="menuPost">
         <!--
         <div class="search"><input class="search__input" ng-model="searchMain" placeholder="Search" />
 <button class="search__button"><img src="assets/icons/magnifying-glass.svg"></button>
 </div>
 -->
+        <!--  ng-show="cart.length !== 0" -->
 
+                               
         <div class="rightMenu">
             <ul>
                 <!--                <li><a href="#"><img src="assets/icons/user.svg"></a></li>-->
@@ -16,26 +18,29 @@
                         <h5>Welcome, Dear <em>{{user}}</em></h5>
                     </div>
                 </li>
-                <li><a href="#"><img src="assets/icons/gear-big-shape.svg">
+                <li><a href="#" id="opt"><img src="assets/icons/gear-big-shape.svg">
                 <label>Options</label></a>
+                <ul class="opsubmenu">
+                    <li><a href="#">History</a></li>
+                    <li><a href="./logout">Logout</a></li>
+                </ul>
                 </li>
                 <li>
                     <div>
                         <span>0</span>
                         <span ng-repeat="c in cart">{{totalItem(0)}}</span>
-                        <a href="#"><img src="assets/icons/inbox.svg">
+                        <a href="#" id="inbBtn"><img src="assets/icons/inbox.svg">
                         <label>Booking</label>
                         </a>
 
-
                         <ul class="userset" ng-show="cart.length !== 0">
+                            <em ng-show="cart.length == 0">cart empty</em>
                             <li ng-repeat="c in cart">
                                 <h6>{{c.name}}
-                                    <!--                                    <p ng-show="cart.length !== 0">({{c.count}})</p>-->
                                 </h6>
                                 <input class="btn-danger" type="button" ng-click="removeItemCart(c)" value="x" />
                             </li>
-                            <a href="./cart"><button class="bookNow">Book Now</button></a>
+                            <a href="./cart" ng-show="cart.length !== 0" class="dsd2"><button class="bookNow">Book Now</button></a>
                         </ul>
                     </div>
                 </li>

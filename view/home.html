@@ -1,60 +1,59 @@
-<div class="grid display">
-    <div class="row left">
-        <!-- START DISPLAY -->
-        <div ng-controller="AliceController" class="talent-container">
-            <div ng-repeat="talent in talents | filter:searchMain" class="card boxed {{talent.indexing}}">
-                <div class="actionlist">
-                    <div class="vid-icon"><a href="#" ng-click="showVid = true">video</a></div>
-                    <div class="addBtn">
-                        <a href="#" ng-click="add_cart(talent)">
-                        <svg width="15px" height="15px" enable-background="new 0 0 44 44" version="1.1" viewBox="0 0 44 44" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M22,0C9.8,0,0,9.8,0,22s9.8,22,22,22s22-9.8,22-22S34.2,0,22,0z M34,23c0,0.6-0.4,1-1,1h-8.5c-0.3,0-0.5,0.2-0.5,0.5V33  c0,0.6-0.4,1-1,1h-2c-0.6,0-1-0.4-1-1v-8.5c0-0.3-0.2-0.5-0.5-0.5H11c-0.6,0-1-0.4-1-1v-2c0-0.6,0.4-1,1-1h8.5  c0.3,0,0.5-0.2,0.5-0.5V11c0-0.6,0.4-1,1-1h2c0.6,0,1,0.4,1,1v8.5c0,0.3,0.2,0.5,0.5,0.5H33c0.6,0,1,0.4,1,1V23z" fill="#d7d7d7"/>
-                        </svg>
-                   </a>
-                    </div>
-                    <div class="loveBtn">
-                        <a href="#">
-                                   <svg width="15px" height="15px" enable-background="new 0 0 568.707 568.707" version="1.1" viewBox="0 0 568.71 568.71" xml:space="preserve" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="m427.08 38.124c-43.568-25.41-91.145-38.121-142.73-38.121-51.591 0-99.168 12.711-142.73 38.121-43.569 25.441-78.068 59.934-103.49 103.5-25.429 43.562-38.134 91.145-38.134 142.72 0 51.604 12.711 99.174 38.134 142.74 25.422 43.574 59.915 78.072 103.49 103.48 43.562 25.428 91.139 38.14 142.73 38.14 51.586 0 99.162-12.712 142.73-38.14 43.562-25.411 78.061-59.909 103.49-103.48 25.423-43.562 38.134-91.133 38.134-142.74 0-51.574-12.717-99.157-38.134-142.72-25.427-43.557-59.926-78.055-103.49-103.5zm-2.222 199.58c-2.099 9.143-5.128 16.414-9.069 21.842l-129.59 175.13-129.22-175.14c-3.954-5.422-6.977-12.699-9.07-21.842-2.099-9.125-1.359-19.626 2.221-31.469 3.574-11.849 11.047-21.591 22.399-29.26 10.116-6.408 20.49-9.547 31.102-9.431 10.606 0.117 19.682 2.283 27.216 6.481 7.528 4.192 14.253 9.749 20.178 16.659 8.886 9.877 20.606 14.81 35.171 14.81 14.812 0 26.659-4.933 35.546-14.81 5.924-6.916 12.644-12.467 20.178-16.659 7.527-4.192 16.597-6.365 27.215-6.481 10.612-0.116 20.857 3.023 30.735 9.431 11.597 7.668 19.186 17.411 22.772 29.26 3.575 11.848 4.315 22.35 2.215 31.475z" fill="#d7d7d7"/>
-                                </svg>
+<div id="home">
+    <div class="userMenu">
+        <div class="main-nav">
+            <div class="container">
+                <div class="main-logo">
+                    <a href="/"></a>
+                </div>
+                <ul>
+                    <li>
+                        <a href="#" class="jobBtn">
+                            <h5>FIND JOB</h5>
                         </a>
-                    </div>
-                </div>
-                <div class="media" ng-mouseover="open = true" ng-mouseleave="open = false">
-
-                    <div class="indicator-thumb" rn-carousel-indicators ng-if="talents.length > 1" slides="talents" rn-carousel-index="carouselIndex" ng-show="open">
-                    </div>
-                    <ul rn-carousel rn-carousel-buffered rn-carousel-index="carouselIndex" rn-carousel-on-infinite-scroll-right="loadNextImages()" rn-carousel-on-infinite-scroll-left="loadPreviousImages()" rnCarouselPauseOnHover>
-
-                        <li><img id="slideShow" ng-src="{{talent.images}}"></li>
-                        <li class="hide"><img id="slideShow" ng-src="{{talent.images02}}"></li>
-                        <li class="hide"><img id="slideShow" ng-src="{{talent.images03}}"></li>
-
-                    </ul>
-                </div>
-                <div class="info">
-                    <div id="name">{{talent.name}}</div>
-                    <div class="button medium">
-                        <a href="#" class="moreBtn" ng-click="goToLogin()">MORE</a>
-                    </div>
-                </div>
-                <div class="skills-thumb">
-                    <a href="#" class="boxedMedium">{{talent.skills}}</a><a href="#" class="boxedMedium">{{talent.skills02}}</a>
-                </div>
-
-
-                <div class="containerVid" ng-model="talents" ng-show="showVid">
-                    <span ng-click="showVid = false">close</span>
-                    <!--            <input class="playerBtn" type="button" ng-click="pauseOrPlay($event)"></input>-->
-                    <video class="video" controls loop><source src="{{talent.video}}"></video>
-                    <!--            <span class="unavail">Video Not Available</span>-->
-                </div>
+                    </li>
+                    <li>
+                        <a href="#" class="jobBtn" ng-click="goToLogin()">
+                            <h5>MASUK</h5>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="jobBtn" ng-click="goToRegister()">
+                            <h5>MENDAFTAR</h5>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="loginBtn" ng-click="goToLogin()">
+                            <h5>CLIENT</h5>
+                        </a>
+                    </li>
+                </ul>
 
             </div>
-
-
         </div>
+    </div>
+    <div class="hero">
+        <div class="herowrap">
+            <div class="fixedBg"></div>
+            <div class="heroBanner"></div>
+            <div class="heroText">
+                <h2 class="text01">A Place for</h2>
+                <h2 class="text02">Talented</h2>
+                <h2 class="text03">People</h2>
+            </div>
 
+            <div class="Register">
+                <form>
+                    <h3>Join Now Free</h3>
+                    <span>your email</span>
+                    <input type="email" placeholder="email" id="emailR" autocomplete="off">
+                    <span>your password</span>
+                    <input type="password" placeholder="password" id="passwordR" autocomplete="off">
+                    <span>repeat password</span>
+                    <input type="password" placeholder="repeat password" id="repasswordR" autocomplete="off">
+                    <button type="submit" id="register">REGISTER</button>
+                </form>
+            </div>
+        </div>
     </div>
 </div>
 <script type="text/javascript" src="js/script.js"></script>

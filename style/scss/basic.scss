@@ -1,61 +1,127 @@
 @font-face {
-    font-family: 'Open Sans',
-    sans-serif;
-    src: url('../../assets/fonts/open/OpenSans-Regular-webfont.eot');
+    font-family: 'alice';
+    font-weight: 100;
+    src: url('../../assets/fonts/alice/regular/alice.eot');
     /* IE9 Compat Modes */
-    src: url('../../assets/fonts/open/OpenSans-Regular-webfont?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-    url('../../assets/fonts/OpenSans-Regular-webfont.woff') format('woff'), /* Pretty Modern Browsers */
-    url('../../assets/fonts/OpenSans-Regular-webfont.ttf') format('truetype'), /* Safari, Android, iOS */
-    url('../../assets/fonts/OpenSans-Regular-webfont.svg#svgFontName') format('svg');
+    src: url('../../assets/fonts/alice/regular/alice?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('../../assets/fonts/alice/regular/alice.woff') format('woff'), /* Pretty Modern Browsers */
+    url('../../assets/fonts/alice/regular/alice.ttf') format('truetype'), /* Safari, Android, iOS */
+    url('../../assets/fonts/alice/regular/alice.svg#svgFontName') format('svg');
     /* Legacy iOS */
 }
 
 @font-face {
-    font-family: 'basis-grotesque-regular';
-    src: url('../../assets/fonts/basis-grotesque-regular.woff');
+    font-family: 'alice-bold';
+    font-weight: 100;
+    src: url('../../assets/fonts/alice/bold/alice-bold.eot');
+    /* IE9 Compat Modes */
+    src: url('../../assets/fonts/alice/bold/alice-bold?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('../../assets/fonts/alice/bold/alice-bold.woff') format('woff'), /* Pretty Modern Browsers */
+    url('../../assets/fonts/alice/bold/alice-bold.ttf') format('truetype'), /* Safari, Android, iOS */
+    url('../../assets/fonts/alice/bold/alice-bold.svg#svgFontName') format('svg');
+    /* Legacy iOS */
 }
 
 @font-face {
-    font-family: 'basis-grotesque-bold';
-    src: url('../../assets/fonts/basis-grotesque-bold.woff');
+    font-family: 'alice-thin';
+    src: url('../../assets/fonts/alice/alice-thin.eot');
+    /* IE9 Compat Modes */
+    src: url('../../assets/fonts/alice/alice-thin?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('../../assets/fonts/alice/alice-thin.woff') format('woff'), /* Pretty Modern Browsers */
+    url('../../assets/fonts/alice/alice-thin.ttf') format('truetype'), /* Safari, Android, iOS */
+    url('../../assets/fonts/alice/alice-thin.svg#svgFontName') format('svg');
+    /* Legacy iOS */
 }
-
-@font-face {
-    font-family: 'Bebas Neue';
-    src: url('../../assets/fonts/bebas/bebasBold.eot');
-    src: url('../../assets/fonts/bebas/bebasBold.woff');
-    src: url('../../assets/fonts/bebas/bebasBold.woff2');
-    font-weight: bold;
-    font-style: normal;
-}
-
-@import url('https://fonts.googleapis.com/css?family=PT+Sans:400,700');
 
 html,
-body {}
+body {
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004);
+    text-rendering: optimizeLegibility !important;
+    -webkit-font-smoothing: antialiased !important;
+}
 
 html {
     background: #FFFFFF;
     height: 100%!important;
 }
 
-$opens: 'Open Sans',
+
+$basis: 'alice',
+-apple-system,
+BlinkMacSystemFont,
+"Segoe UI",
+"Roboto",
+"Oxygen",
+"Ubuntu",
+"Cantarell",
+"Fira Sans",
+"Droid Sans",
+"Helvetica Neue",
 sans-serif;
-$basis: 'basis-grotesque-regular';
-$blue: #0093e5;
+$bold: 'alice-bold';
+$blue: #12a3bd;
+$blue1: #0093e5;
 $mainb: #3d3bee;
 $boxs: 0px 4px 83px 3px rgba(0,
 0,
 0,
 0.18);
-$font: 'PT Sans',
-sans-serif;
-$bold: 'basis-grotesque-bold';
-$bebas: 'Bebas Neue';
+$box:0 7px 14px rgba(50,
+50,
+93,
+0.1),
+0 3px 6px rgba(0,
+0,
+0,
+0.08);
 /* fallback for old browsers */
 
 //background: -webkit-linear-gradient(to right, #F45C43, #EB3349);  /* Chrome 10-25, Safari 5.1-6 *///background: linear-gradient(to right, #F45C43, #EB3349); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 $grey: #989898;
+$gridbg: linear-gradient(0deg,
+transparent 24%,
+rgba(255,
+255,
+255,
+.05) 25%,
+rgba(255,
+255,
+255,
+.05) 26%,
+transparent 27%,
+transparent 74%,
+rgba(255,
+255,
+255,
+.05) 75%,
+rgba(255,
+255,
+255,
+.05) 76%,
+transparent 77%,
+transparent),
+linear-gradient(90deg,
+transparent 24%,
+rgba(255,
+255,
+255,
+.05) 25%,
+rgba(255,
+255,
+255,
+.05) 26%,
+transparent 27%,
+transparent 74%,
+rgba(255,
+255,
+255,
+.05) 75%,
+rgba(255,
+255,
+255,
+.05) 76%,
+transparent 77%,
+transparent);
 $g2: linear-gradient(to right,
 #3674ef,
 #23a5f1);
@@ -95,6 +161,19 @@ input {
     }
 }
 
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus input:-webkit-autofill,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+    -webkit-text-fill-color: #000;
+    background: #fff;
+    transition: background-color 5000s ease-in-out 0s;
+}
+
 *,
 *:before,
 *:after {
@@ -124,7 +203,7 @@ input,
 textarea,
 select,
 button {
-    font-family: $opens;
+    font-family: $basis;
 
 }
 
@@ -148,7 +227,6 @@ button {
 ::-webkit-scrollbar-thumb {
     background-color: #9ac3c3;
 }
-
 
 .button {
     display: inline-block;

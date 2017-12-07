@@ -44,6 +44,7 @@
     <script src="js/lib/angular-carousel.js"></script>
     <script type="text/javascript" src="js/script.js"></script>
     <script src="js/app/app.js"></script>
+    <script src="js/app/animate.js"></script>
 </body>
 
 </html>

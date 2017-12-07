@@ -1,8 +1,7 @@
 /// <reference path="js/angular.js" />
 (function () {
 
-    var alice = angular
-        .module('alice', ['ngRoute', 'angular-carousel', 'ngTouch', 'angular-carousel.shifty', 'ngCookies', 'xeditable', 'ui.bootstrap']).
+    var alice = angular.module('alice', ['ngRoute', 'angular-carousel', 'ngTouch', 'angular-carousel.shifty', 'ngCookies', 'xeditable', 'ui.bootstrap']).
     config(['$locationProvider', '$routeProvider', function ($locationProvider, $routeProvider) {
             $routeProvider.
             when('/', {
