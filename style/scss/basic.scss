@@ -1,35 +1,36 @@
 @font-face {
-    font-family: 'alice';
+    font-family: 'SourceSansPro-Light';
     font-weight: 100;
-    src: url('../../assets/fonts/alice/regular/alice.eot');
+    src: url('../../assets/fonts/alice/light/SourceSansPro-Light.eot');
     /* IE9 Compat Modes */
-    src: url('../../assets/fonts/alice/regular/alice?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-    url('../../assets/fonts/alice/regular/alice.woff') format('woff'), /* Pretty Modern Browsers */
-    url('../../assets/fonts/alice/regular/alice.ttf') format('truetype'), /* Safari, Android, iOS */
-    url('../../assets/fonts/alice/regular/alice.svg#svgFontName') format('svg');
+    src: url('../../assets/fonts/alice/light/SourceSansPro-Light?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('../../assets/fonts/alice/light/SourceSansPro-Light.woff') format('woff'), /* Pretty Modern Browsers */
+    url('../../assets/fonts/alice/light/SourceSansPro-Light.ttf') format('truetype'), /* Safari, Android, iOS */
+    url('../../assets/fonts/alice/light/SourceSansPro-Light.svg#svgFontName') format('svg');
     /* Legacy iOS */
 }
 
 @font-face {
-    font-family: 'alice-bold';
+    font-family: 'SourceSansPro-Bold';
     font-weight: 100;
-    src: url('../../assets/fonts/alice/bold/alice-bold.eot');
+    src: url('../../assets/fonts/alice/bold/SourceSansPro-Bold.eot');
     /* IE9 Compat Modes */
-    src: url('../../assets/fonts/alice/bold/alice-bold?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-    url('../../assets/fonts/alice/bold/alice-bold.woff') format('woff'), /* Pretty Modern Browsers */
-    url('../../assets/fonts/alice/bold/alice-bold.ttf') format('truetype'), /* Safari, Android, iOS */
-    url('../../assets/fonts/alice/bold/alice-bold.svg#svgFontName') format('svg');
+    src: url('../../assets/fonts/alice/bold/SourceSansPro-Bold?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('../../assets/fonts/alice/bold/SourceSansPro-Bold.woff') format('woff'), /* Pretty Modern Browsers */
+    url('../../assets/fonts/alice/bold/SourceSansPro-Bold.ttf') format('truetype'), /* Safari, Android, iOS */
+    url('../../assets/fonts/alice/bold/SourceSansPro-Bold.svg#svgFontName') format('svg');
     /* Legacy iOS */
 }
 
 @font-face {
-    font-family: 'alice-thin';
-    src: url('../../assets/fonts/alice/alice-thin.eot');
+    font-family: 'SourceSansPro-Regular';
+    font-weight: 400;
+    src: url('../../assets/fonts/alice/regular/SourceSansPro-Regular.eot');
     /* IE9 Compat Modes */
-    src: url('../../assets/fonts/alice/alice-thin?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-    url('../../assets/fonts/alice/alice-thin.woff') format('woff'), /* Pretty Modern Browsers */
-    url('../../assets/fonts/alice/alice-thin.ttf') format('truetype'), /* Safari, Android, iOS */
-    url('../../assets/fonts/alice/alice-thin.svg#svgFontName') format('svg');
+    src: url('../../assets/fonts/alice/regular/SourceSansPro-Regular?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('../../assets/fonts/alice/regular/SourceSansPro-Regular.woff') format('woff'), /* Pretty Modern Browsers */
+    url('../../assets/fonts/alice/regular/SourceSansPro-Regular.woff2') format('woff2'), /* Pretty Modern Browsers */
+    url('../../assets/fonts/alice/regular/SourceSansPro-Regular.ttf') format('truetype'), /* Safari, Android, iOS */
     /* Legacy iOS */
 }
 
@@ -38,6 +39,8 @@ body {
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004);
     text-rendering: optimizeLegibility !important;
     -webkit-font-smoothing: antialiased !important;
+    min-height: 100% !important;
+    height: 100%;
 }
 
 html {
@@ -45,23 +48,38 @@ html {
     height: 100%!important;
 }
 
+#paged {
+    height: 100%;
+    min-height: 100%!important;
+}
 
-$basis: 'alice',
--apple-system,
-BlinkMacSystemFont,
-"Segoe UI",
-"Roboto",
-"Oxygen",
-"Ubuntu",
-"Cantarell",
-"Fira Sans",
-"Droid Sans",
-"Helvetica Neue",
-sans-serif;
-$bold: 'alice-bold';
-$blue: #12a3bd;
-$blue1: #0093e5;
-$mainb: #3d3bee;
+$basis: 'SourceSansPro-Regular';
+//-apple-system,
+//BlinkMacSystemFont,
+//"Segoe UI",
+//"alice",
+//"Roboto",
+//"Oxygen",
+//"Ubuntu",
+//"Cantarell",
+//"Fira Sans",
+//"Droid Sans",
+//"Helvetica Neue",
+//sans-serif;
+$bold: 'SourceSansPro-Bold';
+$lite: 'SourceSansPro-Light';
+$blue: #5A80FB;
+$alt: #ebeff2;
+$mute: #8D99A6;
+$muted: #36414c;
+$bhov: 0 7px 14px rgba(18,
+163,
+189,
+0.25),
+0 3px 6px rgba(19,
+149,
+173,
+0.82);
 $boxs: 0px 4px 83px 3px rgba(0,
 0,
 0,
@@ -152,6 +170,7 @@ li {
 a {
     color: $grey;
     text-decoration: none;
+    font-weight: normal;
 }
 
 input {
@@ -226,6 +245,15 @@ button {
 
 ::-webkit-scrollbar-thumb {
     background-color: #9ac3c3;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: $bold;
+
 }
 
 .button {
@@ -357,6 +385,26 @@ button {
 .relative {
     position: relative!important;
 
+}
+
+.caret {
+    display: inline-block;
+    width: 0;
+    height: 0;
+    margin-top: -2px;
+    margin-left: 2px;
+    vertical-align: middle;
+    border-top: 4px solid;
+    border-right: 4px solid transparent;
+    border-left: 4px solid transparent;
+}
+
+.bbot {
+    border-bottom: 1px solid $alt;
+}
+
+.dark-text {
+    color: #36414c;
 }
 
 

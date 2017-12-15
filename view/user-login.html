@@ -1,0 +1,22 @@
+<div class="box-section">
+    <div class="userLogin">
+        <div id="login-form">
+            <div class="input-data">
+                <h6>* Username</h6>
+                <div id="invaliduser"></div>
+                <input type="text" autocomplete="off" ng-model="username" placeholder="Your username" id="users">
+            </div>
+            <div class="input-data">
+                <h6>* Client Key</h6>
+                <input type="Password" autocomplete="off" ng-model="password" placeholder="Client Key" id="pass">
+                <div id="invalid"></div>
+            </div>
+            <div class="keysubmit">
+                <button id="loginBtn" ng-click="login()">Submit</button>
+            </div>
+
+            <h6 class="forgotPass">Forgot your password? Click <a href="#">here</a></h6>
+
+        </div>
+    </div>
+</div>

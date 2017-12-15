@@ -1,8 +1,8 @@
 /// <reference path="js/angular.js" />
 (function () {
 
-    var alice = angular.module('alice', ['ngRoute', 'angular-carousel', 'ngTouch', 'angular-carousel.shifty', 'ngCookies', 'xeditable', 'ui.bootstrap']).
-    config(['$locationProvider', '$routeProvider', function ($locationProvider, $routeProvider) {
+    var alice = angular.module('alice', ['ngRoute', 'angular-loading-bar', 'angular-carousel', 'ngTouch', 'angular-carousel.shifty', 'ngCookies', 'xeditable', 'ui.bootstrap']).
+    config(['$locationProvider', '$routeProvider', 'cfpLoadingBarProvider', function ($locationProvider, $routeProvider, cfpLoadingBarProvider) {
             $routeProvider.
             when('/', {
                 templateUrl: 'view/main.html',
@@ -36,6 +36,10 @@
                 templateUrl: 'view/login.html',
                 controller: 'loginCtrl'
             }).
+            when('/user-login', {
+                templateUrl: 'view/user-login.html',
+                controller: 'userlgnCtrl'
+            }).
             when('/logout', {
                 resolve: {
                     deadResolve: function ($location, user) {
@@ -48,15 +52,28 @@
                 resolve: {
                     check: function ($location, user) {
                         if (!user.isUserLoggedIn()) {
-                            $location.path('/login');
+                            $location.path('/user-login');
                         }
                     },
                 },
                 templateUrl: 'view/client.html',
                 controller: 'clientCtrl'
             }).
+            when('/dashboard', {
+                resolve: {
+                    check: function ($location, userid) {
+                        if (!userid.isUserLoggedIn()) {
+                            $location.path('/login');
+                        }
+                    },
+                },
+                templateUrl: 'view/dashboard.html',
+                controller: 'dsbCtrl'
+            }).
             otherwise('/');
 
+            cfpLoadingBarProvider.latencyThreshold = 1;
+            cfpLoadingBarProvider.includeSpinner = false;
             $locationProvider.html5Mode(true);
     }])
         //        .factory("cartService", function () {
@@ -182,6 +199,10 @@
 
                 $scope.goToLogin = function () {
                     $location.path('/login')
+                };
+
+                $scope.goToUserLogin = function () {
+                    $location.path('/user-login')
                 };
             });
 
@@ -322,7 +343,53 @@
         }
 
     });
-    alice.controller('loginCtrl', ['$scope', '$http', '$location', 'user', function ($scope, $http, $location, user) {
+    alice.service('userid', function () {
+        var username;
+        var loggedin = false;
+        var id;
+
+        this.getName = function () {
+            return username;
+        };
+
+        // SET UNIQUE ID
+        this.setID = function (userID) {
+            id = userID;
+        };
+
+        this.getID = function () {
+            return id;
+        };
+
+        this.isUserLoggedIn = function () {
+            if (!!localStorage.getItem('login')) {
+                loggedin = true;
+                var data = JSON.parse(localStorage.getItem('login'));
+                username = data.username;
+                id = data.id;
+            }
+            return loggedin;
+        };
+
+        this.saveData = function (data) {
+            username = data.user;
+            id = data.id;
+            loggedin = true;
+            localStorage.setItem('login', JSON.stringify({
+                username: username,
+                id: id
+            }));
+        };
+
+        this.clearData = function () {
+            localStorage.removeItem('login');
+            username = "";
+            id = "";
+            loggedin = false;
+        }
+
+    });
+    alice.controller('userlgnCtrl', ['$scope', '$http', '$location', 'user', function ($scope, $http, $location, user) {
         $scope.login = function () {
             var username = $scope.username;
             var password = $scope.password;
@@ -350,6 +417,34 @@
         }
         }]);
 
+    alice.controller('loginCtrl', ['$scope', '$http', '$location', 'userid', function ($scope, $http, $location, userid) {
+        $scope.loginus = function () {
+            var username = $scope.username;
+            var password = $scope.password;
+            $http({
+                url: 'key.php',
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/x-www-form-urlencoded'
+                },
+                data: 'username=' + username + '&password=' + password
+            }).then(function (res) {
+                if (res.data.status == 'loggedin') {
+                    userid.saveData(res.data);
+                    $location.path('/dashboard');
+                }
+                //                else if (username !== 0) {//
+                //                    document.getElementById("invaliduser").innerHTML = "*Invalid Username or Key";
+                //                    document.getElementById('users').className += ' invalidpass';
+                else {
+                    document.getElementById("invalid").innerHTML = "*Invalid Key";
+                    document.getElementById('pass').className += ' invalidpass';
+                }
+            })
+
+        }
+        }]);
+
     alice.controller("clientCtrl", ['$scope', '$http', '$routeParams', 'user', function ($scope, $http, $routeParams, user) {
 
 
@@ -359,6 +454,12 @@
                 $scope.talents = res.data.talents;
                 $scope.which = $routeParams.userID;
             });
+    }]);
+
+    alice.controller("dsbCtrl", ['$scope', '$http', '$routeParams', 'userid', function ($scope, $http, $routeParams, userid) {
+
+
+        $scope.user = userid.getName();
     }]);
 
 

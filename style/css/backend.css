@@ -1,55 +1,63 @@
 @font-face {
-  font-family: 'alice';
+  font-family: 'SourceSansPro-Light';
   font-weight: 100;
-  src: url("../../assets/fonts/alice/regular/alice.eot");
+  src: url("../../assets/fonts/alice/light/SourceSansPro-Light.eot");
   /* IE9 Compat Modes */
-  src: url("../../assets/fonts/alice/regular/alice?#iefix") format("embedded-opentype"), url("../../assets/fonts/alice/regular/alice.woff") format("woff"), url("../../assets/fonts/alice/regular/alice.ttf") format("truetype"), url("../../assets/fonts/alice/regular/alice.svg#svgFontName") format("svg");
+  src: url("../../assets/fonts/alice/light/SourceSansPro-Light?#iefix") format("embedded-opentype"), url("../../assets/fonts/alice/light/SourceSansPro-Light.woff") format("woff"), url("../../assets/fonts/alice/light/SourceSansPro-Light.ttf") format("truetype"), url("../../assets/fonts/alice/light/SourceSansPro-Light.svg#svgFontName") format("svg");
   /* Legacy iOS */
 }
 
 @font-face {
-  font-family: 'alice-bold';
+  font-family: 'SourceSansPro-Bold';
   font-weight: 100;
-  src: url("../../assets/fonts/alice/bold/alice-bold.eot");
+  src: url("../../assets/fonts/alice/bold/SourceSansPro-Bold.eot");
   /* IE9 Compat Modes */
-  src: url("../../assets/fonts/alice/bold/alice-bold?#iefix") format("embedded-opentype"), url("../../assets/fonts/alice/bold/alice-bold.woff") format("woff"), url("../../assets/fonts/alice/bold/alice-bold.ttf") format("truetype"), url("../../assets/fonts/alice/bold/alice-bold.svg#svgFontName") format("svg");
+  src: url("../../assets/fonts/alice/bold/SourceSansPro-Bold?#iefix") format("embedded-opentype"), url("../../assets/fonts/alice/bold/SourceSansPro-Bold.woff") format("woff"), url("../../assets/fonts/alice/bold/SourceSansPro-Bold.ttf") format("truetype"), url("../../assets/fonts/alice/bold/SourceSansPro-Bold.svg#svgFontName") format("svg");
   /* Legacy iOS */
 }
 
 @font-face {
-  font-family: 'alice-thin';
-  src: url("../../assets/fonts/alice/alice-thin.eot");
+  font-family: 'SourceSansPro-Regular';
+  font-weight: 400;
+  src: url("../../assets/fonts/alice/regular/SourceSansPro-Regular.eot");
   /* IE9 Compat Modes */
-  src: url("../../assets/fonts/alice/alice-thin?#iefix") format("embedded-opentype"), url("../../assets/fonts/alice/alice-thin.woff") format("woff"), url("../../assets/fonts/alice/alice-thin.ttf") format("truetype"), url("../../assets/fonts/alice/alice-thin.svg#svgFontName") format("svg");
-  /* Legacy iOS */
+  src: url("../../assets/fonts/alice/regular/SourceSansPro-Regular?#iefix") format("embedded-opentype"), url("../../assets/fonts/alice/regular/SourceSansPro-Regular.woff") format("woff"), url("../../assets/fonts/alice/regular/SourceSansPro-Regular.woff2") format("woff2"), url("../../assets/fonts/alice/regular/SourceSansPro-Regular.ttf") format("truetype");
 }
 
-/* line 36, D:/xampp/htdocs/alice/style/scss/basic.scss */
+/* line 37, D:/xampp/htdocs/alice/style/scss/basic.scss */
 html,
 body {
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004);
   text-rendering: optimizeLegibility !important;
   -webkit-font-smoothing: antialiased !important;
+  min-height: 100% !important;
+  height: 100%;
 }
 
-/* line 43, D:/xampp/htdocs/alice/style/scss/basic.scss */
+/* line 46, D:/xampp/htdocs/alice/style/scss/basic.scss */
 html {
   background: #FFFFFF;
   height: 100% !important;
 }
 
+/* line 51, D:/xampp/htdocs/alice/style/scss/basic.scss */
+#paged {
+  height: 100%;
+  min-height: 100% !important;
+}
+
 /* fallback for old browsers */
-/* line 130, D:/xampp/htdocs/alice/style/scss/basic.scss */
+/* line 147, D:/xampp/htdocs/alice/style/scss/basic.scss */
 .boxb {
   box-shadow: 0px 8px 52px 2px rgba(0, 0, 0, 0.18);
 }
 
-/* line 137, D:/xampp/htdocs/alice/style/scss/basic.scss */
+/* line 154, D:/xampp/htdocs/alice/style/scss/basic.scss */
 .box2 {
   box-shadow: 0 7px 14px rgba(50, 50, 93, 0.1), 0 3px 6px rgba(0, 0, 0, 0.08);
 }
 
-/* line 141, D:/xampp/htdocs/alice/style/scss/basic.scss */
+/* line 158, D:/xampp/htdocs/alice/style/scss/basic.scss */
 ol,
 ul {
   padding: 0;
@@ -57,28 +65,28 @@ ul {
   list-style: none;
 }
 
-/* line 148, D:/xampp/htdocs/alice/style/scss/basic.scss */
+/* line 165, D:/xampp/htdocs/alice/style/scss/basic.scss */
 li {
   display: inline-block;
 }
 
-/* line 152, D:/xampp/htdocs/alice/style/scss/basic.scss */
+/* line 169, D:/xampp/htdocs/alice/style/scss/basic.scss */
 a {
   color: #989898;
   text-decoration: none;
 }
 
-/* line 157, D:/xampp/htdocs/alice/style/scss/basic.scss */
+/* line 174, D:/xampp/htdocs/alice/style/scss/basic.scss */
 input {
   border: 0;
 }
 
-/* line 159, D:/xampp/htdocs/alice/style/scss/basic.scss */
+/* line 176, D:/xampp/htdocs/alice/style/scss/basic.scss */
 input:focus {
   outline: 0;
 }
 
-/* line 164, D:/xampp/htdocs/alice/style/scss/basic.scss */
+/* line 181, D:/xampp/htdocs/alice/style/scss/basic.scss */
 input:-webkit-autofill,
 input:-webkit-autofill:hover,
 input:-webkit-autofill:focus input:-webkit-autofill,
@@ -92,7 +100,7 @@ select:-webkit-autofill:focus {
   transition: background-color 5000s ease-in-out 0s;
 }
 
-/* line 177, D:/xampp/htdocs/alice/style/scss/basic.scss */
+/* line 194, D:/xampp/htdocs/alice/style/scss/basic.scss */
 *,
 *:before,
 *:after {
@@ -101,19 +109,19 @@ select:-webkit-autofill:focus {
   box-sizing: border-box;
 }
 
-/* line 185, D:/xampp/htdocs/alice/style/scss/basic.scss */
+/* line 202, D:/xampp/htdocs/alice/style/scss/basic.scss */
 img {
   max-width: 100%;
 }
 
-/* line 189, D:/xampp/htdocs/alice/style/scss/basic.scss */
+/* line 206, D:/xampp/htdocs/alice/style/scss/basic.scss */
 table {
   border-collapse: collapse;
   empty-cells: show;
   width: 100%;
 }
 
-/* line 195, D:/xampp/htdocs/alice/style/scss/basic.scss */
+/* line 212, D:/xampp/htdocs/alice/style/scss/basic.scss */
 td,
 th {
   text-align: left;
@@ -121,42 +129,51 @@ th {
   margin: 0;
 }
 
-/* line 202, D:/xampp/htdocs/alice/style/scss/basic.scss */
+/* line 219, D:/xampp/htdocs/alice/style/scss/basic.scss */
 input,
 textarea,
 select,
 button {
-  font-family: "alice", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-family: "SourceSansPro-Regular";
 }
 
-/* line 210, D:/xampp/htdocs/alice/style/scss/basic.scss */
+/* line 227, D:/xampp/htdocs/alice/style/scss/basic.scss */
 button {
   border: 0;
   cursor: pointer;
 }
 
-/* line 213, D:/xampp/htdocs/alice/style/scss/basic.scss */
+/* line 230, D:/xampp/htdocs/alice/style/scss/basic.scss */
 button:focus {
   outline: none;
 }
 
-/* line 218, D:/xampp/htdocs/alice/style/scss/basic.scss */
+/* line 235, D:/xampp/htdocs/alice/style/scss/basic.scss */
 ::-webkit-scrollbar-track {
   background-color: #ddd;
 }
 
-/* line 222, D:/xampp/htdocs/alice/style/scss/basic.scss */
+/* line 239, D:/xampp/htdocs/alice/style/scss/basic.scss */
 ::-webkit-scrollbar {
   width: 4px;
   background-color: #F5F5F5;
 }
 
-/* line 227, D:/xampp/htdocs/alice/style/scss/basic.scss */
+/* line 244, D:/xampp/htdocs/alice/style/scss/basic.scss */
 ::-webkit-scrollbar-thumb {
   background-color: #9ac3c3;
 }
 
-/* line 231, D:/xampp/htdocs/alice/style/scss/basic.scss */
+/* line 248, D:/xampp/htdocs/alice/style/scss/basic.scss */
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "SourceSansPro-Bold";
+}
+
+/* line 257, D:/xampp/htdocs/alice/style/scss/basic.scss */
 .button {
   display: inline-block;
   float: right;
@@ -164,149 +181,149 @@ button:focus {
   top: -15px;
 }
 
-/* line 238, D:/xampp/htdocs/alice/style/scss/basic.scss */
+/* line 264, D:/xampp/htdocs/alice/style/scss/basic.scss */
 .rl-container {
   position: relative;
 }
 
-/* line 242, D:/xampp/htdocs/alice/style/scss/basic.scss */
+/* line 268, D:/xampp/htdocs/alice/style/scss/basic.scss */
 .boxed {
   box-shadow: 0px 11px 83px 3px rgba(0, 0, 0, 0.18);
   -moz-box-sizing: border-box;
 }
 
-/* line 248, D:/xampp/htdocs/alice/style/scss/basic.scss */
+/* line 274, D:/xampp/htdocs/alice/style/scss/basic.scss */
 .boxedSmall {
   box-shadow: 0 1px 1px #66abab;
   -moz-box-sizing: border-box;
 }
 
-/* line 253, D:/xampp/htdocs/alice/style/scss/basic.scss */
+/* line 279, D:/xampp/htdocs/alice/style/scss/basic.scss */
 .boxed.fixed {
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.19);
   -moz-box-sizing: border-box;
 }
 
-/* line 258, D:/xampp/htdocs/alice/style/scss/basic.scss */
+/* line 284, D:/xampp/htdocs/alice/style/scss/basic.scss */
 .bx {
   box-shadow: 0px 8px 52px 2px rgba(0, 0, 0, 0.18);
 }
 
-/* line 262, D:/xampp/htdocs/alice/style/scss/basic.scss */
+/* line 288, D:/xampp/htdocs/alice/style/scss/basic.scss */
 .clear {
   clear: both;
 }
 
-/* line 266, D:/xampp/htdocs/alice/style/scss/basic.scss */
+/* line 292, D:/xampp/htdocs/alice/style/scss/basic.scss */
 .slow {
   transition: all .2s ease-in-out;
 }
 
-/* line 270, D:/xampp/htdocs/alice/style/scss/basic.scss */
+/* line 296, D:/xampp/htdocs/alice/style/scss/basic.scss */
 .row {
   width: 1200px;
   margin: 0 auto;
 }
 
-/* line 275, D:/xampp/htdocs/alice/style/scss/basic.scss */
+/* line 301, D:/xampp/htdocs/alice/style/scss/basic.scss */
 .center {
   text-align: center;
 }
 
-/* line 279, D:/xampp/htdocs/alice/style/scss/basic.scss */
+/* line 305, D:/xampp/htdocs/alice/style/scss/basic.scss */
 .left {
   text-align: left;
 }
 
-/* line 283, D:/xampp/htdocs/alice/style/scss/basic.scss */
+/* line 309, D:/xampp/htdocs/alice/style/scss/basic.scss */
 .spacer.huge {
   height: 20vh;
 }
 
-/* line 287, D:/xampp/htdocs/alice/style/scss/basic.scss */
+/* line 313, D:/xampp/htdocs/alice/style/scss/basic.scss */
 .spacer.big {
   height: 10vh;
   position: relative;
 }
 
-/* line 292, D:/xampp/htdocs/alice/style/scss/basic.scss */
+/* line 318, D:/xampp/htdocs/alice/style/scss/basic.scss */
 .gr-2 {
   width: 50%;
 }
 
-/* line 296, D:/xampp/htdocs/alice/style/scss/basic.scss */
+/* line 322, D:/xampp/htdocs/alice/style/scss/basic.scss */
 .gr-2-5 {
   width: 55%;
   min-height: 1px;
 }
 
-/* line 301, D:/xampp/htdocs/alice/style/scss/basic.scss */
+/* line 327, D:/xampp/htdocs/alice/style/scss/basic.scss */
 .gr-2-4 {
   width: 40%;
 }
 
-/* line 305, D:/xampp/htdocs/alice/style/scss/basic.scss */
+/* line 331, D:/xampp/htdocs/alice/style/scss/basic.scss */
 .gr-3 {
   width: 33%;
   min-height: 1px;
 }
 
-/* line 311, D:/xampp/htdocs/alice/style/scss/basic.scss */
+/* line 337, D:/xampp/htdocs/alice/style/scss/basic.scss */
 .gr-3-5 {
   width: 30%;
   min-height: 1px;
 }
 
-/* line 316, D:/xampp/htdocs/alice/style/scss/basic.scss */
+/* line 342, D:/xampp/htdocs/alice/style/scss/basic.scss */
 .gr-4 {
   width: 25%;
   min-height: 1px;
 }
 
-/* line 321, D:/xampp/htdocs/alice/style/scss/basic.scss */
+/* line 347, D:/xampp/htdocs/alice/style/scss/basic.scss */
 .gr-5 {
   width: 20%;
   min-height: 1px;
 }
 
-/* line 326, D:/xampp/htdocs/alice/style/scss/basic.scss */
+/* line 352, D:/xampp/htdocs/alice/style/scss/basic.scss */
 .gr-10 {
   width: 10%;
   min-height: 1px;
 }
 
-/* line 331, D:/xampp/htdocs/alice/style/scss/basic.scss */
+/* line 357, D:/xampp/htdocs/alice/style/scss/basic.scss */
 .talent-container {
   max-width: 1200px;
   margin: 0 auto;
   text-align: center;
 }
 
-/* line 337, D:/xampp/htdocs/alice/style/scss/basic.scss */
+/* line 363, D:/xampp/htdocs/alice/style/scss/basic.scss */
 .container {
   width: 1200px;
   margin: 0 auto;
   position: relative;
 }
 
-/* line 343, D:/xampp/htdocs/alice/style/scss/basic.scss */
+/* line 369, D:/xampp/htdocs/alice/style/scss/basic.scss */
 .clearfix:before,
 .clearfix:after {
   content: "";
   display: table;
 }
 
-/* line 349, D:/xampp/htdocs/alice/style/scss/basic.scss */
+/* line 375, D:/xampp/htdocs/alice/style/scss/basic.scss */
 .clearfix:after {
   clear: both;
 }
 
-/* line 353, D:/xampp/htdocs/alice/style/scss/basic.scss */
+/* line 379, D:/xampp/htdocs/alice/style/scss/basic.scss */
 .clearfix {
   zoom: 1;
 }
 
-/* line 357, D:/xampp/htdocs/alice/style/scss/basic.scss */
+/* line 383, D:/xampp/htdocs/alice/style/scss/basic.scss */
 .relative {
   position: relative !important;
 }
@@ -329,7 +346,7 @@ button:focus {
   }
 }
 
-/* line 382, D:/xampp/htdocs/alice/style/scss/basic.scss */
+/* line 408, D:/xampp/htdocs/alice/style/scss/basic.scss */
 .glyphicon {
   position: relative;
   top: 1px;
@@ -342,12 +359,12 @@ button:focus {
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* line 395, D:/xampp/htdocs/alice/style/scss/basic.scss */
+/* line 421, D:/xampp/htdocs/alice/style/scss/basic.scss */
 .glyphicon-ok:before {
   content: "\2713";
 }
 
-/* line 399, D:/xampp/htdocs/alice/style/scss/basic.scss */
+/* line 425, D:/xampp/htdocs/alice/style/scss/basic.scss */
 .glyphicon-remove:before {
   content: "\00d7";
   font-size: 17px;
@@ -445,7 +462,7 @@ button:focus {
   display: block;
   width: 100px;
   padding: 5px 0;
-  background: #12a3bd;
+  background: #5A80FB;
   border-radius: 4px;
   color: #fff;
   text-align: center;

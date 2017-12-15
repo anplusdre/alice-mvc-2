@@ -385,38 +385,137 @@ header.minified {
     }
 }
 
+.page {
+    height: 100%;
+}
+
+.page.pdtop {
+    padding: 30px 0;
+}
+
 #home {
-    height: 100vh;
-    position: relative;
-    width: 100%;
+    overflow: hidden;
+    height: 100%;
+    margin: 0px auto;
+    width: calc(100% - 10%);
     background: #fff;
-    z-index: 3;
     /* IE9+ and future browsers */
     .userMenu {
-
-        position: absolute;
         width: 100%;
-        top: 25px;
-        z-index: 33;
     }
 
     .hero {
         height: 100%;
-        position: relative;
+        .fixedBg {
+            background: url(../../assets/images/worlds.svg) no-repeat;
+            background-size: 400px;
+            background-position-y: center;
+            background-position-x: center;
+            width: 100%;
+            height: 300px;
+            position: relative;
+
+            &:before {
+                //                content: ""; //                    background: rgba(25, 25, 25, 0.66);
+                background-color: rgba(25, 25, 25, 0.33);
+                background-image: $gridbg;
+                height: 100%;
+                background-size: 50px 50px;
+                position: absolute;
+                z-index: 22;
+                width: 100%;
+                height: 100%;
+
+            }
+        }
 
         .herowrap {
             position: relative;
             height: 100%;
             width: 100%;
+            padding: 50px 0;
+            text-align: center;
+            .searchModule {
+                display: table;
+                width: 775px;
+                border-radius: 6px;
+                vertical-align: middle;
+
+                .smodWrap {
+                    display: table-cell;
+                    vertical-align: middle;
+
+                    input,
+                    select {
+                        display: table-column;
+                        vertical-align: middle;
+                    }
+
+                    .areaopt {
+                        width: 22%;
+                        height: 35px;
+                        border: 0;
+                        padding-left: 15px;
+                        background: $blue;
+                        color: #fff;
+                        margin-right: 0.299%;
+                        border-radius: 4px;
+
+                        &:focus {
+                            outline: 0;
+                            border: 0;
+                        }
+
+                        option {
+                            background: #fff;
+                            color: $blue;
+                            padding: 5px 0;
+                        }
+                    }
+
+                    .searchJob {
+                        width: 68%;
+                        margin-left: 1%;
+                        height: 35px;
+                        border-radius: 4px;
+                        padding-left: 15px;
+                        border: 1px solid $blue;
+                    }
+
+                    button {
+                        background: #fff;
+                        border: 1px solid $blue;
+                        width: 45px;
+                        height: 35px;
+                        border-top-right-radius: 4px;
+                        border-bottom-right-radius: 4px;
+                        top: 12px;
+                        position: relative;
+                        line-height: 35px;
+                        left: -49px;
+                        span {
+                            position: absolute;
+                            background: url(../../assets/icons/magnifying-glass.svg) no-repeat;
+                            background-position: center;
+                            width: 45px;
+                            left: 0;
+                            top: 0;
+                            height: 35px;
+                        }
+                    }
+                }
+            }
 
             .Register {
                 z-index: 55;
+                top: 50%;
                 position: absolute;
-                right: 8%;
+                right: 7%;
                 width: 350px;
                 padding: 40px;
                 background: rgba(255, 255, 255, 0.82);
                 border-radius: 6px;
+                transform: translate(-0, -50%);
                 form {
 
                     h3 {
@@ -463,34 +562,11 @@ header.minified {
                         color: #fff;
                         position: relative;
                         float: right;
-                        font-family: 'alice-bold';
+                        font-family: $basis;
                     }
                 }
             }
 
-            .fixedBg {
-                background: url(../../assets/images/alice.jpg)no-repeat; //        background-position-y: -400px;
-                background-size: cover;
-
-                background-position-y: -50px;
-                width: 100%;
-                height: 100%;
-                position: absolute;
-                z-index: 10;
-
-                &:before {
-                    content: ""; //                    background: rgba(25, 25, 25, 0.66);
-                    background-color: rgba(25, 25, 25, 0.33);
-                    background-image: $gridbg;
-                    height: 100%;
-                    background-size: 50px 50px;
-                    position: absolute;
-                    z-index: 22;
-                    width: 100%;
-                    height: 100%;
-
-                }
-            }
 
             .heroBanner {
                 position: absolute;
@@ -513,28 +589,66 @@ header.minified {
             }
 
             .heroText {
-                //                top: 50%;
-                //                transform: translate(0, -50%);
                 position: relative;
-                display: inline-block;
-                z-index: 33;
-                margin-left: 5%;
-                top: 50%;
+                display: block;
+                width: 500px;
+                margin: 0 auto;
+
+                a.start {
+                    margin-top: 20px;
+                    background: #fff;
+                    border: 1px solid $blue;
+                    height: 30px;
+                    padding: 4px 20px;
+                    line-height: 22px;
+                    border-radius: 4px;
+                    display: inline-block;
+                    position: relative;
+
+                    &:hover > h5 {
+                        color: #fff;
+                    }
+
+                    h5 {
+                        color: $blue;
+                        font-size: 13px;
+                        margin: 0;
+                        letter-spacing: 2px;
+                        position: relative;
+                    }
+
+                    &:before {
+                        cursor: pointer;
+                        content: '';
+                        display: inline-block;
+                        margin: 0 auto;
+                        width: 0;
+                        height: 100%;
+                        background: #5A80FB;
+                        transition: width .4s;
+                        left: 0;
+                        top: 0;
+                        position: absolute;
+                    }
+
+                    &:hover:before {
+                        box-shadow: 0;
+                        width: 100%;
+                    }
+                }
 
                 h2 {
-                    font-family: 'alice-thin';
-                    color: #fff;
-                    padding-right: 15px;
+                    font-family: $basis;
+                    color: #212121;
                     margin: 0;
                     vertical-align: middle;
-                    text-transform: uppercase;
                 }
 
                 .text01 {
-                    font-size: 30px;
-                    margin-left: 30px;
-                    text-align: left;
-                    letter-spacing: 7px;
+                    font-size: 14px;
+                    font-family: $lite;
+                    font-weight: normal;
+                    text-align: center;
                 }
 
                 .text02 {
@@ -542,9 +656,9 @@ header.minified {
                     margin-left: 30px;
                     letter-spacing: 5.5px;
                     position: relative;
-                    font-family: 'alice';
+                    font-family: $bold;
                     z-index: 10;
-                    color: #2296ad;
+                    color: $blue;
                 }
 
                 .text03 {
@@ -578,11 +692,29 @@ header.minified {
     height: 43px; //    background: rgba(21, 21, 21, 0.6509803921568628);
     text-align: right;
 
+    .fsmnu {
+        display: none;
+        position: absolute;
+        left: 0;
+        top: 100%;
+
+        li {
+            display: block;
+
+            a {
+                display: block;
+                text-align: center;
+                margin-right: 0;
+            }
+        }
+    }
+
     ul {
         display: block;
 
         li {
             display: inline-block;
+            position: relative;
 
             a {
                 margin-right: 30px;
@@ -593,15 +725,55 @@ header.minified {
     }
 }
 
+.dash-nav {
+    width: 100%;
+    height: 43px;
+    text-align: right;
+    display: table;
+
+    ul {
+        display: table-cell;
+
+        li {
+
+            a {
+                font-size: 13px;
+                color: $mute;
+                display: block;
+                line-height: 43px;
+                padding: 0 10px;
+
+                .news-notif {
+                    background: orangered;
+                    color: #fff;
+                    width: 20px;
+                    text-align: center;
+                    line-height: 25px;
+                    border-radius: 3px;
+                }
+
+                span {
+                    display: inline-block;
+                }
+
+                span::first-letter {
+                    text-transform: uppercase;
+                }
+            }
+        }
+    }
+}
+
 .main-logo {
-    text-align: center;
-    position: relative;
-    width: 200px;
-    margin: 15px auto;
-    float: left;
+    display: table-cell;
+    text-align: left;
+    vertical-align: middle;
     a {
+        display: block;
+
         img {
-            height: 100px;
+            width: 30px;
+            vertical-align: middle;
             transform: translateZ(40px)
         }
     }
@@ -1744,7 +1916,7 @@ $search-font-size: 12px;
                                 box-shadow: 0px 11px 83px 3px rgba(0, 0, 0, 0.18);
                                 background: #fff;
                                 border: 1px solid #fff;
-                                color: $mainb;
+                                color: $blue;
                             }
                             &:focus::placeholder {
                                 color: transparent;
@@ -2382,6 +2554,7 @@ $search-font-size: 12px;
             margin: 8px auto;
             font-size: 11px;
             margin-bottom: 25px;
+            font-family: $lite;
         }
 
         .key {
@@ -2472,7 +2645,7 @@ $search-font-size: 12px;
     @extend .bookBtn;
     transition: $smooth;
     &:hover {
-        box-shadow: 0 7px 14px rgba(0, 147, 229, 0.28), 0 3px 6px rgba(0, 147, 229, 0.45);
+        box-shadow: 0 5px 14px -4px #7287D0;
     }
 
     h5 {
@@ -2482,19 +2655,18 @@ $search-font-size: 12px;
 
 .jobBtn {
     transition: $smooth;
-    font-family: $bold;
     line-height: 16px;
     display: block;
     margin-right: 20px;
 
     h5 {
-
+        font-family: $basis;
         font-weight: normal;
-        color: #fff;
+        color: #212121;
         text-align: center;
         display: table-cell;
         vertical-align: middle;
-        font-size: 12px;
+        font-size: 0.7755em;
 
     }
 
@@ -2505,8 +2677,8 @@ $search-font-size: 12px;
         display: block;
         margin: 0 auto;
         width: 0;
-        height: 2px;
-        background: #fff;
+        height: 1.6px;
+        background: $blue;
         transition: width .4s;
         top: 3px;
         position: relative;
@@ -2542,6 +2714,7 @@ $search-font-size: 12px;
         }
     }
 }
+
 
 .empty-event {
     width: 100%;
@@ -2819,4 +2992,77 @@ $search-font-size: 12px;
         background: $blue;
         color: #fff;
     }
+}
+
+.box-section {
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    margin: 0 auto;
+    position: relative;
+    .userLogin {
+        background: linear-gradient(45deg, #06beb6, $blue);
+        min-height: 100%;
+        width: 100%;
+        z-index: 1;
+        position: relative;
+
+        &:before {
+            //            content: "";
+            position: absolute;
+            background: rgba(0, 0, 0, .4);
+            width: 100%;
+            height: 100%;
+            left: 0;
+            top: 0;
+            z-index: -1;
+        }
+
+        #login-form {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: -1;
+            width: 400px;
+            padding: 40px;
+            background: #fff;
+            border-radius: 6px;
+            box-shadow: 0 7px 14px rgba(50, 50, 93, 0.1), 0 3px 6px rgba(0, 0, 0, 0.08);
+
+            .input-data {
+
+                h6 {
+                    margin: 0;
+                    text-align: left;
+                    margin-bottom: 5px;
+                    font-weight: normal;
+                }
+            }
+
+            input {
+                width: 100%;
+                background: #eee;
+                height: 33px;
+                border-radius: 4px;
+                padding-left: 25px;
+                z-index: 3;
+                margin-bottom: 20px;
+            }
+
+            button {
+                height: 35px;
+                padding: 0px 30px;
+                background: $blue;
+                color: #fff;
+                border-radius: 4px;
+                box-shadow: 0 7px 14px rgba(50, 50, 93, 0.1), 0 3px 6px rgba(0, 0, 0, 0.08);
+            }
+        }
+    }
+
+    h2 {
+        margin: 0;
+    }
+
 }
